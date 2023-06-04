@@ -16,18 +16,25 @@ namespace HyperCasual.Runner
 
         [SerializeField]
         GateType m_GateType;
-        [SerializeField]
-        float m_Value;
+        
+        [SerializeField] float m_Value;
+        [SerializeField] private float heightValue;
+        [SerializeField] private float widthValue;
+        
         [SerializeField]
         RectTransform m_Text;
 
         bool m_Applied;
+        
         Vector3 m_TextInitialScale;
 
+        private Inventory inventory;
         enum GateType
         {
             ChangeSpeed,
             ChangeSize,
+            ChangeHeight,
+            ChangeWidth
         }
 
         /// <summary>
@@ -68,6 +75,8 @@ namespace HyperCasual.Runner
             {
                 m_TextInitialScale = m_Text.localScale;
             }
+
+            inventory = FindObjectOfType<Inventory>();
         }
 
         void OnTriggerEnter(Collider col)
@@ -82,6 +91,8 @@ namespace HyperCasual.Runner
         {
             switch (m_GateType)
             {
+                /*
+                 * 
                 case GateType.ChangeSpeed:
                     PlayerController.Instance.AdjustSpeed(m_Value);
                 break;
@@ -89,6 +100,15 @@ namespace HyperCasual.Runner
                 case GateType.ChangeSize:
                     PlayerController.Instance.AdjustScale(m_Value);
                 break;
+                
+                 */
+                case GateType.ChangeHeight:
+                    inventory.BucketCapacity = heightValue;
+                    PlayerController.Instance.AdjustHeight(heightValue);
+                    break;
+                case GateType.ChangeWidth:
+                    PlayerController.Instance.AdjustWidth(widthValue);
+                    break;
             }
 
             m_Applied = true;

@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using HyperCasual.Core;
+using TMPro;
 using UnityEngine;
 
 namespace HyperCasual.Runner
@@ -13,12 +11,23 @@ namespace HyperCasual.Runner
     public class Obstacle : Spawnable
     {
         const string k_PlayerTag = "Player";
-        
+
+        private Inventory inventory;
+        private void Start()
+        {
+            inventory = FindObjectOfType<Inventory>();
+        }
+
         void OnTriggerEnter(Collider col)
         {
             if (col.CompareTag(k_PlayerTag))
             {
-                GameManager.Instance.Lose();
+               //GameManager.Instance.Lose();
+               inventory.BucketFilledAmount = -10;
+               TextMeshPro textMP = GameObject.Find("playerWaterText").GetComponent<TextMeshPro>(); 
+               textMP.text = inventory.BucketFilledAmount.ToString();
+               TextMeshPro bucketText = GameObject.Find("playerCapacityText").GetComponent<TextMeshPro>();
+               bucketText.text = "Capacity: " + inventory.BucketCapacity + "\nEmpty Portion"+(inventory.BucketCapacity - inventory.BucketFilledAmount).ToString();
             }
         }
     }

@@ -103,6 +103,32 @@ namespace HyperCasual.Runner
         /// <summary> The player's maximum X position. </summary>
         public float MaxXPosition => m_MaxXPosition;
 
+        #region My Codes
+
+        public void AdjustWidth(float adjust)
+        {
+            Transform child = transform.GetChild(5).transform;
+            float x = child.localScale.x;
+            float y = child.localScale.y;
+            float newX = x + adjust;
+            Debug.Log("x will be : " + newX );
+            Vector3 scale = new Vector3(newX, y, newX);
+            Debug.Log("Scale is " + scale);
+            child.transform.localScale = scale;
+        }
+        public void AdjustHeight(float adjust)
+        {
+            Transform child = transform.GetChild(5).transform;
+            float y = child.localScale.y;
+            float x = child.localScale.x;
+            float newY = y + adjust;
+            Debug.Log("y will be : " + newY );
+            Vector3 scale = new Vector3(x, newY, x);
+            Debug.Log("Scale is " + scale);
+            child.transform.localScale = scale;
+        }
+
+        #endregion
         void Awake()
         {
             if (s_Instance != null && s_Instance != this)

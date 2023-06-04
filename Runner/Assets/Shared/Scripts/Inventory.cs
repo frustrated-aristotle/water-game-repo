@@ -30,8 +30,30 @@ namespace HyperCasual.Runner
         public float waterAmount;
         public float soilAmount;
         public float acidAmount;
-        public float bucketCapacity;
-        public float bucketFilled;
+        private float bucketCapacity;
+        private float bucketFilledAmount;
+
+        public float BucketCapacity 
+        {
+            get => bucketCapacity;
+            set
+            {
+                Debug.Log("Bucket capacity before: " + bucketCapacity);
+                bucketCapacity += value;
+                Debug.Log("Bucket capacity after: " + bucketCapacity);
+
+            }
+        }
+        public float BucketFilledAmount
+        {
+            get => bucketFilledAmount;
+            set
+            {
+                Debug.Log("Bucket filled amount before: " + bucketFilledAmount);
+                bucketFilledAmount += value;
+                Debug.Log("bucket filled amount after : " + bucketFilledAmount);
+            }
+        }
         /// <summary>
         /// Temporary const
         /// Users keep accumulating XP when playing the game and they're rewarded as they hit a milestone.
