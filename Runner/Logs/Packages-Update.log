@@ -1,0 +1,12 @@
+
+=== Fri Jun  2 14:53:41 2023
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.collab-proxy@1.17.7
+  com.unity.visualscripting@1.7.8
+The following packages were updated:
+  com.unity.inputsystem from version 1.4.3 to 1.4.4
+  com.unity.render-pipelines.universal from version 12.1.6 to 12.1.8
