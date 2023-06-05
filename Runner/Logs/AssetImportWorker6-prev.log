@@ -1,0 +1,389 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16185 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\aristo\Documents\Unity All Projects\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+57808
+Successfully changed project path to: C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner
+C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [6708] Host "[IP] 192.168.1.35 [Port] 0 [Flags] 2 [Guid] 117339222 [EditorId] 117339222 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P5AC8NT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [6708] Host "[IP] 192.168.1.35 [Port] 0 [Flags] 2 [Guid] 117339222 [EditorId] 117339222 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P5AC8NT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 168.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3168
+Initialize mono
+Mono path[0] = 'C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009530 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 137.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Domain Reload Profiling:
+	ReloadAssembly (771ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (586ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (106ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (137ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (138ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007853 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\aristo\Desktop\UnityGames\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\aristo\Desktop\UnityGames\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 171.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.836 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1836ms)
+		BeginReloadAssembly (238ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (134ms)
+		EndReloadAssembly (1468ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (467ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (781ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (172ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (288ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5806 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (0.8 MB). Loaded Objects now: 6235.
+Memory consumption went from 230.1 MB to 229.3 MB.
+Total: 4.421500 ms (FindLiveObjects: 0.435100 ms CreateObjectMapping: 0.424500 ms MarkObjects: 3.207100 ms  DeleteObjects: 0.354200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 463987.443921 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Dust/bigdust.png
+  artifactKey: Guid(403b3475e8a4b9a43a0598ec3f7f9469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Dust/bigdust.png using Guid(403b3475e8a4b9a43a0598ec3f7f9469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fd2a0579e6628bc0c7bb3a1196caf4') in 0.081022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Water/Bubble.mat
+  artifactKey: Guid(50b0bc25c5231284c92c6e6efe67e623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Water/Bubble.mat using Guid(50b0bc25c5231284c92c6e6efe67e623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0457d801f6294c9b1fa4ff135b1eec2c') in 0.230571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Flare/flare_blue.png
+  artifactKey: Guid(51dc0756acf1a45449c62a44ceafb65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Flare/flare_blue.png using Guid(51dc0756acf1a45449c62a44ceafb65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9242ab1e4f8c69963dddcebdd5a3e922') in 0.027147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Fire/Misc/GasFireBurst02.prefab
+  artifactKey: Guid(bba62ddae3c91c44487e90fc6b24c697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Fire/Misc/GasFireBurst02.prefab using Guid(bba62ddae3c91c44487e90fc6b24c697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccfdec493c31ae755514cdadf7bcfef') in 0.050743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Fire/Misc/GasFireBurst01.prefab
+  artifactKey: Guid(1c2ed5bf1a0359443b2ca9e1f7cfc66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Fire/Misc/GasFireBurst01.prefab using Guid(1c2ed5bf1a0359443b2ca9e1f7cfc66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a250b7d6c84a2b77b0d886f6df60bc6e') in 0.032879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Dust/DustBright.prefab
+  artifactKey: Guid(5c4b9fb87220981419fbe4a11fe8a167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Dust/DustBright.prefab using Guid(5c4b9fb87220981419fbe4a11fe8a167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f2ac45ead7d1f542f716c04a722eed') in 0.032294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Fire/Combined/CombinedSmallFire04.prefab
+  artifactKey: Guid(96e7e25ce8f732546afe56289c1766eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Fire/Combined/CombinedSmallFire04.prefab using Guid(96e7e25ce8f732546afe56289c1766eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a54c799223bfb4d66f385a8056b115') in 0.058050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Water/bubble01.png
+  artifactKey: Guid(7ec4db8e9fe8fbc4d9d6e319487d1a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Water/bubble01.png using Guid(7ec4db8e9fe8fbc4d9d6e319487d1a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63e13628f402282bdfaebff60ad3f81') in 0.014895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainHeavyBillboard.mat
+  artifactKey: Guid(ee95bddb7fac70640855a9872a9feae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainHeavyBillboard.mat using Guid(ee95bddb7fac70640855a9872a9feae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64afd17c8a43f0114c35c02240b1347') in 0.024588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Lava/iron_melted_globs_glowy_2x2.png
+  artifactKey: Guid(68226323599d13c49891e085f036bfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Lava/iron_melted_globs_glowy_2x2.png using Guid(68226323599d13c49891e085f036bfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b464059b8734d89fee282fa63f00f1bf') in 0.021437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesSmallUnderwater.prefab
+  artifactKey: Guid(b7fc7606b61996746a60959e2e8a0442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesSmallUnderwater.prefab using Guid(b7fc7606b61996746a60959e2e8a0442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb285b5cc91ec71c726a94bbc8d99abe') in 0.017289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Explosions/Explosion(AlphaBlend).mat
+  artifactKey: Guid(bca3d1acbcc2d4a46821429a72fb69fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Explosions/Explosion(AlphaBlend).mat using Guid(bca3d1acbcc2d4a46821429a72fb69fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e4e8fac7eb4a3e3a973a23e5933a9a') in 0.048851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Lava/Lava3DBubblesExplodingFast.prefab
+  artifactKey: Guid(d5e53f6947c6a96469a08e87ebf2441f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Lava/Lava3DBubblesExplodingFast.prefab using Guid(d5e53f6947c6a96469a08e87ebf2441f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f4f38dabd76c9da30101e9c77fd6c5') in 0.041111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Editor/Tutorials/Hypercasual_tutorial_banner.png
+  artifactKey: Guid(3805e4f09f9248944b79159591c1b47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/Hypercasual_tutorial_banner.png using Guid(3805e4f09f9248944b79159591c1b47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db622fa9376001863f950bb2fc3798cb') in 0.026586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Flares/FlareBlue.prefab
+  artifactKey: Guid(e6d8e6d17d528e741a5846cffb3b53d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Flares/FlareBlue.prefab using Guid(e6d8e6d17d528e741a5846cffb3b53d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4e3191488268bc190a5221977d6b55') in 0.047686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Lava/lava_3dbubble.png
+  artifactKey: Guid(ec82e4cd4955d2f4dafb27cdea861307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Lava/lava_3dbubble.png using Guid(ec82e4cd4955d2f4dafb27cdea861307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9629fef89e8e142325834383ac4a7a36') in 0.019117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Lava/Lava3DBubblesExploding.prefab
+  artifactKey: Guid(7b5040fd143f05e4bbf4baeb9a49ff1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Lava/Lava3DBubblesExploding.prefab using Guid(7b5040fd143f05e4bbf4baeb9a49ff1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5df1cceaa9a7bd94f538db9180c085d') in 0.028558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainBillboard.mat
+  artifactKey: Guid(f8454dde4a64cd240a616aa150b0328d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainBillboard.mat using Guid(f8454dde4a64cd240a616aa150b0328d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e2517bd1b70731ef98ff67270ae11b') in 0.017627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/BubblesExploding.prefab
+  artifactKey: Guid(2a96b1a64e79b374d991be82e68d8e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/BubblesExploding.prefab using Guid(2a96b1a64e79b374d991be82e68d8e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9611df6c371e075e2c0576dd1e42a98') in 0.020320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodFountain02.prefab
+  artifactKey: Guid(80003f06ab0ac5a41b1ab76cd569e0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodFountain02.prefab using Guid(80003f06ab0ac5a41b1ab76cd569e0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f8ddab16a8f2a249732cd439a7d7e3') in 0.042736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesExplosionUnderwater.prefab
+  artifactKey: Guid(9e63e42566b4f394d94c6d093e06debf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesExplosionUnderwater.prefab using Guid(9e63e42566b4f394d94c6d093e06debf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6bd690caf523e91b314d4951331fdd') in 0.018473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_billboard.png
+  artifactKey: Guid(c83129e9a1d6d2a469d75c2cb7acb1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_billboard.png using Guid(c83129e9a1d6d2a469d75c2cb7acb1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464e0a7ec97a46f08617bbf7598140f4') in 0.019755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSmall.prefab
+  artifactKey: Guid(7d3ebe428eb585643afd94b60c2d4295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSmall.prefab using Guid(7d3ebe428eb585643afd94b60c2d4295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878c516685f21dabd38a11a41a48336a') in 0.027298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSplashLong.prefab
+  artifactKey: Guid(c5b1722c426657c46b9c730e6cefd14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSplashLong.prefab using Guid(c5b1722c426657c46b9c730e6cefd14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379bf61f7eb1c2bec420d8d6d38c7ade') in 0.026309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Fire/Combined/CombinedMediumFireGreen.prefab
+  artifactKey: Guid(4f65cbffcfee85645b473042d53fe6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Fire/Combined/CombinedMediumFireGreen.prefab using Guid(4f65cbffcfee85645b473042d53fe6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5535853799a4eaee04b5e6e1b720e9') in 0.069860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Fire/Combined/CombinedMediumFireBlue.prefab
+  artifactKey: Guid(ac2530217c8966d43aee459bbb568302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Fire/Combined/CombinedMediumFireBlue.prefab using Guid(ac2530217c8966d43aee459bbb568302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724ddd57becd8e810e8caa4cd0006e72') in 0.045374 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009378 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\aristo\Desktop\UnityGames\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\aristo\Desktop\UnityGames\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.414 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1415ms)
+		BeginReloadAssembly (175ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1123ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (513ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (276ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5681 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (0.8 MB). Loaded Objects now: 6333.
+Memory consumption went from 229.7 MB to 228.9 MB.
+Total: 6.227000 ms (FindLiveObjects: 0.521500 ms CreateObjectMapping: 0.626600 ms MarkObjects: 4.452300 ms  DeleteObjects: 0.625500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

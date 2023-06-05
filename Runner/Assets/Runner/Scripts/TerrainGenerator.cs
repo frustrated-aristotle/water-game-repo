@@ -277,6 +277,7 @@ namespace HyperCasual.Runner
             }
 
             terrainGameObject = new GameObject("Terrain");
+            terrainGameObject.layer = 6;
             MeshFilter meshFilter = terrainGameObject.AddComponent<MeshFilter>();
             meshFilter.sharedMesh = mesh;
             MeshRenderer meshRenderer = terrainGameObject.AddComponent<MeshRenderer>();

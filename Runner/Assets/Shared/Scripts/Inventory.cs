@@ -49,10 +49,19 @@ namespace HyperCasual.Runner
             get => bucketFilledAmount;
             set
             {
-                Debug.Log("Bucket filled amount before: " + bucketFilledAmount);
                 bucketFilledAmount += value;
-                Debug.Log("bucket filled amount after : " + bucketFilledAmount);
+                UpdateWaterLevel();
             }
+        }
+
+        private void UpdateWaterLevel()
+        {
+            float filledRate = bucketFilledAmount / bucketCapacity * 100;
+            float waterRate = -80 * filledRate / 100;
+            //-80-waterrate
+            SkinnedMeshRenderer child = PlayerController.Instance.transform.GetChild(5).GetChild(1)
+                .GetComponent<SkinnedMeshRenderer>(); 
+            child.SetBlendShapeWeight(1, -80-waterRate);
         }
         /// <summary>
         /// Temporary const

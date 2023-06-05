@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 namespace HyperCasual.Runner
@@ -10,6 +9,8 @@ namespace HyperCasual.Runner
     /// </summary>
     public class PlayerController : MonoBehaviour
     {
+        public Mesh mesh;
+        
         /// <summary> Returns the PlayerController. </summary>
         public static PlayerController Instance => s_Instance;
         static PlayerController s_Instance;
@@ -71,6 +72,9 @@ namespace HyperCasual.Runner
         Vector3 m_TargetScale;
         Vector3 m_DefaultScale;
 
+        private float baseWidth;
+        private float baseHeigth;
+        
         const float k_HalfWidth = 0.5f;
 
         /// <summary> The player's root Transform component. </summary>
@@ -107,25 +111,25 @@ namespace HyperCasual.Runner
 
         public void AdjustWidth(float adjust)
         {
-            Transform child = transform.GetChild(5).transform;
-            float x = child.localScale.x;
-            float y = child.localScale.y;
+            SkinnedMeshRenderer child = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>();
+            float x =child.GetBlendShapeWeight(1);
             float newX = x + adjust;
-            Debug.Log("x will be : " + newX );
-            Vector3 scale = new Vector3(newX, y, newX);
-            Debug.Log("Scale is " + scale);
-            child.transform.localScale = scale;
+            if (baseWidth <= newX)
+            {
+                child.SetBlendShapeWeight(1, newX);
+            }
         }
         public void AdjustHeight(float adjust)
         {
-            Transform child = transform.GetChild(5).transform;
-            float y = child.localScale.y;
-            float x = child.localScale.x;
+            SkinnedMeshRenderer child = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>();
+            //Transform child = transform.GetChild(5).transform;
+            float y = child.GetBlendShapeWeight(0);
             float newY = y + adjust;
-            Debug.Log("y will be : " + newY );
-            Vector3 scale = new Vector3(x, newY, x);
-            Debug.Log("Scale is " + scale);
-            child.transform.localScale = scale;
+            if (baseHeigth<= newY)
+            {
+                child.SetBlendShapeWeight(0,newY);
+            }
+
         }
 
         #endregion
@@ -138,7 +142,9 @@ namespace HyperCasual.Runner
             }
 
             s_Instance = this;
-
+            baseWidth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(1);
+            
+            baseHeigth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0);
             Initialize();
         }
 
