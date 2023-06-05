@@ -1,0 +1,260 @@
+Using pre-set license
+Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'tr' Physical Memory: 16330 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/UnityProjects/water-game-repo/Runner
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60278
+Successfully changed project path to: C:/UnityProjects/water-game-repo/Runner
+C:/UnityProjects/water-game-repo/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [33568] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 1132232571 [EditorId] 1132232571 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [33568] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 1132232571 [EditorId] 1132232571 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 145.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/water-game-repo/Runner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004912 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 100.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.512 seconds
+Domain Reload Profiling:
+	ReloadAssembly (513ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (77ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (242ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (41ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004798 seconds.
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:DoScan (UnityEditor.DeploymentTargets.IDeploymentTargetsExtension,UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,System.Threading.CancellationToken)
+UnityEditor.Android.TargetScanWorker/<>c__DisplayClass8_0:<Scan>b__0 ()
+System.Threading.Tasks.Task:InnerInvoke ()
+System.Threading.Tasks.Task:Execute ()
+System.Threading.Tasks.Task:ExecutionContextCallback (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.Tasks.Task:ExecuteWithThreadLocal (System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:ExecuteEntry (bool)
+System.Threading.Tasks.Task:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
+System.Threading.ThreadPoolWorkQueue:Dispatch ()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+
+Begin MonoManager ReloadAssembly
+Android Extension - Scanning For ADB Devices 12610 ms
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 100.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1011ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (845ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (491ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5804 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (449.1 KB). Loaded Objects now: 6236.
+Memory consumption went from 225.5 MB to 225.1 MB.
+Total: 3.560400 ms (FindLiveObjects: 0.393700 ms CreateObjectMapping: 0.161500 ms MarkObjects: 2.761500 ms  DeleteObjects: 0.242800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 471396.216368 seconds.
+  path: Assets/Mesh/bucket.fbx
+  artifactKey: Guid(2d767e6650313254ab032703769c46cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mesh/bucket.fbx using Guid(2d767e6650313254ab032703769c46cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9e2bcd45d1db282a582a47113c88d4') in 0.378301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.649703 seconds.
+  path: Assets/Mesh/watergun.fbx
+  artifactKey: Guid(66682c6aefc5b1c4cb594656d11f5f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mesh/watergun.fbx using Guid(66682c6aefc5b1c4cb594656d11f5f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d1efc9f6c41fe8613eb8d89437769c') in 0.057118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.652884 seconds.
+  path: Assets/Mesh/watergun.fbx
+  artifactKey: Guid(66682c6aefc5b1c4cb594656d11f5f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mesh/watergun.fbx using Guid(66682c6aefc5b1c4cb594656d11f5f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb93ecfdea4977002ee01b4850eb31b1') in 0.069112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.778912 seconds.
+  path: Assets/Prefab/bucket.prefab
+  artifactKey: Guid(c27d96ea6a5e333418707d297e0a487f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/bucket.prefab using Guid(c27d96ea6a5e333418707d297e0a487f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464403e0edaaffaa9bbf006e4aa93b19') in 0.249172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.072211 seconds.
+  path: Assets/Prefab/watergun.prefab
+  artifactKey: Guid(df3d5fb63a1963e4ca784dca8b8d8844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/watergun.prefab using Guid(df3d5fb63a1963e4ca784dca8b8d8844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3ce6ce85089bdd700abe59985418a6') in 0.012205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.614458 seconds.
+  path: Assets/Prefab/Cloud.prefab
+  artifactKey: Guid(722dd74a47d5d2143bf0291f4f493929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cloud.prefab using Guid(722dd74a47d5d2143bf0291f4f493929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67d07ed73cefbef3ac3a35dfcfda1f4') in 0.008149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 148.898954 seconds.
+  path: Assets/Mesh/Gate.fbx
+  artifactKey: Guid(9c92f16d432bc544197ddd8177f12780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mesh/Gate.fbx using Guid(9c92f16d432bc544197ddd8177f12780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdae82bd1845100fd0a334cb5222cdff') in 0.013272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 239.063802 seconds.
+  path: Assets/Materials/New Material 8.mat
+  artifactKey: Guid(2a1b787759564154f91e098ba0e5bb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 8.mat using Guid(2a1b787759564154f91e098ba0e5bb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900e42678bcf2ea90fb458ac01177604') in 0.008833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.070521 seconds.
+  path: Assets/Materials/New Material 9.mat
+  artifactKey: Guid(cd40e1d935a579142a49607e7f27d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 9.mat using Guid(cd40e1d935a579142a49607e7f27d2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadcaf972952e890c18d88b88d53ada0') in 0.007089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.472185 seconds.
+  path: Assets/Materials/New Material 10.mat
+  artifactKey: Guid(8f1ce1e62d1d61a4f8b9a490f68c0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 10.mat using Guid(8f1ce1e62d1d61a4f8b9a490f68c0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912315c520d4026b97d86b1347700ab8') in 0.006745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.906818 seconds.
+  path: Assets/Prefab/Cloud.prefab
+  artifactKey: Guid(722dd74a47d5d2143bf0291f4f493929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Cloud.prefab using Guid(722dd74a47d5d2143bf0291f4f493929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0290cabe6e9d3c56360c5b76fe6d78') in 0.007550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.853750 seconds.
+  path: Assets/Prefab/Gate.prefab
+  artifactKey: Guid(431a5da439c97784dbfa1308d2aaf8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Gate.prefab using Guid(431a5da439c97784dbfa1308d2aaf8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444eebc05af82a2224ef79a0dc976289') in 0.008071 seconds 
