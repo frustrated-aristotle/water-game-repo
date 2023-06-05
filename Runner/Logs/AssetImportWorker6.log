@@ -1,0 +1,377 @@
+Using pre-set license
+Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'tr' Physical Memory: 16330 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/UnityProjects/water-game-repo/Runner
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+60278
+Successfully changed project path to: C:/UnityProjects/water-game-repo/Runner
+C:/UnityProjects/water-game-repo/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [32388] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 3158975868 [EditorId] 3158975868 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [32388] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 3158975868 [EditorId] 3158975868 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 115.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/water-game-repo/Runner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004862 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 116.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.549 seconds
+Domain Reload Profiling:
+	ReloadAssembly (549ms)
+		BeginReloadAssembly (51ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (416ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (88ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (116ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004915 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 99.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.084 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1084ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (130ms)
+		EndReloadAssembly (814ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (488ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5839 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (464.7 KB). Loaded Objects now: 6277.
+Memory consumption went from 229.0 MB to 228.5 MB.
+Total: 3.840400 ms (FindLiveObjects: 0.374600 ms CreateObjectMapping: 0.254000 ms MarkObjects: 2.981400 ms  DeleteObjects: 0.229700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 472956.283654 seconds.
+  path: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Environment/CFX3_SmokeColumn_Green.prefab
+  artifactKey: Guid(ec1b2bb0ab8377b40b6f0abaf7a7f1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Environment/CFX3_SmokeColumn_Green.prefab using Guid(ec1b2bb0ab8377b40b6f0abaf7a7f1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb71a5b635b7de28cbb18b78709b1c2') in 0.191998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.852492 seconds.
+  path: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Nature/CFX3_Hit_Leaves_A_Air.prefab
+  artifactKey: Guid(35665ccb8d7722943b81209cbd7e9103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Nature/CFX3_Hit_Leaves_A_Air.prefab using Guid(35665ccb8d7722943b81209cbd7e9103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d1d37abcaaf44b3123686fd9b853bf') in 0.017161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Nature/CFX3_Shield_Leaves_Raw.prefab
+  artifactKey: Guid(69b3f2e9fd7bcb844a112bc6835b0e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX (legacy)/CFX3 Prefabs/Nature/CFX3_Shield_Leaves_Raw.prefab using Guid(69b3f2e9fd7bcb844a112bc6835b0e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908757a5575e257b4a4bccf3f38fc530') in 0.007521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.548334 seconds.
+  path: Assets/Editor/Tutorials/CreateLevel/10-DuplicateLevel.asset
+  artifactKey: Guid(10620d52773c57b4b9d9e4130593a95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/CreateLevel/10-DuplicateLevel.asset using Guid(10620d52773c57b4b9d9e4130593a95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946971c53167e15b76d6bccebd042ab6') in 0.014757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Editor/Tutorials/AdsSetup/15-TurnOnAdsProject.asset
+  artifactKey: Guid(611efe899fb914d038a8052f4086a488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/AdsSetup/15-TurnOnAdsProject.asset using Guid(611efe899fb914d038a8052f4086a488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18ba9c32a57bf7c8cd5250ef2940936') in 0.001928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Editor/Tutorials/AdsSetup/20-GameIds.asset
+  artifactKey: Guid(518e648c1c22e4403b6c948f3aa5d9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/AdsSetup/20-GameIds.asset using Guid(518e648c1c22e4403b6c948f3aa5d9be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b79dbc63e9bf33b6f9907e4d2f0c24') in 0.166074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Editor/Tutorials/LevelEditor/14-LevelEditing.asset
+  artifactKey: Guid(9221309e56cbe5845b88acab30144d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/LevelEditor/14-LevelEditing.asset using Guid(9221309e56cbe5845b88acab30144d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54fd833b09e414b726604c5900fb495') in 0.101725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Editor/Tutorials/CreateLevel/15-EditLevel.asset
+  artifactKey: Guid(3878ad5d9c3a8574fb206530cd578778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/CreateLevel/15-EditLevel.asset using Guid(3878ad5d9c3a8574fb206530cd578778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcc7c3ed0af24323ed279b464532a40') in 0.127548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Editor/Tutorials/CreateLevel/55-EditGameManager.asset
+  artifactKey: Guid(3a56be04d032ac04288ccd5ad27a9034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/CreateLevel/55-EditGameManager.asset using Guid(3a56be04d032ac04288ccd5ad27a9034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc5d4580843f3bf70f0a8a3fedcc58a') in 0.113718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.087723 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919c1474832abbe890b63606463af98b') in 0.080767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.995190 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Hit Ice A (Ground).prefab
+  artifactKey: Guid(a1e53c8ac45fd1041b1c2834b868a7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Hit Ice A (Ground).prefab using Guid(a1e53c8ac45fd1041b1c2834b868a7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c663eb6d8df294574721b2bcdffa802') in 0.001573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Ice Debris Hit (Lit).prefab
+  artifactKey: Guid(28ee99865fe6cb848a574eb3b73719bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Ice Debris Hit (Lit).prefab using Guid(28ee99865fe6cb848a574eb3b73719bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1f9278e3e50e71ae397a824fa2d8da') in 0.001408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Iceball A.prefab
+  artifactKey: Guid(5241eccb55f5602479af08ba1f788c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Iceball A.prefab using Guid(5241eccb55f5602479af08ba1f788c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a5d049d7f1d2c17ca297fd2dce1e52') in 0.001662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Iceball B.prefab
+  artifactKey: Guid(db667c0317c36ab41aef724b63de71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Iceball B.prefab using Guid(db667c0317c36ab41aef724b63de71cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ef279bce802061ea14b047ffaddd19') in 0.001854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Hit Ice B (Ground).prefab
+  artifactKey: Guid(80287f7d04f67624c93ff4dae786ef27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Hit Ice B (Ground).prefab using Guid(80287f7d04f67624c93ff4dae786ef27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e556cf4f0bc984f3042ae59224e208fa') in 0.001500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Ice Shield.prefab
+  artifactKey: Guid(481cb74595caa0d47a7686986c1cf928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Ice Shield.prefab using Guid(481cb74595caa0d47a7686986c1cf928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9bdf311a53be1172eeb71d65c4ef3e') in 0.001498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Hit Ice B (Air).prefab
+  artifactKey: Guid(6f34ef0d986e9db4199cf75805f79753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Ice/CFXR3 Hit Ice B (Air).prefab using Guid(6f34ef0d986e9db4199cf75805f79753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0deba153a8bc2e978c887a4ae96edd') in 0.001336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.404926 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Falling Leaves B (Lit, Green).prefab
+  artifactKey: Guid(9df36663e17118d4687c47a86cd4fc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Falling Leaves B (Lit, Green).prefab using Guid(9df36663e17118d4687c47a86cd4fc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33860fd4cd60ea3f6f3736d18c5870f7') in 0.001554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Hit Leaves A (Lit).prefab
+  artifactKey: Guid(ceec7516237b4104b94300043ca39784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Hit Leaves A (Lit).prefab using Guid(ceec7516237b4104b94300043ca39784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a3b3e5f2e05d2cbde28fc7e56e52c7') in 0.001240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Shield Leaves B (Lit).prefab
+  artifactKey: Guid(57720d15ef2b509458e5dbce09501d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Shield Leaves B (Lit).prefab using Guid(57720d15ef2b509458e5dbce09501d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85af8669c61279776fd4637d419a997f') in 0.001591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Hit Leaves B (Lit).prefab
+  artifactKey: Guid(0ca930d1e5232d14d8c0b97cc1b911c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Hit Leaves B (Lit).prefab using Guid(0ca930d1e5232d14d8c0b97cc1b911c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540871746c4eb430a1ad98bd6f51f7df') in 0.001309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Shield Leaves A (Lit).prefab
+  artifactKey: Guid(e1385af346f4e624eb313ec1ea4fcd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Shield Leaves A (Lit).prefab using Guid(e1385af346f4e624eb313ec1ea4fcd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319cfacd9b3e5499236538be9c09a5d0') in 0.001675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.798025 seconds.
+  path: Assets/Prefab/bucket.prefab
+  artifactKey: Guid(c27d96ea6a5e333418707d297e0a487f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/bucket.prefab using Guid(c27d96ea6a5e333418707d297e0a487f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f7fe047d9cc828a2688f5ed4754d4a') in 0.020073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX3_T_IceBulk.png
+  artifactKey: Guid(f103820c13bdb524b9416caf8fa215b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX (legacy)/Textures/CFX3_T_IceBulk.png using Guid(f103820c13bdb524b9416caf8fa215b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d35b50450f04dc0eee88c50599bd55f') in 0.025085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/JMO Assets/Cartoon FX (legacy)/Textures (Mobile)/CFXM3_T_FireBulk.png
+  artifactKey: Guid(ed1817534d2dd954e8315150374ca8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JMO Assets/Cartoon FX (legacy)/Textures (Mobile)/CFXM3_T_FireBulk.png using Guid(ed1817534d2dd954e8315150374ca8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932cb9ebbf1a4b27cd189335d739a0f5') in 0.005646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 242.623332 seconds.
+  path: Assets/VarietyParticles/Prefabs
+  artifactKey: Guid(4f2272576fc0d7d4eb58aa21db06bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs using Guid(4f2272576fc0d7d4eb58aa21db06bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93d9e2199d75428446b60ad37941e64') in 0.001600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053480 seconds.
+  path: Assets/VarietyParticles/Prefabs/WindZone.prefab
+  artifactKey: Guid(9dbd5b4da29c8e2418d9a942fbb87d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs/WindZone.prefab using Guid(9dbd5b4da29c8e2418d9a942fbb87d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc812e02bfcdde150416fc5e4cc69f9') in 0.002842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.378457 seconds.
+  path: Assets/VarietyParticles/Prefabs/Rain
+  artifactKey: Guid(c67b8296c69d44e429a8a37dce0fad3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs/Rain using Guid(c67b8296c69d44e429a8a37dce0fad3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c36d5df471ee1c29940e095baa26b7') in 0.001865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052597 seconds.
+  path: Assets/VarietyParticles/Prefabs/Rain/WaterImpactRipple.prefab
+  artifactKey: Guid(3119aacd89f39e54780925771a42427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs/Rain/WaterImpactRipple.prefab using Guid(3119aacd89f39e54780925771a42427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8280753bec9f373d9b31c0bbf93197c') in 0.017274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.514877 seconds.
+  path: Assets/VarietyParticles/Materials/Rain/WaterRipple.mat
+  artifactKey: Guid(69f1d7de5aec84642ab2a2ddf8157adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Materials/Rain/WaterRipple.mat using Guid(69f1d7de5aec84642ab2a2ddf8157adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f91dcf7816efc3e7c2bce4dfd1e615') in 0.026006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.561632 seconds.
+  path: Assets/VarietyParticles/Prefabs/Rain/Ripples
+  artifactKey: Guid(233ec7629b6150949af94cdd3c5292a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs/Rain/Ripples using Guid(233ec7629b6150949af94cdd3c5292a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb601183c4dab0bdb3de264f64368c25') in 0.001295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053524 seconds.
+  path: Assets/VarietyParticles/Prefabs/Rain/Ripples/RainExtreme.prefab
+  artifactKey: Guid(7744d18fd5f79114796690ccb6e052f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs/Rain/Ripples/RainExtreme.prefab using Guid(7744d18fd5f79114796690ccb6e052f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30278f7dbc7714df4d61b963785f462c') in 0.017956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.751089 seconds.
+  path: Assets/VarietyParticles/Materials/Rain/RainHeavyBillboard.mat
+  artifactKey: Guid(ee95bddb7fac70640855a9872a9feae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Materials/Rain/RainHeavyBillboard.mat using Guid(ee95bddb7fac70640855a9872a9feae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1de5f6066d99949a920b7f627f3cd57') in 0.008296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.108584 seconds.
+  path: Assets/VarietyParticles/Prefabs/Rain/Ripples/RainExtreme.prefab
+  artifactKey: Guid(7744d18fd5f79114796690ccb6e052f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Prefabs/Rain/Ripples/RainExtreme.prefab using Guid(7744d18fd5f79114796690ccb6e052f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e907e9de89e794132e27fd48cb0218') in 0.018672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.509369 seconds.
+  path: Assets/VarietyParticles/Materials/Rain/RainBillboard.mat
+  artifactKey: Guid(f8454dde4a64cd240a616aa150b0328d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VarietyParticles/Materials/Rain/RainBillboard.mat using Guid(f8454dde4a64cd240a616aa150b0328d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3633947f69a174073f0fd8dd6881826') in 0.006734 seconds 

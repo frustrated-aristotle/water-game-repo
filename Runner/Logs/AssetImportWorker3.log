@@ -195,3 +195,37 @@ Received Import Request.
   path: Assets/Materials/New Material 11.mat
   artifactKey: Guid(13d74c1619effbf4daccc2a8dec7f78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/New Material 11.mat using Guid(13d74c1619effbf4daccc2a8dec7f78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eab4a55a8e52991ced39db1930f8cdb') in 0.007490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 401.811114 seconds.
+  path: Assets/Materials/New Material 2.mat
+  artifactKey: Guid(a0770b48cfc99f843920afb98430f5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 2.mat using Guid(a0770b48cfc99f843920afb98430f5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8556d72cc7d3da31aec8c203d9760b') in 0.147291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/New Material 10.mat
+  artifactKey: Guid(8f1ce1e62d1d61a4f8b9a490f68c0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 10.mat using Guid(8f1ce1e62d1d61a4f8b9a490f68c0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e1a316c9a8c3cb1fb2d7635800f3f4') in 0.109471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(dab2f047b22e809458566cd308467bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(dab2f047b22e809458566cd308467bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7354d5138a4d4b9d958109279bf7f4d9') in 0.116720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Materials/New Material 8.mat
+  artifactKey: Guid(2a1b787759564154f91e098ba0e5bb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 8.mat using Guid(2a1b787759564154f91e098ba0e5bb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d3e3b290700259f6e2b75987040c17') in 0.006804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Materials/New Material 11.mat
+  artifactKey: Guid(13d74c1619effbf4daccc2a8dec7f78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 11.mat using Guid(13d74c1619effbf4daccc2a8dec7f78e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca498637f8d6290a7f6b647709acf113') in 0.006845 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
