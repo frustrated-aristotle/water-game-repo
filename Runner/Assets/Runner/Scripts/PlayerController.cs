@@ -116,6 +116,8 @@ namespace HyperCasual.Runner
             float newX = x + adjust;
             if (baseWidth <= newX)
             {
+                child.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, newX);
+                
                 child.SetBlendShapeWeight(1, newX);
             }
         }

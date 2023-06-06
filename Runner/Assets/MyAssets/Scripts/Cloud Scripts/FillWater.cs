@@ -9,7 +9,6 @@ namespace HyperCasual.Runner
         {
             if (inventory.BucketCapacity <= inventory.BucketCapacity + rate)
             {
-                inventory.waterAmount += rate;
                 inventory.BucketFilledAmount = rate;
             }
                 

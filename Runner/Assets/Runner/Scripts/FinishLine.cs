@@ -18,6 +18,7 @@ namespace HyperCasual.Runner
         {
             if (col.CompareTag(k_PlayerTag))
             {
+                GunFire.Instance.StopFiring();
                 GameManager.Instance.Win();
             }
         }

@@ -7,6 +7,8 @@ TagManager:
   - HighObstacle
   - LowObstacle
   - LevelParent
+  - Bullet
+  - Target
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - Water
   - UI
   - Terrain
-  - 
-  - 
+  - Target
+  - Our
   - 
   - 
   - 

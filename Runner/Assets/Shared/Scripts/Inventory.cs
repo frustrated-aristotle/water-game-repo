@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
 using HyperCasual.Gameplay;
+using TMPro;
 using UnityEngine;
 
 namespace HyperCasual.Runner
@@ -27,7 +28,6 @@ namespace HyperCasual.Runner
         float m_TempXp;
         float m_TotalXp;
         int m_TempKeys;
-        public float waterAmount;
         public float soilAmount;
         public float acidAmount;
         private float bucketCapacity;
@@ -62,6 +62,10 @@ namespace HyperCasual.Runner
             SkinnedMeshRenderer child = PlayerController.Instance.transform.GetChild(5).GetChild(1)
                 .GetComponent<SkinnedMeshRenderer>(); 
             child.SetBlendShapeWeight(1, -80-waterRate);
+            TextMeshPro textMP = GameObject.Find("playerWaterText").GetComponent<TextMeshPro>(); 
+            textMP.text = BucketFilledAmount.ToString();
+            TextMeshPro bucketText = GameObject.Find("playerCapacityText").GetComponent<TextMeshPro>();
+            bucketText.text = "Capacity: " + BucketCapacity + "\nEmpty Portion"+(BucketCapacity - BucketFilledAmount).ToString();
         }
         /// <summary>
         /// Temporary const
