@@ -41,9 +41,10 @@ namespace HyperCasual.Runner
         GameObject m_CurrentLevelGO;
         GameObject m_CurrentTerrainGO;
         GameObject m_LevelMarkersGO;
-
+        
         List<Spawnable> m_ActiveSpawnables = new List<Spawnable>();
 
+        public int finishAmount;
 #if UNITY_EDITOR
         bool m_LevelEditorMode;
 #endif
