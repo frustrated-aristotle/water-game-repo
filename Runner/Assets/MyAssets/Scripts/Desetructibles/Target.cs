@@ -7,9 +7,9 @@ public class Target : MonoBehaviour
 {
     [SerializeField] private GameObject moneyPrefab;
     
-    [SerializeField] private float health;
+    [SerializeField] private int health;
     
-    public float Health { get => health; private set => health -= value;}
+    public int Health { get => health; private set => health -= value;}
     private void OnTriggerEnter(Collider other)
     {
         Transform col = other.transform;
@@ -28,7 +28,7 @@ public class Target : MonoBehaviour
         bool isCollisionBullet = col.CompareTag("Bullet");
         if (isCollisionBullet)
         {
-            float damageAmount = col.GetComponent<BulletMovement>().BulletPower;
+            int damageAmount = col.GetComponent<BulletMovement>().BulletPower;
             TakeAHit(damageAmount);
             if (Health <= 0)
             {
@@ -57,7 +57,7 @@ public class Target : MonoBehaviour
     }
     
 
-    private void TakeAHit(float damageAmount)
+    private void TakeAHit(int damageAmount)
     {
         Health = damageAmount;
         transform.GetChild(0).GetComponent<TextMeshPro>().text = health.ToString();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
+using HyperCasual.Runner;
 using UnityEngine;
 
 namespace HyperCasual.Gameplay
@@ -14,6 +15,8 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
+            Debug.LogError("It is working");
+            GunFire.Instance?.StopFiring();
         }
     }
 }

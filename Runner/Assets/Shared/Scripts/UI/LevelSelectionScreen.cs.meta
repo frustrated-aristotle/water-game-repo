@@ -3,7 +3,13 @@ guid: c80c0dc8855374628b0243ec4b1413a8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_QuickPlayButton: {instanceID: 0}
+  - m_BackButton: {instanceID: 0}
+  - m_LevelButtonPrefab: {instanceID: 0}
+  - m_LevelButtonsRoot: {instanceID: 0}
+  - m_NextLevelEvent: {instanceID: 0}
+  - m_BackEvent: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

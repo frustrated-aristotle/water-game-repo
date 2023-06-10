@@ -41,7 +41,36 @@ namespace HyperCasual.Runner
         GameObject m_CurrentLevelGO;
         GameObject m_CurrentTerrainGO;
         GameObject m_LevelMarkersGO;
+        //Bullet Power Multiplier
+        private float bulletPowerMultiplier = 1;
+        private int bulletPower = 10;
+        private int currentBulletPower = 10;
+
+        public int BulletPower
+        {
+            get => currentBulletPower;
+            set => currentBulletPower = value;
+        }
+
+        public void InitBulletPower()
+        {
+            currentBulletPower = (int)(bulletPower * bulletPowerMultiplier);
+        }
+
+        public float BulletPowerMultiplier
+        {
+            get => bulletPowerMultiplier;
+            set => bulletPowerMultiplier += value;
+        }
         
+        
+        //Money
+        private float moneyMultiplier = 1;
+
+        public float MoneyMultipler { 
+            get => moneyMultiplier;
+            set => moneyMultiplier += value;
+        }
         List<Spawnable> m_ActiveSpawnables = new List<Spawnable>();
 
         public int finishAmount;

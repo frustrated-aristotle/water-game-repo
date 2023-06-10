@@ -41,7 +41,10 @@ namespace HyperCasual.Runner
         protected override void Awake()
         {
             base.Awake();
-
+            float tempCount = m_Count;
+            tempCount *= GameManager.Instance.MoneyMultipler;
+            m_Count = (int)tempCount;
+            
             m_Renderers = gameObject.GetComponentsInChildren<Renderer>();
         }
 

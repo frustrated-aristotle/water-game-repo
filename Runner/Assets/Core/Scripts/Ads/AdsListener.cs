@@ -14,6 +14,7 @@ namespace HyperCasual.Core
         {
             foreach (GenericGameEventListener trigger in m_EndOfLevelListeners)
             {
+                
                 trigger.EventHandler += OnEndOfLevel;
                 trigger.Subscribe();
             }
@@ -30,8 +31,9 @@ namespace HyperCasual.Core
 
         public void OnEndOfLevel()
         {
+            int i = 0;
             AdsController adsController = AdsController.Instance;
-            if (adsController.Initialized)
+            if (adsController.Initialized && i == 1)
             {
                 string adId = m_EndOfLevelAndroidAdUnitId;
                 if (Application.platform == RuntimePlatform.IPhonePlayer)

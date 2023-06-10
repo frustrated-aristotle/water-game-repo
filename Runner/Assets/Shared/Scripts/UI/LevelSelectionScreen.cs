@@ -39,7 +39,8 @@ namespace HyperCasual.Gameplay
             {
                 m_Buttons.Add(Instantiate(m_LevelButtonPrefab, m_LevelButtonsRoot));
             }
-
+            SequenceManager.Instance.SetStartingLevel(SaveManager.Instance.LevelProgress);
+            m_NextLevelEvent.Raise();
             ResetButtonData();
         }
 
@@ -76,8 +77,8 @@ namespace HyperCasual.Gameplay
             if (startingIndex < 0)
                 throw new Exception("Button is not initialized");
 
-            SequenceManager.Instance.SetStartingLevel(startingIndex);
-            m_NextLevelEvent.Raise();
+            //SequenceManager.Instance.SetStartingLevel(startingIndex);
+           // m_NextLevelEvent.Raise();
         }
         
         void OnQuickPlayButtonClicked()

@@ -41,6 +41,7 @@ namespace HyperCasual.Gameplay
             {
                 if (m_GoldValue != value)
                 {
+                    Debug.Log("a" + this.name);
                     m_GoldValue = value;
                     m_GoldText.text = GoldValue.ToString();
                 }
@@ -69,6 +70,7 @@ namespace HyperCasual.Gameplay
         void OnEnable()
         {
             m_PauseButton.AddListener(OnPauseButtonClick);
+            GoldValue = Inventory.Instance.m_TotalGold;
         }
 
         void OnDisable()

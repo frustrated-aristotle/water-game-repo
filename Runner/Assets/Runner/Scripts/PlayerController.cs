@@ -43,7 +43,7 @@ namespace HyperCasual.Runner
         float m_ScaleVelocity = 2.0f;
 
         [SerializeField]
-        bool m_AutoMoveForward = true;
+        public bool m_AutoMoveForward = true;
 
         Vector3 m_LastPosition;
         float m_StartHeight;
@@ -143,7 +143,9 @@ namespace HyperCasual.Runner
                 return;
             }
 
+
             s_Instance = this;
+            m_AutoMoveForward = false;
             baseWidth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(1);
             
             baseHeigth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0);
@@ -325,6 +327,7 @@ namespace HyperCasual.Runner
 
             if (m_HasInput)
             {
+                m_AutoMoveForward = true;
                 float horizontalSpeed = speed * m_HorizontalSpeedFactor;
 
                 float newPositionTarget = Mathf.Lerp(m_XPos, m_TargetPosition, horizontalSpeed);

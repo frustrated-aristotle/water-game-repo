@@ -32,6 +32,11 @@ namespace HyperCasual.Gameplay
         AbstractGameEvent m_LoseEvent;
         [SerializeField]
         AbstractGameEvent m_PauseEvent;
+        //My event
+        [SerializeField]
+        AbstractGameEvent proceedToResultEvent;
+        
+        
         [Header("Other")]
         [SerializeField]
         float m_SplashDelay = 2f;
@@ -138,6 +143,8 @@ namespace HyperCasual.Gameplay
             var winState = new PauseState(() => OnWinScreenDisplayed(loadLevelState));
             var loseState = new PauseState(ShowUI<GameoverScreen>);
             var pauseState = new PauseState(ShowUI<PauseMenu>);
+            //MyCode:
+            var proceedToResultState = new PauseState(ShowUI<ResultScreen>);
             var unloadLose = new UnloadLastSceneState(m_SceneController);
             var unloadPause = new UnloadLastSceneState(m_SceneController);
 
@@ -151,6 +158,10 @@ namespace HyperCasual.Gameplay
             
             loseState.AddLink(new EventLink(m_ContinueEvent, loadLevelState));
             loseState.AddLink(new EventLink(m_BackEvent, unloadLose));
+            loseState.AddLink((new EventLink(proceedToResultEvent, proceedToResultState)));
+            
+            //Newly added at 6/10/2023 June at 1:07
+            proceedToResultState.AddLink(new EventLink(m_ContinueEvent, loadLevelState));
             unloadLose.AddLink(new Link(quitState));
 
             pauseState.AddLink(new EventLink(m_ContinueEvent, gameplayState));
@@ -179,8 +190,13 @@ namespace HyperCasual.Gameplay
         
         void OnMainMenuDisplayed()
         {
-            ShowUI<MainMenu>();
-            AudioManager.Instance.PlayMusic(SoundID.MenuMusic);
+  //          SequenceManager.Instance.SetStartingLevel(SaveManager.Instance.LevelProgress);
+ //         m_ContinueEvent.Raise();
+            
+            //ShowUI<MainMenu>();
+            SetStartingLevel(SaveManager.Instance.LevelProgress);
+            m_ContinueEvent.Raise();
+ AudioManager.Instance.PlayMusic(SoundID.MenuMusic);
         }
 
         void OnWinScreenDisplayed(IState currentLevel)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
+using HyperCasual.Runner;
 using UnityEngine;
 
 namespace HyperCasual.Gameplay

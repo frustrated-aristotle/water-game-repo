@@ -23,6 +23,7 @@ namespace HyperCasual.Runner
         const string k_Xp = "Xp";
         const string k_AudioSettings = "AudioSettings";
         const string k_QualityLevel = "QualityLevel";
+        const string capacity = "Capacity";
 
         void Awake()
         {
@@ -47,6 +48,11 @@ namespace HyperCasual.Runner
             set => PlayerPrefs.SetInt(k_Currency, value);
         }
 
+        public int Capacity
+        {
+            get => PlayerPrefs.GetInt(capacity);
+            set => PlayerPrefs.SetInt(capacity, value);
+        }
         public float XP
         {
             get => PlayerPrefs.GetFloat(k_Xp); 

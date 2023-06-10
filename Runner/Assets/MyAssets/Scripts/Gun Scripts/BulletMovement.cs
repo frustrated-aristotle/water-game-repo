@@ -1,22 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using HyperCasual.Runner;
 using UnityEngine;
 
 public class BulletMovement : MonoBehaviour
 {
-    [SerializeField]private float bulletPower;
-    
-    public float BulletPower
+    [SerializeField]private int bulletPower;
+
+
+    public int BulletPower
     {
-        get;
-        private set;
+        get => bulletPower;
+        private set => bulletPower = value;
     }
 
     private void OnEnable()
     {
-        BulletPower = bulletPower;
+        bulletPower = GameManager.Instance.BulletPower;
     }
+
 
     private void FixedUpdate()
     {

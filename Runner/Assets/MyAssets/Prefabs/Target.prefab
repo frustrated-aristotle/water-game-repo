@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyPrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
     type: 3}
-  health: 10
+  health: 20
 --- !u!54 &4209266843070710866
 Rigidbody:
   m_ObjectHideFlags: 0

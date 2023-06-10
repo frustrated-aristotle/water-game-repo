@@ -103,12 +103,17 @@ namespace HyperCasual.Runner
                 
                  */
                 case GateType.ChangeHeight:
+                {
                     inventory.BucketCapacity = heightValue;
                     PlayerController.Instance.AdjustHeight(heightValue);
                     break;
+                }
                 case GateType.ChangeWidth:
+                {
+                    inventory.BucketCapacity = widthValue;
                     PlayerController.Instance.AdjustWidth(widthValue);
                     break;
+                }
             }
 
             m_Applied = true;

@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using HyperCasual.Core;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace HyperCasual.Runner
 {
@@ -20,16 +17,35 @@ namespace HyperCasual.Runner
         [SerializeField]
         AbstractGameEvent m_GoToMainMenuEvent;
 
+        
+        //buttons
+        [SerializeField] private HyperCasualButton increaseIncomeButton;
+        [SerializeField] private HyperCasualButton increaseBulletPowerButton;
+        [SerializeField] private HyperCasualButton proceedToResultButton;
+        
+        //Events
+        [SerializeField] private AbstractGameEvent increaseBulletPowerEvent;
+        [SerializeField] private AbstractGameEvent increaseIncomeEvent;
+        [SerializeField] private AbstractGameEvent proceedToResultEvent;
+
         void OnEnable()
         {
-            m_PlayAgainButton.AddListener(OnPlayAgainButtonClick);
-            m_GoToMainMenuButton.AddListener(OnGoToMainMenuButtonClick);
+            increaseBulletPowerButton.AddListener(OnIncreaseBulletPowerButtonClick);
+            increaseIncomeButton.AddListener(OnIncreaseIncomeButtonClick);
+            proceedToResultButton.AddListener(OnProceedToResultButtonClick);
+            //m_PlayAgainButton.AddListener(OnPlayAgainButtonClick);
+            //m_GoToMainMenuButton.AddListener(OnGoToMainMenuButtonClick);
         }
+
+       
 
         void OnDisable()
         {
-            m_PlayAgainButton.RemoveListener(OnPlayAgainButtonClick);
-            m_GoToMainMenuButton.RemoveListener(OnGoToMainMenuButtonClick);
+            increaseBulletPowerButton.RemoveListener(OnIncreaseBulletPowerButtonClick);
+            increaseIncomeButton.RemoveListener(OnIncreaseIncomeButtonClick);
+            proceedToResultButton.RemoveListener(OnProceedToResultButtonClick);
+            //m_PlayAgainButton.RemoveListener(OnPlayAgainButtonClick);
+            //m_GoToMainMenuButton.RemoveListener(OnGoToMainMenuButtonClick);
         }
 
         void OnPlayAgainButtonClick()
@@ -39,7 +55,25 @@ namespace HyperCasual.Runner
 
         void OnGoToMainMenuButtonClick()
         {
-            m_GoToMainMenuEvent.Raise();
+            //increaseIncomeEvent.Raise();
+//            m_GoToMainMenuEvent.Raise();
+        }
+        
+        //PlayAgainEvent starts the game.
+        //GoToMainMenu is, obviously ha.
+        private void OnIncreaseIncomeButtonClick()
+        {
+            increaseIncomeEvent.Raise();
+            //IncreaseIncomeEvent.Raise();
+        }
+
+        private void OnIncreaseBulletPowerButtonClick()
+        {
+            increaseBulletPowerEvent.Raise();
+        }
+        private void OnProceedToResultButtonClick()
+        {
+            proceedToResultEvent.Raise();
         }
     }
 }

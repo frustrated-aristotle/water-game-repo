@@ -8,8 +8,8 @@ namespace HyperCasual.Core
     /// <summary>
     /// A base class which provides basic event functionalities.
     /// Events facilitate the communication between different scopes of the game.
-    /// Each event is a scriptable object instance that has a list of listeners that are notified when the event is triggered. 
-    /// </summary>
+    /// </summary>    /// Each event is a scriptable object instance that has a list of listeners that are notified when the event is triggered. 
+
     public abstract class AbstractGameEvent : ScriptableObject
     {
         readonly List<IGameEventListener> m_EventListeners = new();

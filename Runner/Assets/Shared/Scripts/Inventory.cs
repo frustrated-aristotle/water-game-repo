@@ -23,25 +23,31 @@ namespace HyperCasual.Runner
         [SerializeField]
         GenericGameEventListener m_LoseEventListener;
 
-        int m_TempGold;
-        int m_TotalGold;
+        public int m_TempGold;
+        public int m_TotalGold;
+        public int totalMoneyAmount;
+        public int TotalGold { 
+            get=> m_TotalGold;
+            private set => m_TotalGold = value;
+
+        }
         float m_TempXp;
         float m_TotalXp;
         int m_TempKeys;
         public float soilAmount;
         public float acidAmount;
+        [SerializeField]
         private float bucketCapacity;
+        [SerializeField]
+        private float tempBucketCapacity;
         private float bucketFilledAmount;
 
         public float BucketCapacity 
         {
-            get => bucketCapacity;
+            get => tempBucketCapacity;
             set
             {
-                Debug.Log("Bucket capacity before: " + bucketCapacity);
-                bucketCapacity += value;
-                Debug.Log("Bucket capacity after: " + bucketCapacity);
-
+                tempBucketCapacity += value;
             }
         }
         public float BucketFilledAmount
@@ -56,7 +62,7 @@ namespace HyperCasual.Runner
 
         private void UpdateWaterLevel()
         {
-            float filledRate = bucketFilledAmount / bucketCapacity * 100;
+            float filledRate = bucketFilledAmount / tempBucketCapacity * 100;
             float waterRate = -80 * filledRate / 100;
             //-80-waterrate
             SkinnedMeshRenderer child = PlayerController.Instance.transform.GetChild(5).GetChild(1)
@@ -85,16 +91,18 @@ namespace HyperCasual.Runner
             m_KeyEventListener.EventHandler = OnKeyPicked;
             m_WinEventListener.EventHandler = OnWin;
             m_LoseEventListener.EventHandler = OnLose;
-
+            
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
+            bucketCapacity = SaveManager.Instance.Capacity;
+            tempBucketCapacity = bucketCapacity;
+            
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
             m_TempKeys = 0;
 
             m_LevelCompleteScreen = UIManager.Instance.GetView<LevelCompleteScreen>();
             m_Hud = UIManager.Instance.GetView<Hud>();
-            bucketCapacity = 360;
         } 
 
         void OnEnable()
@@ -117,8 +125,10 @@ namespace HyperCasual.Runner
         {
             if (m_GoldEventListener.m_Event is ItemPickedEvent goldPickedEvent)
             {
+                Debug.LogError("GoldPicked");
                 m_TempGold += goldPickedEvent.Count;
-                m_Hud.GoldValue = m_TempGold;
+                m_TotalGold += goldPickedEvent.Count;
+                m_Hud.GoldValue = m_TotalGold;
             }
             else
             {
@@ -140,8 +150,6 @@ namespace HyperCasual.Runner
 
         void OnWin()
         {
-            m_TotalGold += m_TempGold;
-            m_TempGold = 0;
             SaveManager.Instance.Currency = m_TotalGold;
 
             m_LevelCompleteScreen.GoldValue = m_TotalGold;
@@ -158,7 +166,7 @@ namespace HyperCasual.Runner
 
         void OnLose()
         {
-            m_TempGold = 0;
+            Debug.Log("OnLoseEvent");
             m_TotalXp += m_TempXp;
             m_TempXp = 0f;
             SaveManager.Instance.XP = m_TotalXp;
@@ -177,6 +185,29 @@ namespace HyperCasual.Runner
                     m_Hud.XpSlider.maxValue = loadLevelFromDef.m_LevelDefinition.LevelLength;
                 }
             }
+        }
+
+        private int multiplier = 1;
+        public void SaveMoney()
+        {
+            int extraMoney = (m_TempGold * multiplier) - m_TempGold;
+            m_TempGold += extraMoney;
+            SaveManager.Instance.Currency = m_TotalGold;
+        }
+
+        /// <summary>
+        /// The main capacity will be changed on start screen by an upgrade button
+        /// After that button is clicked, saving the capacity will be a must to do.
+        /// </summary>
+        public void SaveCapacity()
+        {
+            SaveManager.Instance.Capacity = (int)bucketCapacity;
+        }
+
+        public void SaveInventory()
+        {
+            SaveMoney();
+            
         }
     }
 }
