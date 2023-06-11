@@ -8,7 +8,7 @@ public class UpgradeCapacityScreen : View
 
     [SerializeField] private HyperCasualButton upgradeCapacityButton;
 
-    [SerializeField] private AbstractGameEvent upgradeEvent;
+    [SerializeField] private AbstractGameEvent upgradeCapacityEvent;
 
     private void OnEnable()
     {
@@ -22,7 +22,7 @@ public class UpgradeCapacityScreen : View
 
     private void OnUpgradeCapacityButtonClicked()
     {
-        upgradeEvent.Raise();
+        upgradeCapacityEvent.Raise();
     }
 
 }

@@ -209,5 +209,12 @@ namespace HyperCasual.Runner
             SaveMoney();
             
         }
+        
+        public void IncreaseBucketCapacityFromStartingMenu()
+        {
+            bucketCapacity += 10;
+            SaveCapacity();
+            Debug.Log(bucketCapacity);
+        }
     }
 }

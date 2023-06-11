@@ -20,6 +20,9 @@ namespace HyperCasual.Core
         [SerializeField]
         RectTransform m_ViewLayer;
 
+        public RectTransform bucketCapacityUpgradeButton;
+        public RectTransform flowRateUpgradeButton;
+        
         List<View> m_Views;
 
         View m_CurrentView;
