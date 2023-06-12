@@ -111,8 +111,6 @@ RectTransform:
   - {fileID: 2404344049218371190}
   - {fileID: 4364922130764155794}
   - {fileID: 2404344050907402547}
-  - {fileID: 6194574268385363497}
-  - {fileID: 3619950555264151955}
   m_Father: {fileID: 2404344050206740042}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -400,8 +398,8 @@ MonoBehaviour:
   m_Root: {fileID: 2404344050206740042}
   m_BackgroundLayer: {fileID: 472289200663523460}
   m_ViewLayer: {fileID: 5280667181393737275}
-  bucketCapacityUpgradeButton: {fileID: 3377292352838818836}
-  flowRateUpgradeButton: {fileID: 5266295811767282606}
+  bucketCapacityUpgradeButton: {fileID: 1099455454880085627}
+  flowRateUpgradeButton: {fileID: 6721532534218406294}
 --- !u!1001 &59403737481401959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -412,12 +410,12 @@ PrefabInstance:
     - target: {fileID: 2418144165519764240, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2418144165519764240, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2418144165573983334, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
@@ -427,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 2418144165573983334, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2418144165573983337, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
@@ -537,210 +535,43 @@ PrefabInstance:
     - target: {fileID: 2418144166512983714, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2418144166512983714, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2418144166512983714, guid: 3c7a51309061d411eb5591ed1fd837f3,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410479386866596386, guid: 3c7a51309061d411eb5591ed1fd837f3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7a51309061d411eb5591ed1fd837f3, type: 3}
+--- !u!224 &1099455454880085627 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1121686077192986652, guid: 3c7a51309061d411eb5591ed1fd837f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 59403737481401959}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2404344050809350670 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2418144165573983337, guid: 3c7a51309061d411eb5591ed1fd837f3,
     type: 3}
   m_PrefabInstance: {fileID: 59403737481401959}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &928125825102752950
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5280667181393737275}
-    m_Modifications:
-    - target: {fileID: 2426078144723850147, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Name
-      value: UpgradeFlowButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 79.400024
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000030517578
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281382, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Name
-      value: UpgradeFlowScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281382, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7891079721477458017, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: upgradeCapacityEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: a06ba86887d523f44ad1620dc23e9f75,
-        type: 2}
-    - target: {fileID: 7891079721477458017, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: upgradeCapacityButton
-      value: 
-      objectReference: {fileID: 8580140117157842176}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e0da6156bbd54c143bec4c67290e587d, type: 3}
---- !u!1 &3263549191016103701 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2426078144723850147, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 928125825102752950}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8580140117157842176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3263549191016103701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5e87ca911816437f846b3f0d738b485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Button: {fileID: 5588233711615387856}
-  m_ButtonSound: 3
---- !u!224 &3619950555264151955 stripped
+--- !u!224 &6721532534218406294 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
+  m_CorrespondingSourceObject: {fileID: 6743196340105867249, guid: 3c7a51309061d411eb5591ed1fd837f3,
     type: 3}
-  m_PrefabInstance: {fileID: 928125825102752950}
+  m_PrefabInstance: {fileID: 59403737481401959}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &5266295811767282606 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 928125825102752950}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5588233711615387856 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4714206091983914086, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 928125825102752950}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3263549191016103701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2175222254993113940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1925,209 +1756,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5464304629124346698, guid: 00e4640835693420fb50752e3cc78323,
     type: 3}
   m_PrefabInstance: {fileID: 7676647486454664508}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &7722112220171098892
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5280667181393737275}
-    m_Modifications:
-    - target: {fileID: 2426078144723850147, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Name
-      value: UpgradeCapacityButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485837305495722599, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_text
-      value: Upgrade Capacity
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 79.400024
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.000030517578
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281382, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Name
-      value: UpgradeCapacityScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530049876488281382, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.000030517578
-      objectReference: {fileID: 0}
-    - target: {fileID: 7891079721477458017, guid: e0da6156bbd54c143bec4c67290e587d,
-        type: 3}
-      propertyPath: upgradeCapacityButton
-      value: 
-      objectReference: {fileID: 6993717467452364281}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e0da6156bbd54c143bec4c67290e587d, type: 3}
---- !u!114 &3046207204520583018 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4714206091983914086, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7722112220171098892}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5368674560186697903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!224 &3377292352838818836 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7722112220171098892}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5368674560186697903 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2426078144723850147, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7722112220171098892}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6993717467452364281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5368674560186697903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5e87ca911816437f846b3f0d738b485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Button: {fileID: 3046207204520583018}
-  m_ButtonSound: 3
---- !u!224 &6194574268385363497 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4530049876488281381, guid: e0da6156bbd54c143bec4c67290e587d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7722112220171098892}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8082819362220817619
 PrefabInstance:

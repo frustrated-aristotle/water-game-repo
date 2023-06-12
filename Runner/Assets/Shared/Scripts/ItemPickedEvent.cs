@@ -18,6 +18,7 @@ namespace HyperCasual.Gameplay
         
         public override void Reset()
         {
+            Inventory.Instance.PickUpMoney();
             Count = -1;
         }
     }

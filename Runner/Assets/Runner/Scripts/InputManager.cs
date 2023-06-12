@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
+using HyperCasual.Gameplay;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -92,8 +93,11 @@ namespace HyperCasual.Runner
 
             if (m_HasInput && !CheckRectContainsScreenPoint())
             {
+                Hud hud = FindObjectOfType<Hud>();
+                hud?.ToggleButtonActiveState(false);
                 float normalizedDeltaPosition = (m_InputPosition.x - m_PreviousInputPosition.x) / Screen.width * m_InputSensitivity;
                 PlayerController.Instance.SetDeltaPosition(normalizedDeltaPosition);
+                
             }
             else
             {

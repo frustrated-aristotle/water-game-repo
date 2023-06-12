@@ -222,6 +222,10 @@ namespace HyperCasual.Gameplay
         {
             m_CurrentLevel = current;
             ShowUI<Hud>();
+            /*
+            ShowUI<UpgradeCapacityScreen>();
+            ShowUI<UpgradeFlowScreen>();            
+            */
             AudioManager.Instance.StopMusic();
         }
     }

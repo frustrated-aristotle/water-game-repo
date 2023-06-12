@@ -109,31 +109,59 @@ namespace HyperCasual.Runner
 
         #region My Codes
 
+        enum BlendShapeType
+        {
+            WIDTH = 0,
+            HEIGHT = 1,
+        }
         public void AdjustWidth(float adjust)
         {
-            SkinnedMeshRenderer child = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>();
-            float x =child.GetBlendShapeWeight(1);
+            int blendShapeType = (int)BlendShapeType.WIDTH;
+            float x = GetBlendShapeWeight(blendShapeType, 5);
             float newX = x + adjust;
-            if (baseWidth <= newX)
-            {
-                child.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().SetBlendShapeWeight(0, newX);
-                
-                child.SetBlendShapeWeight(1, newX);
-            }
+            SetBlendShapeWeight(blendShapeType,newX, 5);
         }
         public void AdjustHeight(float adjust)
         {
-            SkinnedMeshRenderer child = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>();
-            //Transform child = transform.GetChild(5).transform;
-            float y = child.GetBlendShapeWeight(0);
+            int blendShapeType = (int)BlendShapeType.HEIGHT;
+            float y = GetBlendShapeWeight(blendShapeType, 5);
             float newY = y + adjust;
-            if (baseHeigth<= newY)
-            {
-                child.SetBlendShapeWeight(0,newY);
-            }
-
+            SetBlendShapeWeight(blendShapeType, newY, 5);
         }
 
+        public float GetBlendShapeWeight(int weightIndex, int childIndex)
+        {
+            SkinnedMeshRenderer child = transform.GetChild(childIndex).GetComponent<SkinnedMeshRenderer>();
+            float x =child.GetBlendShapeWeight(weightIndex);
+            return x;
+        }
+
+        private void SetBlendShapeWeight(int weightIndex, float newWeightValue, int childIndex)
+        {
+            if (baseWidth <= newWeightValue)
+            {
+                SkinnedMeshRenderer child = transform.GetChild(childIndex).GetComponent<SkinnedMeshRenderer>();
+                child.SetBlendShapeWeight(weightIndex, newWeightValue);
+            }
+        }
+        /// <summary>
+        /// At the end of each run, this function will be called
+        /// This function takes latest blend shape values and saves it.
+        /// Will be called from armory
+        /// </summary>
+        public void SaveScale()
+        {
+            SaveManager.Instance.FirstBlendShapeValue = GetBlendShapeWeight(0,5);
+            SaveManager.Instance.SecondBlendShapeValue = GetBlendShapeWeight(1,5);
+            Debug.Log("First Value : " + SaveManager.Instance.FirstBlendShapeValue);
+            Debug.Log("Second Value : " + SaveManager.Instance.SecondBlendShapeValue);
+        }
+
+        public void SetBlendShapeValuesFromPref()
+        {
+            SetBlendShapeWeight(0,SaveManager.Instance.FirstBlendShapeValue, 5);
+            SetBlendShapeWeight(1,SaveManager.Instance.SecondBlendShapeValue, 5);
+        }
         #endregion
         void Awake()
         {
@@ -149,6 +177,8 @@ namespace HyperCasual.Runner
             baseWidth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(1);
             
             baseHeigth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0);
+
+            SetBlendShapeValuesFromPref();
             Initialize();
         }
 
@@ -157,8 +187,9 @@ namespace HyperCasual.Runner
         /// </summary>
         public void Initialize()
         {
-            m_Transform = transform;
-            m_StartPosition = m_Transform.position;
+            m_Transform = this.transform;
+            Vector3 pos = m_Transform.position;
+            m_StartPosition = pos;
             m_DefaultScale = m_Transform.localScale;
             m_Scale = m_DefaultScale;
             m_TargetScale = m_Scale;

@@ -15,7 +15,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            Debug.LogError("It is working");
+            Inventory.Instance.m_TempGold = 0;
             GunFire.Instance?.StopFiring();
         }
     }

@@ -23,6 +23,9 @@ namespace HyperCasual.Runner
         [SerializeField]
         GenericGameEventListener m_LoseEventListener;
 
+        [HideInInspector]public int baseMoney = 10;
+        
+        
         public int m_TempGold;
         public int m_TotalGold;
         public int totalMoneyAmount;
@@ -87,16 +90,23 @@ namespace HyperCasual.Runner
 
         void Start()
         {
-            m_GoldEventListener.EventHandler = OnGoldPicked;
-            m_KeyEventListener.EventHandler = OnKeyPicked;
-            m_WinEventListener.EventHandler = OnWin;
-            m_LoseEventListener.EventHandler = OnLose;
+            //m_GoldEventListener.EventHandler = OnGoldPicked;
+
+            //m_KeyEventListener.EventHandler = OnKeyPicked;
+
+            //m_WinEventListener.EventHandler = OnWin;
             
+            //m_LoseEventListener.EventHandler = OnLose;
+
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
             bucketCapacity = SaveManager.Instance.Capacity;
             tempBucketCapacity = bucketCapacity;
-            
+            Debug.Log("start");
+
+            Debug.Log("total gold: " + m_TotalGold);
+            Debug.Log("start");
+
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
             m_TempKeys = 0;
@@ -121,8 +131,9 @@ namespace HyperCasual.Runner
             m_LoseEventListener.Unsubscribe();
         }
 
-        void OnGoldPicked()
+        public void OnGoldPicked()
         {
+            Debug.LogError("GoldPickedOUTSİDE");
             if (m_GoldEventListener.m_Event is ItemPickedEvent goldPickedEvent)
             {
                 Debug.LogError("GoldPicked");
@@ -171,7 +182,8 @@ namespace HyperCasual.Runner
             m_TempXp = 0f;
             SaveManager.Instance.XP = m_TotalXp;
         }
-
+/*
+ !!XP CASE
         void Update()
         {
             if (m_Hud.gameObject.activeSelf)
@@ -186,8 +198,18 @@ namespace HyperCasual.Runner
                 }
             }
         }
+ */
 
         private int multiplier = 1;
+
+        public void PickUpMoney()
+        {
+            m_TotalGold += 10;            
+            m_TempGold += 10;
+            
+            Debug.Log(m_TotalGold);
+            m_Hud.GoldValue = m_TotalGold;
+        }
         public void SaveMoney()
         {
             int extraMoney = (m_TempGold * multiplier) - m_TempGold;
@@ -214,7 +236,6 @@ namespace HyperCasual.Runner
         {
             bucketCapacity += 10;
             SaveCapacity();
-            Debug.Log(bucketCapacity);
         }
     }
 }

@@ -17,6 +17,8 @@ namespace HyperCasual.Runner
         /// </summary>
         public static SaveManager Instance => s_Instance;
         static SaveManager s_Instance;
+        const string secondBlendShapeValue = "SecondBlendShapeValue";
+        const string firstBlendShapeValue = "FirstBlendShapeValue";
 
         const string k_LevelProgress = "LevelProgress";
         const string k_Currency = "Currency";
@@ -67,6 +69,17 @@ namespace HyperCasual.Runner
             set => PlayerPrefs.SetInt(k_QualityLevel, value);
         }
 
+        public float FirstBlendShapeValue
+        {
+            get => PlayerPrefs.GetFloat(firstBlendShapeValue);
+            set => PlayerPrefs.SetFloat(firstBlendShapeValue, value);
+        }
+
+        public float SecondBlendShapeValue
+        {
+            get => PlayerPrefs.GetFloat(secondBlendShapeValue);
+            set => PlayerPrefs.SetFloat(secondBlendShapeValue, value);
+        }
         public AudioSettings LoadAudioSettings()
         {
             return PlayerPrefsUtils.Read<AudioSettings>(k_AudioSettings);

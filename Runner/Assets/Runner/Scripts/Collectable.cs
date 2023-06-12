@@ -41,6 +41,7 @@ namespace HyperCasual.Runner
         protected override void Awake()
         {
             base.Awake();
+            m_Count = Inventory.Instance.baseMoney;
             float tempCount = m_Count;
             tempCount *= GameManager.Instance.MoneyMultipler;
             m_Count = (int)tempCount;

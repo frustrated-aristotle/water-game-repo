@@ -71,8 +71,15 @@ namespace HyperCasual.Gameplay
         {
             m_PauseButton.AddListener(OnPauseButtonClick);
             GoldValue = Inventory.Instance.m_TotalGold;
+            ToggleButtonActiveState(true);
         }
 
+        public void ToggleButtonActiveState(bool willBeActive)
+        {
+            var childCount = transform.childCount;
+            transform.GetChild(childCount-1).gameObject.SetActive(willBeActive);
+            transform.GetChild(childCount-2).gameObject.SetActive(willBeActive);
+        }
         void OnDisable()
         {
             m_PauseButton.RemoveListener(OnPauseButtonClick);
