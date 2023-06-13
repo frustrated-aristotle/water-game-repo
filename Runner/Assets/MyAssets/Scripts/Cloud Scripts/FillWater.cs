@@ -5,22 +5,15 @@ namespace HyperCasual.Runner
 {
     public class FillWater : MonoBehaviour,IFillTheBucket
     {
-        public void FillTheBucket( Inventory inventory,float rate)
+        public void FillTheBucket( Inventory inventory,int rate)
         {
             if (inventory.BucketCapacity <= inventory.BucketCapacity + rate)
             {
+                Debug.Log("Rate: " + rate + " and BucketCapacity: " + inventory.BucketCapacity);
                 inventory.BucketFilledAmount = rate;
+                Debug.Log("BucketFilledAmount : " + inventory.BucketFilledAmount + " and the bucket capacity is " + inventory.BucketCapacity );
             }
-                
-            TextMeshPro textMP = GameObject.Find("playerWaterText").GetComponent<TextMeshPro>(); 
-            textMP.text = inventory.BucketFilledAmount.ToString();
-            TextMeshPro bucketText = GameObject.Find("playerCapacityText").GetComponent<TextMeshPro>();
-            bucketText.text = "Capacity: " + inventory.BucketCapacity + "\nEmpty Portion"+(inventory.BucketCapacity - inventory.BucketFilledAmount).ToString();
-            }
-        
-        
-        
-
+        }
         public void TakeTheEffect()
         {
         }

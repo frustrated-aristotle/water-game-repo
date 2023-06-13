@@ -208,6 +208,66 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 56983840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &57017154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 57017156}
+  - component: {fileID: 57017155}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &57017155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57017154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3c9063ae27648e5bb39802427ca51e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GoldEventListener:
+    m_Event: {fileID: 0}
+  m_KeyEventListener:
+    m_Event: {fileID: 0}
+  m_WinEventListener:
+    m_Event: {fileID: 0}
+  m_LoseEventListener:
+    m_Event: {fileID: 0}
+  baseMoney: 10
+  m_TempGold: 0
+  m_TotalGold: 0
+  totalMoneyAmount: 0
+  soilAmount: 0
+  acidAmount: 0
+  bucketCapacity: 0
+  tempBucketCapacity: 0
+--- !u!4 &57017156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57017154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &64631513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7230,6 +7290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107816924745832803, guid: 1b8960ea00aef2747b6aeea4d2932e20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b8960ea00aef2747b6aeea4d2932e20, type: 3}

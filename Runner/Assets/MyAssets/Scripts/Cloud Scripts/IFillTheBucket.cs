@@ -5,7 +5,7 @@
         /// <summary>
         /// Fills the bucket's capacity
         /// </summary>
-        public void FillTheBucket(Inventory inventory,float rate);
+        public void FillTheBucket(Inventory inventory,int rate);
 
         /// <summary>
         /// Player gets the expected effect

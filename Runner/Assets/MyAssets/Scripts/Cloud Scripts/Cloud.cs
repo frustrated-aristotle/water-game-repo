@@ -14,7 +14,6 @@ namespace HyperCasual.Runner
         protected override void Awake()
         {
             base.Awake();
-            _inventory = FindObjectOfType<Inventory>();
             filler = GetComponent<IFillTheBucket>();
         }
 
@@ -22,10 +21,9 @@ namespace HyperCasual.Runner
         private CloudType cloudType;
 
         [SerializeField] 
-        private float rate;
+        private int rate;
 
         private bool applied;
-        private Inventory _inventory;
         enum CloudType
         {
             Normal,
@@ -46,9 +44,10 @@ namespace HyperCasual.Runner
 
         void fonk(Collider col)
         {
+            Debug.Log("Inventory bucket capactiy: " + Inventory.Instance.tempBucketCapacity);
             if (col.CompareTag(playerTag))
             {
-                filler.FillTheBucket(_inventory,rate);
+                filler.FillTheBucket(Inventory.Instance,rate);
                 filler.TakeTheEffect();
             }
         }

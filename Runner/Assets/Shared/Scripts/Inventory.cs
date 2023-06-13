@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using HyperCasual.Core;
 using HyperCasual.Gameplay;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HyperCasual.Runner
 {
@@ -40,29 +39,44 @@ namespace HyperCasual.Runner
         public float soilAmount;
         public float acidAmount;
         [SerializeField]
-        private float bucketCapacity;
+        private int bucketCapacity;
         [SerializeField]
-        private float tempBucketCapacity;
-        private float bucketFilledAmount;
+        public int tempBucketCapacity;
+        private int bucketFilledAmount;
 
-        public float BucketCapacity 
+        public int BucketCapacity 
         {
-            get => tempBucketCapacity;
+            get
+            {
+                return tempBucketCapacity;
+            }
+                
             set
             {
+                Debug.Log("xBucket capacity before: " + tempBucketCapacity);
                 tempBucketCapacity += value;
+                Debug.Log("xBucket capacity after: " + tempBucketCapacity);
+                UpdateWaterLevelUI();
             }
         }
-        public float BucketFilledAmount
+        public int BucketFilledAmount
         {
             get => bucketFilledAmount;
             set
             {
                 bucketFilledAmount += value;
                 UpdateWaterLevel();
+                UpdateWaterLevelUI();
             }
         }
 
+        private void UpdateWaterLevelUI()
+        {
+            float filledRateForSlider = (float)bucketFilledAmount / tempBucketCapacity * 100 /100;
+            UIManager.Instance.WaterCapacityUI.GetComponent<Slider>().value = filledRateForSlider;
+            TextMeshProUGUI t = UIManager.Instance.WaterCapacityUI.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+            t.text = bucketFilledAmount.ToString();
+        }
         private void UpdateWaterLevel()
         {
             float filledRate = bucketFilledAmount / tempBucketCapacity * 100;
@@ -101,12 +115,10 @@ namespace HyperCasual.Runner
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
             bucketCapacity = SaveManager.Instance.Capacity;
+            Debug.Log("Bucket capacity: " + bucketCapacity);
             tempBucketCapacity = bucketCapacity;
-            Debug.Log("start");
-
-            Debug.Log("total gold: " + m_TotalGold);
-            Debug.Log("start");
-
+            Debug.Log("temp bucket capacity: " + tempBucketCapacity);
+            
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
             m_TempKeys = 0;

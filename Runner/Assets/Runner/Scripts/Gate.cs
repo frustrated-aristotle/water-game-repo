@@ -18,8 +18,8 @@ namespace HyperCasual.Runner
         GateType m_GateType;
         
         [SerializeField] float m_Value;
-        [SerializeField] private float heightValue;
-        [SerializeField] private float widthValue;
+        [SerializeField] private int heightValue;
+        [SerializeField] private int widthValue;
         
         [SerializeField]
         RectTransform m_Text;
@@ -104,13 +104,13 @@ namespace HyperCasual.Runner
                  */
                 case GateType.ChangeHeight:
                 {
-                    inventory.BucketCapacity = heightValue;
+                    Inventory.Instance.BucketCapacity = heightValue;
                     PlayerController.Instance.AdjustHeight(heightValue);
                     break;
                 }
                 case GateType.ChangeWidth:
                 {
-                    inventory.BucketCapacity = widthValue;
+                    Inventory.Instance.BucketCapacity = widthValue;
                     PlayerController.Instance.AdjustWidth(widthValue);
                     break;
                 }

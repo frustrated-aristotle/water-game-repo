@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace HyperCasual.Runner
 {
-    public class FillSoil : MonoBehaviour, IFillTheBucket
+    public class FillSoil : MonoBehaviour
     { 
         //Some mechanics will not be used in this version of the game:
         //1
