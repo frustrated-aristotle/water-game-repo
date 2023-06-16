@@ -1,16 +1,19 @@
-using System;
+
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace HyperCasual.Runner
 {
     public class Cloud : Spawnable
     {
         private const string playerTag = "Player";
+        
         public TextMeshProUGUI text;
+        
         public GameObject go;
+        
         private IFillTheBucket filler;
+        
         protected override void Awake()
         {
             base.Awake();
@@ -23,13 +26,35 @@ namespace HyperCasual.Runner
         [SerializeField] 
         private int rate;
 
+        public int Rate
+        {
+            get => rate;
+            set
+            {
+                rate = value;
+                Debug.LogError("Rate Is: "+ rate);
+            }
+        }
+        
         private bool applied;
+        
+        
         enum CloudType
         {
             Normal,
             Acid,
         }
-        
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            rate = (int)VariableManager.Instance.CloudRate;
+            Debug.LogError("cloud rate : "  + rate);
+            
+        }
+
+     
+
         //Maybe we can add the SetScale method
 
         public override void ResetSpawnable()

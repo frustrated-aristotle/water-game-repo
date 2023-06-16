@@ -13,10 +13,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            Debug.Log($"Current money multiplier is {GameManager.Instance.MoneyMultipler}");
             GameManager.Instance.MoneyMultipler = 0.2f;
-            Debug.Log($"New money multiplier is {GameManager.Instance.MoneyMultipler}");
-
         }
     }
 }

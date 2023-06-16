@@ -1,6 +1,7 @@
 using HyperCasual.Core;
 using HyperCasual.Runner;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 
 namespace HyperCasual.Gameplay
 {
@@ -13,7 +14,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            Inventory.Instance.IncreaseBucketCapacityFromStartingMenu();
+             VariableManager.Instance.OnBucketCapacityIncreasePurchased();  
         }
     }
 }

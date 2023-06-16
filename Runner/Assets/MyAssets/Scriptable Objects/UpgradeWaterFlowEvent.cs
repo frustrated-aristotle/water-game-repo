@@ -13,7 +13,9 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            Debug.LogError("FLOW RATE MUST BE INCREASED");
+            VariableManager.Instance.IncreaseCloudRate();
+            //Need to find all clouds and then give them this. 
+            Debug.LogError($"FLOW RATE MUST BE INCREASED : {VariableManager.Instance.CloudRate}");
         }
     }
 }

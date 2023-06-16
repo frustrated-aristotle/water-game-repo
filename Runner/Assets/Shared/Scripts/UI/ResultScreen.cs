@@ -19,6 +19,7 @@ namespace HyperCasual.Runner
         {
             startSceneButton.AddListener(OnStartSceneButtonClicked);
             InitCollectedMoney();
+            Inventory.Instance.MakeBucketLevelZero();
         }
 
         private void OnDisable()

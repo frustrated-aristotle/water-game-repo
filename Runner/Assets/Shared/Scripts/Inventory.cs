@@ -30,7 +30,7 @@ namespace HyperCasual.Runner
         public int totalMoneyAmount;
         public int TotalGold { 
             get=> m_TotalGold;
-            private set => m_TotalGold = value;
+            set => m_TotalGold = value;
 
         }
         float m_TempXp;
@@ -248,6 +248,12 @@ namespace HyperCasual.Runner
         {
             bucketCapacity += 10;
             SaveCapacity();
+        }
+
+        public void MakeBucketLevelZero()
+        {
+            BucketFilledAmount = -BucketFilledAmount;
+            //bucketFilledAmount = 0;
         }
     }
 }

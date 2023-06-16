@@ -17,6 +17,10 @@ namespace HyperCasual.Runner
         /// </summary>
         public static SaveManager Instance => s_Instance;
         static SaveManager s_Instance;
+        const string bucketCapacityIncreaseCostMultiplier = "BucketCapacityIncreaseCostMultiplier";
+        const string cloudRateCostMultiplier = "CloudRateCostMultiplier";
+        const string cloudRateMultiplier="ClooudMultiplier";
+        const string cloudRate = "CloudRate";
         const string secondBlendShapeValue = "SecondBlendShapeValue";
         const string firstBlendShapeValue = "FirstBlendShapeValue";
 
@@ -79,6 +83,24 @@ namespace HyperCasual.Runner
         {
             get => PlayerPrefs.GetFloat(secondBlendShapeValue);
             set => PlayerPrefs.SetFloat(secondBlendShapeValue, value);
+        }
+
+        public float CloudRateMultiplier 
+        { 
+            get => PlayerPrefs.GetFloat(cloudRateMultiplier);
+            set => PlayerPrefs.SetFloat(cloudRateMultiplier, value); 
+        }
+
+        public float CloudRateCostMultiplier
+        {
+            get => PlayerPrefs.GetFloat(cloudRateCostMultiplier);
+            set => PlayerPrefs.SetFloat(cloudRateCostMultiplier, value);
+        }
+
+        public float BucketCapacityIncreaseCostMultiplier
+        {
+            get => PlayerPrefs.GetFloat(bucketCapacityIncreaseCostMultiplier);
+            set => PlayerPrefs.SetFloat(bucketCapacityIncreaseCostMultiplier, value);
         }
         public AudioSettings LoadAudioSettings()
         {

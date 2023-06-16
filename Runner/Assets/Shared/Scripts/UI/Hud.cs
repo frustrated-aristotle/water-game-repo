@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using HyperCasual.Core;
 using HyperCasual.Runner;
 using TMPro;
@@ -22,6 +20,20 @@ namespace HyperCasual.Gameplay
         HyperCasualButton m_PauseButton;
         [SerializeField]
         AbstractGameEvent m_PauseEvent;
+        
+        [SerializeField]
+        TextMeshProUGUI capacityText;
+
+        [SerializeField] 
+        TextMeshProUGUI flowText;
+
+
+        public static Hud Instance;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         /// <summary>
         /// The slider that displays the XP value 
@@ -76,6 +88,10 @@ namespace HyperCasual.Gameplay
 
         public void ToggleButtonActiveState(bool willBeActive)
         {
+            if (willBeActive)
+            {
+                UpdateUpgradeButtonText();
+            }
             var childCount = transform.childCount;
             transform.GetChild(childCount-1).gameObject.SetActive(willBeActive);
             transform.GetChild(childCount-2).gameObject.SetActive(willBeActive);
@@ -88,6 +104,31 @@ namespace HyperCasual.Gameplay
         void OnPauseButtonClick()
         {
             m_PauseEvent.Raise();
+        }
+
+        public void UpdateUpgradeButtonText()
+        {
+            int flowInt = (int)VariableManager.Instance.CloudRateIncreaseCost;
+            int capacityInt = (int)VariableManager.Instance.BucketCapacityIncreaseCost;
+            GoldValue = Inventory.Instance.TotalGold;
+            flowText.text = flowInt.ToString();
+            capacityText.text = capacityInt.ToString();
+        }
+
+        public void UpdateUpgradeButtonText(Color color , bool isItFlowText)
+        {
+            if (isItFlowText)
+            {
+                int flowInt = (int)VariableManager.Instance.CloudRateIncreaseCost;
+                flowText.text = flowInt.ToString();
+                flowText.color = color;
+            }
+            else
+            {
+                int capacityInt = (int)VariableManager.Instance.BucketCapacityIncreaseCost;
+                capacityText.text = capacityInt.ToString();
+                capacityText.color = color;
+            }
         }
     }
 }
