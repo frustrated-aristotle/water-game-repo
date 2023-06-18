@@ -142,7 +142,7 @@ namespace HyperCasual.Runner
             m_WinEventListener.Unsubscribe();
             m_LoseEventListener.Unsubscribe();
         }
-
+/*
         public void OnGoldPicked()
         {
             Debug.LogError("GoldPickedOUTSİDE");
@@ -158,6 +158,7 @@ namespace HyperCasual.Runner
                 throw new Exception($"Invalid event type!");
             }
         }
+ */
 
         void OnKeyPicked()
         {
@@ -216,8 +217,9 @@ namespace HyperCasual.Runner
 
         public void PickUpMoney()
         {
-            m_TotalGold += 10;            
-            m_TempGold += 10;
+            
+            m_TotalGold += (int)VariableManager.Instance.MoneyAmount;            
+            m_TempGold += (int)VariableManager.Instance.MoneyAmount;
             
             Debug.Log(m_TotalGold);
             m_Hud.GoldValue = m_TotalGold;

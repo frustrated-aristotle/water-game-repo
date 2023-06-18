@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6013742452007343456}
   - component: {fileID: 908702675661709638}
   - component: {fileID: 2946809331890066953}
+  - component: {fileID: 1286415014529328530}
+  - component: {fileID: 8138061206144591921}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -80,7 +82,7 @@ MonoBehaviour:
   - tag: Bullet
     prefab: {fileID: 8064630308587043973, guid: 4132e0e0fc202604f8b48664e0e6f3af,
       type: 3}
-    size: 10
+    size: 5
 --- !u!114 &908702675661709638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,5 +105,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5749887f5a1d138469d515f8ff3ad52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clouds: []
+--- !u!114 &1286415014529328530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617234690931488546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9b7616d2a5bb43bf04520f5402886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8138061206144591921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617234690931488546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234f4200399ca0241bd65f97a4a83cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

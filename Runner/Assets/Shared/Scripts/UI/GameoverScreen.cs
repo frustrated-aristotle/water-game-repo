@@ -1,4 +1,7 @@
+using System;
 using HyperCasual.Core;
+using HyperCasual.Gameplay;
+using TMPro;
 using UnityEngine;
 
 namespace HyperCasual.Runner
@@ -16,7 +19,10 @@ namespace HyperCasual.Runner
         AbstractGameEvent m_PlayAgainEvent;
         [SerializeField]
         AbstractGameEvent m_GoToMainMenuEvent;
-
+        [SerializeField]
+        TextMeshProUGUI incomeText;
+        [SerializeField] 
+        TextMeshProUGUI bulletPowerText;
         
         //buttons
         [SerializeField] private HyperCasualButton increaseIncomeButton;
@@ -28,11 +34,19 @@ namespace HyperCasual.Runner
         [SerializeField] private AbstractGameEvent increaseIncomeEvent;
         [SerializeField] private AbstractGameEvent proceedToResultEvent;
 
+
+        public static GameoverScreen Instance;
+        private void Awake()
+        {
+            Instance = this;
+        }
+
         void OnEnable()
         {
             increaseBulletPowerButton.AddListener(OnIncreaseBulletPowerButtonClick);
             increaseIncomeButton.AddListener(OnIncreaseIncomeButtonClick);
             proceedToResultButton.AddListener(OnProceedToResultButtonClick);
+            UpdateGameEndUpgradeButtons();
             //m_PlayAgainButton.AddListener(OnPlayAgainButtonClick);
             //m_GoToMainMenuButton.AddListener(OnGoToMainMenuButtonClick);
         }
@@ -74,6 +88,31 @@ namespace HyperCasual.Runner
         private void OnProceedToResultButtonClick()
         {
             proceedToResultEvent.Raise();
+        }
+        public void UpdateGameEndUpgradeButtons()
+        {
+            int powerInt = (int)VariableManager.Instance.BulletPowerIncreaseCost;
+            int incomeInt = (int)VariableManager.Instance.IncomeIncreaseCost;  
+            Hud.Instance.GoldValue = Inventory.Instance.TotalGold;
+            incomeText.text = incomeInt.ToString();
+            bulletPowerText.text = powerInt.ToString();
+            incomeText.color = Color.white;
+            bulletPowerText.color = Color.white;
+        }
+        public void UpdateGameEndUpgradeButtons(Color color , bool isItIncome)
+        {
+            if (isItIncome)
+            {
+                int incomeInt = (int)VariableManager.Instance.IncomeIncreaseCost;
+                incomeText.text = incomeInt.ToString();
+                incomeText.color = color;
+            }
+            else
+            {
+                int powerInt = (int)VariableManager.Instance.BulletPowerIncreaseCost;
+                bulletPowerText.text = powerInt.ToString();
+                bulletPowerText.color = color;
+            }
         }
     }
 }

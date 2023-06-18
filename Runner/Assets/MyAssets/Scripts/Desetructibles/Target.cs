@@ -2,14 +2,36 @@ using System;
 using HyperCasual.Runner;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Target : MonoBehaviour
 {
     [SerializeField] private GameObject moneyPrefab;
     
-    [SerializeField] private int health;
-    
+    public int health;
+
+    public int targetStep;
+
+    [SerializeField] 
+    GameObject healthTxt;
+
+    [SerializeField]private float firstStepZValue;
+
     public int Health { get => health; private set => health -= value;}
+
+    private void OnEnable()
+    {
+        float posZValue = transform.position.z;
+        targetStep = (int)(posZValue - firstStepZValue) /5 +1;
+        health = (int)(targetStep * 1.5f * 20);
+        //ne sarayda ne handa
+        UpdateHealthText();
+    }
+
+    public void UpdateHealthText()
+    {
+        healthTxt.GetComponent<TextMeshPro>().text = health.ToString();
+    }
     private void OnTriggerEnter(Collider other)
     {
         Transform col = other.transform;
@@ -19,6 +41,8 @@ public class Target : MonoBehaviour
         {
             GameManager.Instance.Lose();
         }
+
+      
     }
 
     private void OnCollisionEnter(Collision _collision)
@@ -33,7 +57,7 @@ public class Target : MonoBehaviour
             if (Health <= 0)
             {
                 InstantiateMoneyAfterTheTarget();
-                DeactivateBullet(col.gameObject);
+               // DeactivateBullet(col.gameObject);
                 DestroyTarget();
             }
         }
@@ -59,7 +83,8 @@ public class Target : MonoBehaviour
 
     private void TakeAHit(int damageAmount)
     {
+        Debug.LogError("Take A Hit");
         Health = damageAmount;
-        transform.GetChild(0).GetComponent<TextMeshPro>().text = health.ToString();
+            UpdateHealthText();
     }
 }

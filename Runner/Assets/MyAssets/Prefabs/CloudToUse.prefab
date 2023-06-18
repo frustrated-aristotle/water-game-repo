@@ -149,6 +149,7 @@ MonoBehaviour:
   m_SnapToGrid: 1
   text: {fileID: 0}
   go: {fileID: 0}
+  mat: {fileID: 2100000, guid: 69f1d336ed3ff30459eba8ef51d13dbd, type: 2}
   cloudType: 0
   rate: 5
 --- !u!114 &5146049679992335004

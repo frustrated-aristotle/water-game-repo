@@ -13,7 +13,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            GameManager.Instance.MoneyMultipler = 0.2f;
+            VariableManager.Instance.OnIncomeIncreasePurchased();
         }
     }
 }

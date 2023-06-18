@@ -38,7 +38,6 @@ public class ObjectPooler : MonoBehaviour
                 GameObject obj = Instantiate(pool.prefab);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
-                
             }
             
             poolsDictionary.Add(pool.tag, objectPool);
@@ -61,7 +60,5 @@ public class ObjectPooler : MonoBehaviour
         objectToSpawn.transform.rotation = rotation;
         poolsDictionary[tag].Enqueue(objectToSpawn);
         return objectToSpawn;
-        
-        
     }
 }

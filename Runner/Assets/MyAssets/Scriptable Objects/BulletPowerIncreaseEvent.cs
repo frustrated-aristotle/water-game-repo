@@ -13,10 +13,7 @@ namespace HyperCasual.Runner
     {
         public override void Reset()
         {
-            Debug.Log("Current bullet power is : " + GameManager.Instance.BulletPower);
-            GameManager.Instance.BulletPowerMultiplier = 0.3f;
-            GameManager.Instance.InitBulletPower();
-            Debug.Log("Our new bullet power is : " + GameManager.Instance.BulletPower);
+            VariableManager.Instance.OnBulletPowerIncreasePurchased();
         }
     }
 }

@@ -17,6 +17,9 @@ namespace HyperCasual.Runner
         /// </summary>
         public static SaveManager Instance => s_Instance;
         static SaveManager s_Instance;
+        const string moneyAmountMultiplier= "MoneyAmountMultiplier";
+        const string incomeIncreaseCostMultiplier = "IncomeIncreaseCostMultiplier";
+        const string bulletPowerIncreaseCostMultiplier = "BulletPowerIncreaseCostMultiplier";
         const string bucketCapacityIncreaseCostMultiplier = "BucketCapacityIncreaseCostMultiplier";
         const string cloudRateCostMultiplier = "CloudRateCostMultiplier";
         const string cloudRateMultiplier="ClooudMultiplier";
@@ -101,6 +104,24 @@ namespace HyperCasual.Runner
         {
             get => PlayerPrefs.GetFloat(bucketCapacityIncreaseCostMultiplier);
             set => PlayerPrefs.SetFloat(bucketCapacityIncreaseCostMultiplier, value);
+        }
+
+        public float BulletPowerIncreaseCostMultiplier
+        {
+            get => PlayerPrefs.GetFloat(bulletPowerIncreaseCostMultiplier);
+            set => PlayerPrefs.SetFloat(bulletPowerIncreaseCostMultiplier, value);
+        }
+
+        public float IncomeIncreaseCostMultiplier
+        {
+            get => PlayerPrefs.GetFloat(incomeIncreaseCostMultiplier); 
+            set => PlayerPrefs.SetFloat(incomeIncreaseCostMultiplier, value);   
+        }
+
+        public float MoneyAmountMultiplier
+        {
+            get => PlayerPrefs.GetFloat(moneyAmountMultiplier);
+            set => PlayerPrefs.SetFloat(moneyAmountMultiplier, value);  
         }
         public AudioSettings LoadAudioSettings()
         {

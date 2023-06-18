@@ -13,7 +13,7 @@ namespace HyperCasual.Runner
         public GameObject go;
         
         private IFillTheBucket filler;
-        
+        [SerializeField] private Material mat;
         protected override void Awake()
         {
             base.Awake();
@@ -48,8 +48,9 @@ namespace HyperCasual.Runner
         protected override void OnEnable()
         {
             base.OnEnable();
-            rate = (int)VariableManager.Instance.CloudRate;
+//            rate = (int)VariableManager.Instance.CloudRate;
             Debug.LogError("cloud rate : "  + rate);
+            RenderSettings.skybox = mat;
             
         }
 

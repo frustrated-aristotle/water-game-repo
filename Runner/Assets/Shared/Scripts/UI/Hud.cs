@@ -23,9 +23,9 @@ namespace HyperCasual.Gameplay
         
         [SerializeField]
         TextMeshProUGUI capacityText;
-
         [SerializeField] 
         TextMeshProUGUI flowText;
+      
 
 
         public static Hud Instance;
@@ -53,7 +53,6 @@ namespace HyperCasual.Gameplay
             {
                 if (m_GoldValue != value)
                 {
-                    Debug.Log("a" + this.name);
                     m_GoldValue = value;
                     m_GoldText.text = GoldValue.ToString();
                 }
@@ -112,7 +111,9 @@ namespace HyperCasual.Gameplay
             int capacityInt = (int)VariableManager.Instance.BucketCapacityIncreaseCost;
             GoldValue = Inventory.Instance.TotalGold;
             flowText.text = flowInt.ToString();
+            flowText.text = flowInt.ToString();
             capacityText.text = capacityInt.ToString();
+            capacityText.color  = Color.white;
         }
 
         public void UpdateUpgradeButtonText(Color color , bool isItFlowText)
@@ -130,5 +131,7 @@ namespace HyperCasual.Gameplay
                 capacityText.color = color;
             }
         }
+
+        
     }
 }

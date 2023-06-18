@@ -41,11 +41,16 @@ namespace HyperCasual.Runner
         protected override void Awake()
         {
             base.Awake();
-            m_Count = Inventory.Instance.baseMoney;
-            float tempCount = m_Count;
-            tempCount *= GameManager.Instance.MoneyMultipler;
-            m_Count = (int)tempCount;
-            
+            /*
+                m_Count = Inventory.Instance.baseMoney;
+                float tempCount = m_Count;
+                tempCount *= GameManager.Instance.MoneyMultipler;
+                m_Count = (int)tempCount;
+             */
+            if (VariableManager.Instance)
+            {
+                m_Count = (int)VariableManager.Instance.MoneyAmount;
+            }
             m_Renderers = gameObject.GetComponentsInChildren<Renderer>();
         }
 
@@ -72,6 +77,12 @@ namespace HyperCasual.Runner
 
             m_Collected = true;
             AudioManager.Instance.PlayEffect(m_Sound);
+        }
+
+        public void ChangeCount()
+        {
+            m_Count = (int)VariableManager.Instance.MoneyAmount;
+            Inventory.Instance.m_TotalGold += m_Count;
         }
     }
 }

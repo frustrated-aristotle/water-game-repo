@@ -12,6 +12,30 @@ namespace HyperCasual.Runner
     [CreateAssetMenu(fileName = "Data", menuName = "Runner/LevelDefinition", order = 1)]
     public class LevelDefinition : AbstractLevelData
     {
+
+        [ContextMenu("DeleteMoney")]
+        public void DeleteMoney()
+        {
+            Debug.LogError("Works");
+            List<SpawnableObject> obj = new List<SpawnableObject>();
+            foreach (var s in Spawnables)
+            {
+                Debug.LogError("wOW");
+                if (!s.SpawnablePrefab.GetComponent<Collectable>())
+                {
+                    Debug.LogError("NOT: " + s.SpawnablePrefab);
+
+                    obj.Add(s);
+                }
+                else
+                {
+                    Debug.LogError("It most probably is money: " + s.SpawnablePrefab);
+                }
+            }
+
+            Spawnables = obj.ToArray();
+        }
+        
         /// <summary>
         /// The Length of the level.
         /// </summary>
