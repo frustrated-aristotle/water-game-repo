@@ -77,6 +77,7 @@ namespace HyperCasual.Runner
         
         const float k_HalfWidth = 0.5f;
 
+        public bool isRunning = false;
         /// <summary> The player's root Transform component. </summary>
         public Transform Transform => m_Transform;
 
@@ -174,6 +175,7 @@ namespace HyperCasual.Runner
 
             s_Instance = this;
             m_AutoMoveForward = false;
+            isRunning = false;
             baseWidth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(1);
             
             baseHeigth = transform.GetChild(5).GetComponent<SkinnedMeshRenderer>().GetBlendShapeWeight(0);
@@ -222,6 +224,8 @@ namespace HyperCasual.Runner
 
                 case PlayerSpeedPreset.Fast:
                     return 20.0f;
+                case PlayerSpeedPreset.Custom:
+                    return 12.5f;
             }
 
             return m_CustomPlayerSpeed;

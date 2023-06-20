@@ -91,8 +91,9 @@ namespace HyperCasual.Runner
             }
 #endif
 
-            if (m_HasInput && !CheckRectContainsScreenPoint())
+            if (m_HasInput && (!CheckRectContainsScreenPoint() || PlayerController.Instance.isRunning))
             {
+                PlayerController.Instance.isRunning = true;
                 Hud hud = FindObjectOfType<Hud>();
                 hud?.ToggleButtonActiveState(false);
                 float normalizedDeltaPosition = (m_InputPosition.x - m_PreviousInputPosition.x) / Screen.width * m_InputSensitivity;

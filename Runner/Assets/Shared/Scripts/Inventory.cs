@@ -74,6 +74,7 @@ namespace HyperCasual.Runner
         {
             float filledRateForSlider = (float)bucketFilledAmount / tempBucketCapacity * 100 /100;
             UIManager.Instance.WaterCapacityUI.GetComponent<Slider>().value = filledRateForSlider;
+            UIManager.Instance.WaterCapacityUI.GetComponent<Slider>().value = Mathf.Clamp(filledRateForSlider, 0f,1f);
             TextMeshProUGUI t = UIManager.Instance.WaterCapacityUI.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
             t.text = bucketFilledAmount.ToString();
         }

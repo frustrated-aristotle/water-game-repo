@@ -137,3 +137,5 @@ MonoBehaviour:
   m_LockCameraPosition: 0
   m_SmoothCameraFollow: 1
   m_SmoothCameraFollowStrength: 8
+  titremeSiddeti: 0.1
+  titremeSure: 0.2

@@ -46,13 +46,20 @@ public class GunFire : MonoBehaviour
     }
     private void FireGun()
     {
-        Debug.LogError("GUN");
         Vector3 pos = PlayerController.Instance.transform.position + new Vector3(0, 3, 2.6f);
         GameObject a = pool.SpawnFromPool("Bullet", pos, Quaternion.identity);
         a.transform.Rotate(90,0,0);
-
+        if (Inventory.Instance.BucketFilledAmount - a.GetComponent<BulletMovement>().BulletPower > 0)
+        {
+            Inventory.Instance.BucketFilledAmount = -a.GetComponent<BulletMovement>().BulletPower;
+            Debug.LogError("Bullet Power: " + a.GetComponent<BulletMovement>().BulletPower); 
+        }
+        else
+        {
+            a.SetActive(false);
+            isFiring = false;
+        }
         //Inventory.Instance.BucketFilledAmount = -10;
-        Inventory.Instance.BucketFilledAmount = -a.GetComponent<BulletMovement>().BulletPower;
-        Debug.LogError("Bullet Power: " + a.GetComponent<BulletMovement>().BulletPower);
+       
     }
 }

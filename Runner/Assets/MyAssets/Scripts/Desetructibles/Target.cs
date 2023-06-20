@@ -23,7 +23,7 @@ public class Target : MonoBehaviour
     {
         float posZValue = transform.position.z;
         targetStep = (int)(posZValue - firstStepZValue) /5 +1;
-        health = (int)(targetStep * 1.5f * 20);
+        health = (int)(targetStep * 1.5f * 5);
         //ne sarayda ne handa
         UpdateHealthText();
     }

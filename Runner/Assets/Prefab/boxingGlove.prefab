@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1097111985574727206}
   - component: {fileID: 4809546641768231391}
+  - component: {fileID: 8858849795031702835}
+  - component: {fileID: 6198499744075852723}
+  - component: {fileID: 641372498346882972}
   m_Layer: 0
   m_Name: boxingGlove
   m_TagString: Untagged
@@ -25,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320434132636210332}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.66, y: 3.24, z: -0.008974304}
+  m_LocalPosition: {x: 7, y: 3.24, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,3 +91,42 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 11.635777, y: 3.0104425, z: 3.489243}
   m_DirtyAABB: 0
+--- !u!114 &8858849795031702835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320434132636210332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c147f6a2aa217f14bb83411f020f9041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6198499744075852723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320434132636210332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c2e46c573954e7aaeab312afe10062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SnapToGrid: 1
+--- !u!136 &641372498346882972
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320434132636210332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.8575078
+  m_Height: 11.864503
+  m_Direction: 0
+  m_Center: {x: 5, y: 0, z: 0}

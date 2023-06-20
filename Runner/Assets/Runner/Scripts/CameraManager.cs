@@ -35,6 +35,36 @@ namespace HyperCasual.Runner
         [SerializeField]
         float m_SmoothCameraFollowStrength = 10.0f;
 
+        #region Camera Shake
+        public float titremeSiddeti = 0.1f;
+        public float titremeSure = 0.2f;
+
+        public void KamerayiTitret()
+        {
+            StartCoroutine(TitremeEfekti());
+        }
+
+        private IEnumerator TitremeEfekti()
+        {
+            Vector3 orijinalPozisyon = Camera.main.transform.position;
+
+            float gecenSure = 0f;
+            while (gecenSure < titremeSure)
+            {
+                float randomX = Random.Range(-titremeSiddeti, titremeSiddeti);
+                float randomY = Random.Range(-titremeSiddeti, titremeSiddeti);
+
+                Camera.main.transform.position = orijinalPozisyon + new Vector3(randomX, randomY, 0f);
+
+                gecenSure += Time.deltaTime;
+                yield return null;
+            }
+
+            Camera.main.transform.position = orijinalPozisyon;
+        }
+        
+
+        #endregion
         enum CameraAnglePreset
         {
             Behind,
@@ -165,14 +195,14 @@ namespace HyperCasual.Runner
                 float lerpAmount = Time.deltaTime * m_SmoothCameraFollowStrength;
 
                 m_Transform.position = Vector3.Lerp(m_Transform.position, offset, lerpAmount);
-                m_Transform.LookAt(Vector3.Lerp(m_Transform.position + m_Transform.forward, lookAtOffset, lerpAmount));
+                //m_Transform.LookAt(Vector3.Lerp(m_Transform.position + m_Transform.forward, lookAtOffset, lerpAmount));
 
                 m_Transform.position = new Vector3(m_Transform.position.x, m_Transform.position.y, offset.z);
             }
             else
             {
                 m_Transform.position = playerPosition + GetCameraOffset();
-                m_Transform.LookAt(lookAtOffset);
+                //m_Transform.LookAt(lookAtOffset);
             }
         }
     }

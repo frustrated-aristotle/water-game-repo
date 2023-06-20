@@ -580,13 +580,14 @@ MonoBehaviour:
   waterAmountText: {fileID: 7832869409108618805}
   m_Animator: {fileID: 2141710850789030952}
   m_SkinnedMeshRenderer: {fileID: 3552323526451143052}
-  m_PlayerSpeed: 1
+  m_PlayerSpeed: 3
   m_CustomPlayerSpeed: 10
   m_AccelerationSpeed: 10
   m_DecelerationSpeed: 20
-  m_HorizontalSpeedFactor: 0.8
+  m_HorizontalSpeedFactor: 1.4
   m_ScaleVelocity: 2
   m_AutoMoveForward: 1
+  isRunning: 0
 --- !u!136 &8475646709700121470
 CapsuleCollider:
   m_ObjectHideFlags: 0
