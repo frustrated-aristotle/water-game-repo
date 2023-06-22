@@ -91,6 +91,7 @@ namespace HyperCasual.Runner
         }
         public void UpdateGameEndUpgradeButtons()
         {
+            Debug.Log("Updated");
             int powerInt = (int)VariableManager.Instance.BulletPowerIncreaseCost;
             int incomeInt = (int)VariableManager.Instance.IncomeIncreaseCost;  
             Hud.Instance.GoldValue = Inventory.Instance.TotalGold;

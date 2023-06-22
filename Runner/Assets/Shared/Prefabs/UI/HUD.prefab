@@ -134,6 +134,8 @@ MonoBehaviour:
   m_XpSlider: {fileID: 2418144166341577247}
   m_PauseButton: {fileID: 6004565484081077508}
   m_PauseEvent: {fileID: 11400000, guid: 4bbf7a853b87f44299489a25eb0d9ce5, type: 2}
+  capacityText: {fileID: 0}
+  flowText: {fileID: 0}
 --- !u!1 &2418144166341577245
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +855,7 @@ PrefabInstance:
     - target: {fileID: 4530049876488281382, guid: e0da6156bbd54c143bec4c67290e587d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5040928377626265368, guid: e0da6156bbd54c143bec4c67290e587d,
         type: 3}
@@ -1040,7 +1042,7 @@ PrefabInstance:
     - target: {fileID: 4997773965285375291, guid: 620a9a47bec75f94aa25b2ca74254ac0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 620a9a47bec75f94aa25b2ca74254ac0, type: 3}

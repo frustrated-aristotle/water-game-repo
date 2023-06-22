@@ -7,11 +7,14 @@ namespace HyperCasual.Runner
     {
         public void FillTheBucket( Inventory inventory,int rate)
         {
-            if (inventory.BucketCapacity <= inventory.BucketCapacity + rate)
+            if (inventory.BucketCapacity >= inventory.BucketFilledAmount + rate)
             {
-                Debug.Log("Rate: " + rate + " and BucketCapacity: " + inventory.BucketCapacity);
                 inventory.BucketFilledAmount = rate;
-                Debug.Log("BucketFilledAmount : " + inventory.BucketFilledAmount + " and the bucket capacity is " + inventory.BucketCapacity );
+            }
+
+            if (inventory.BucketCapacity < inventory.BucketFilledAmount)
+            {
+                inventory.BucketFilledAmount = inventory.BucketCapacity;
             }
         }
         public void TakeTheEffect()

@@ -37,7 +37,7 @@ namespace HyperCasual.Runner
         float m_DecelerationSpeed = 20.0f;
 
         [SerializeField]
-        float m_HorizontalSpeedFactor = 0.5f;
+        public float m_HorizontalSpeedFactor = 0.5f;
 
         [SerializeField]
         float m_ScaleVelocity = 2.0f;
@@ -67,7 +67,7 @@ namespace HyperCasual.Runner
         float m_ZPos;
         float m_TargetPosition;
         float m_Speed;
-        float m_TargetSpeed;
+        public float m_TargetSpeed;
         Vector3 m_Scale;
         Vector3 m_TargetScale;
         Vector3 m_DefaultScale;
@@ -124,6 +124,8 @@ namespace HyperCasual.Runner
         }
         public void AdjustHeight(float adjust)
         {
+            //For the water level
+            Inventory.Instance.currentWaterY -= adjust;
             int blendShapeType = (int)BlendShapeType.HEIGHT;
             float y = GetBlendShapeWeight(blendShapeType, 5);
             float newY = y + adjust;
@@ -206,6 +208,9 @@ namespace HyperCasual.Runner
             }
 
             ResetSpeed();
+            //This part is just for manipulating our properties. IT will be deleted when it is time to publis this game.
+            m_TargetSpeed = SaveManager.Instance.NormalSpeed;
+            m_HorizontalSpeedFactor = SaveManager.Instance.HorizontalSpeed;
         }
 
         /// <summary>

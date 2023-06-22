@@ -17,6 +17,9 @@ namespace HyperCasual.Runner
         /// </summary>
         public static SaveManager Instance => s_Instance;
         static SaveManager s_Instance;
+        const string normalSpeed = "NormalSpeed";
+        const string horizontalSpeed = "HorizontalSpeed";
+        const string initBulletPowerIncreaseCost = "InitBulletPowerIncreaseCost";
         const string moneyAmountMultiplier= "MoneyAmountMultiplier";
         const string incomeIncreaseCostMultiplier = "IncomeIncreaseCostMultiplier";
         const string bulletPowerIncreaseCostMultiplier = "BulletPowerIncreaseCostMultiplier";
@@ -39,6 +42,26 @@ namespace HyperCasual.Runner
             s_Instance = this;
         }
 
+        #region Initial Values
+
+        public int InitialBulletPowerIncreaseCost
+        {
+            get => PlayerPrefs.GetInt(initBulletPowerIncreaseCost);
+            set => PlayerPrefs.SetInt(initBulletPowerIncreaseCost, value);
+        }
+
+        public float NormalSpeed
+        {
+            get => PlayerPrefs.GetFloat(normalSpeed);
+            set => PlayerPrefs.SetFloat(normalSpeed, value);
+        }
+
+        public float HorizontalSpeed
+        {
+            get => PlayerPrefs.GetFloat(horizontalSpeed);
+            set => PlayerPrefs.SetFloat(horizontalSpeed, value);
+        }
+        #endregion
         /// <summary>
         /// Save and load level progress as an integer
         /// </summary>

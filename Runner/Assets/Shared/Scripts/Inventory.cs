@@ -44,6 +44,8 @@ namespace HyperCasual.Runner
         public int tempBucketCapacity;
         private int bucketFilledAmount;
 
+        [SerializeField] private float initialWaterY = -80f;
+        public float currentWaterY;
         public int BucketCapacity 
         {
             get
@@ -53,9 +55,7 @@ namespace HyperCasual.Runner
                 
             set
             {
-                Debug.Log("xBucket capacity before: " + tempBucketCapacity);
                 tempBucketCapacity += value;
-                Debug.Log("xBucket capacity after: " + tempBucketCapacity);
                 UpdateWaterLevelUI();
             }
         }
@@ -80,12 +80,17 @@ namespace HyperCasual.Runner
         }
         private void UpdateWaterLevel()
         {
-            float filledRate = bucketFilledAmount / tempBucketCapacity * 100;
-            float waterRate = -80 * filledRate / 100;
+            float filledRate = (float)bucketFilledAmount / (float)tempBucketCapacity * 100f;
+            float bucketY = PlayerController.Instance.GetBlendShapeWeight(0, 5) + 80;
+            float sayi = bucketY * filledRate/100;
+            float waterRate = -80 + sayi;
             //-80-waterrate
             SkinnedMeshRenderer child = PlayerController.Instance.transform.GetChild(5).GetChild(1)
                 .GetComponent<SkinnedMeshRenderer>(); 
-            child.SetBlendShapeWeight(1, -80-waterRate);
+            Debug.LogError($"Name of child is : {child.name} and water rate is : {waterRate} filled rate:  {filledRate} bucketY {bucketY} and sayi : {sayi}");
+            Debug.LogError($"bucket Filled Amount : {bucketFilledAmount} and temp capacity is : {tempBucketCapacity} and blend shape is : {PlayerController.Instance.GetBlendShapeWeight(0, 5)}"/* filled rate:  {filledRate} bucketY {bucketY} and sayi : {sayi}"*/);
+
+            child.SetBlendShapeWeight(1, waterRate);
             TextMeshPro textMP = GameObject.Find("playerWaterText").GetComponent<TextMeshPro>(); 
             textMP.text = BucketFilledAmount.ToString();
             TextMeshPro bucketText = GameObject.Find("playerCapacityText").GetComponent<TextMeshPro>();
@@ -112,13 +117,13 @@ namespace HyperCasual.Runner
             //m_WinEventListener.EventHandler = OnWin;
             
             //m_LoseEventListener.EventHandler = OnLose;
-
+            currentWaterY = initialWaterY;
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
             bucketCapacity = SaveManager.Instance.Capacity;
-            Debug.Log("Bucket capacity: " + bucketCapacity);
+            bucketCapacity = 360;
+            SaveManager.Instance.Capacity = bucketCapacity;
             tempBucketCapacity = bucketCapacity;
-            Debug.Log("temp bucket capacity: " + tempBucketCapacity);
             
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
@@ -230,6 +235,7 @@ namespace HyperCasual.Runner
             int extraMoney = (m_TempGold * multiplier) - m_TempGold;
             m_TempGold += extraMoney;
             SaveManager.Instance.Currency = m_TotalGold;
+            SaveManager.Instance.InitialBulletPowerIncreaseCost = VariableManager.Instance.initialBulletPowerIncreaseCost;
         }
 
         /// <summary>
@@ -249,14 +255,15 @@ namespace HyperCasual.Runner
         
         public void IncreaseBucketCapacityFromStartingMenu()
         {
+            Debug.LogError("Increase from menu");
             bucketCapacity += 10;
+            tempBucketCapacity = bucketCapacity;
             SaveCapacity();
         }
 
         public void MakeBucketLevelZero()
         {
             BucketFilledAmount = -BucketFilledAmount;
-            //bucketFilledAmount = 0;
         }
     }
 }

@@ -30,7 +30,7 @@ public class VariableManager : MonoBehaviour
     
     
     #region  Income Increase Cost Stuff
-    private int initialIncomeIncreaseCost = 300;
+   [SerializeField] protected int initialIncomeIncreaseCost = 300;
     private float currentIncomeIncreaseCost = 300;
     private float incomeIncreaseCostMultiplier = 1;
     
@@ -79,8 +79,8 @@ public class VariableManager : MonoBehaviour
     
     #region Bullet Power Increase Cost Stuff
 
-    private int initialBulletPowerIncreaseCost = 300;
-    private float currentBulletPowerIncreaseCost = 300;
+    public int initialBulletPowerIncreaseCost;
+    private float currentBulletPowerIncreaseCost;
     private float bulletPowerIncreaseCostMultiplier = 1;
     
     public float BulletPowerIncreaseCost 
@@ -93,6 +93,7 @@ public class VariableManager : MonoBehaviour
         set
         {
             currentBulletPowerIncreaseCost = (int)value;
+            Debug.Log("Working");
         }
         
     }
@@ -151,6 +152,7 @@ public class VariableManager : MonoBehaviour
             BucketCapacityIncreaseCost = initialBucketCapacityIncreaseCost * bucketCapacityIncreaseCostMultiplier;
             SaveManager.Instance.BucketCapacityIncreaseCostMultiplier = bucketCapacityIncreaseCostMultiplier;
             Hud.Instance.UpdateUpgradeButtonText();
+            Inventory.Instance.IncreaseBucketCapacityFromStartingMenu();
         }
         else
         {
@@ -182,8 +184,8 @@ public class VariableManager : MonoBehaviour
     #endregion
     
     #region Cloud Rates Related
-    private int initialCloudRate = 5;
-    private float currentCloudRate=5;
+    private int initialCloudRate = 15;
+    private float currentCloudRate=15;
     private float cloudRateMultiplier = 1f;
 
     public float CloudRate
@@ -204,7 +206,6 @@ public class VariableManager : MonoBehaviour
         if (CloudRateIncreaseCost <= Inventory.Instance.TotalGold)
         {
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)CloudRateIncreaseCost;
-            Inventory.Instance.IncreaseBucketCapacityFromStartingMenu();
             FlowUpgradeIsPurchased();
             //We are making the cloud rate multiplier 1 at awake.
             cloudRateMultiplier += 0.2f;
@@ -229,6 +230,13 @@ public class VariableManager : MonoBehaviour
 
     #region Upgrade Functions
     
+    /// <summary>
+    /// This method will update the given value by
+    /// multiplying the initial rate and its multiplier.
+    /// </summary>
+    /// <param name="rateToUpdate"></param>
+    /// <param name="initialRate"></param>
+    /// <param name="rateMultiplier"></param>
     private void UpdateRate(ref float rateToUpdate, ref int initialRate, ref float rateMultiplier)
     {
         rateToUpdate = initialRate * rateMultiplier;
@@ -258,6 +266,7 @@ public class VariableManager : MonoBehaviour
             Instance = this;
         }
 
+        initialBulletPowerIncreaseCost = SaveManager.Instance.InitialBulletPowerIncreaseCost;
         SaveManager.Instance.CloudRateMultiplier = 1;
         SaveManager.Instance.CloudRateCostMultiplier = 1;
         SaveManager.Instance.BucketCapacityIncreaseCostMultiplier = 1;

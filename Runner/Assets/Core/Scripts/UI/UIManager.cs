@@ -22,7 +22,9 @@ namespace HyperCasual.Core
 
         public RectTransform bucketCapacityUpgradeButton;
         public RectTransform flowRateUpgradeButton;
+        public RectTransform valueManipulatorButton;
         public GameObject WaterCapacityUI;
+        
         
         List<View> m_Views;
 
