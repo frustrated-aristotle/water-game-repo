@@ -587,6 +587,7 @@ MonoBehaviour:
   m_HorizontalSpeedFactor: 1.4
   m_ScaleVelocity: 2
   m_AutoMoveForward: 1
+  m_TargetSpeed: 0
   isRunning: 0
 --- !u!136 &8475646709700121470
 CapsuleCollider:

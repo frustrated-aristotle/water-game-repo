@@ -1,0 +1,828 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16185 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\aristo\Documents\Unity All Projects\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49270
+Successfully changed project path to: C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner
+C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [3804] Host "[IP] 192.168.1.37 [Port] 0 [Flags] 2 [Guid] 4064268687 [EditorId] 4064268687 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P5AC8NT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [3804] Host "[IP] 192.168.1.37 [Port] 0 [Flags] 2 [Guid] 4064268687 [EditorId] 4064268687 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P5AC8NT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 250.45 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/aristo/Desktop/UnityGames/water-game-repo/Runner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3168
+Initialize mono
+Mono path[0] = 'C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Users/aristo/Documents/Unity All Projects/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014953 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 245.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.571 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1572ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1210ms)
+			LoadAssemblies (164ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (659ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (156ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (246ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.024049 seconds.
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Users\aristo\AppData\Local\Android\Sdk\platform-tools\adb.exe
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:DoScan (UnityEditor.DeploymentTargets.IDeploymentTargetsExtension,UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,System.Threading.CancellationToken)
+UnityEditor.Android.TargetScanWorker/<>c__DisplayClass8_0:<Scan>b__0 ()
+System.Threading.Tasks.Task:InnerInvoke ()
+System.Threading.Tasks.Task:Execute ()
+System.Threading.Tasks.Task:ExecutionContextCallback (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.Tasks.Task:ExecuteWithThreadLocal (System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:ExecuteEntry (bool)
+System.Threading.Tasks.Task:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
+System.Threading.ThreadPoolWorkQueue:Dispatch ()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+
+Unable to list connected devices. 
+adb.exe: failed to check server version: protocol fault (couldn't read status): connection reset
+
+UnityEditor.Android.CommandInvokationFailure: Unable to list connected devices. 
+C:\Users\aristo\Documents\Unity All Projects\2021.3.16f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platform-tools\adb.exe devices
+
+Environment Variables:
+NVIDIAWHITELISTED = 0x01
+USERDOMAIN = DESKTOP-P5AC8NT
+ProgramFiles = C:\Program Files
+TMP = C:\Users\aristo\AppData\Local\Temp
+ChocolateyLastPathUpdate = 132919181255856899
+PROCESSOR_ARCHITECTURE = AMD64
+HEAP_CLIENT_TOKEN_STAGING = 3786794399
+PROCESSOR_REVISION = a502
+OS = Windows_NT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_36396_TFTXHWPJELWSIBVB
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+NVM_HOME = C:\Users\aristo\AppData\Roaming\nvm
+HOME = C:\SPB_DATA
+AMPLITUDE_API_KEY = 28f3cae0b33b8b3702120c9ed1a935aa
+CDS_LIC_FILE = C:\Cadence\SPB_22.1\License.dat
+USERPROFILE = C:\Users\aristo
+CommonProgramFiles = C:\Program Files\Common Files
+DriverData = C:\Windows\System32\Drivers\DriverData
+ComSpec = C:\Windows\system32\cmd.exe
+LAUNCH_DARKLY_CLIENT_TOKEN = 60a7e30fafc7e60e33446283
+OneDrive = C:\Users\aristo\OneDrive
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\PowerShell\Modules\
+PUBLIC = C:\Users\Public
+USERNAME = aristo
+HEAP_CLIENT_TOKEN = 1717415662
+NUMBER_OF_PROCESSORS = 12
+ZES_ENABLE_SYSMAN = 1
+WOOTRIC_CLIENT_TOKEN = NPS-aa8be4c3
+JAVA_TOOL_OPTIONS = -Dfile.encoding=UTF-8
+DEBUG_ENV_VAR = UnityHub
+ProgramW6432 = C:\Program Files
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+HOMEDRIVE = C:
+TEMP = C:\Users\aristo\AppData\Local\Temp
+Path = C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\aristo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Java\jdk-20\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Users\aristo\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\aristo\AppData\Local\Programs\Python\Python310\;C:\Python\Python311\Scripts\;C:\Python\Python311\;C:\Ruby31-x64\bin;C:\Users\aristo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet;C:\Users\aristo\.dotnet\tools;C:\Users\aristo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aristo\AppData\Local\GitHubDesktop\bin;C:\Users\aristo\AppData\Roaming\npm;C:\Users\aristo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin
+QML_FORCE_DISK_CACHE = 0
+COMPUTERNAME = DESKTOP-P5AC8NT
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW
+SystemDrive = C:
+ALLUSERSPROFILE = C:\ProgramData
+SENTRY_ACCESS_TOKEN = 3df78d9e53f8456aa90fbae044ce1a6261421ab1d0014674bc2e933477289017
+CDS_LIC_ONLY = 1
+ChocolateyInstall = C:\ProgramData\chocolatey
+FPS_BROWSER_USER_PROFILE_STRING = Default
+QML_DISABLE_DISK_CACHE = 1
+AMPLITUDE_API_KEY_STAGING = 83ee04fccc67e4fcc7dd527c4c6f1e21
+QT_DISABLE_SHADER_DISK_CACHE = 1
+NVM_SYMLINK = C:\Program Files\nodejs
+APPDATA = C:\Users\aristo\AppData\Roaming
+windir = C:\Windows
+PROCESSOR_LEVEL = 6
+CommonProgramW6432 = C:\Program Files\Common Files
+ProgramFiles(x86) = C:\Program Files (x86)
+SystemRoot = C:\Windows
+SESSIONNAME = Console
+LOGONSERVER = \\DESKTOP-P5AC8NT
+LOCALAPPDATA = C:\Users\aristo\AppData\Local
+HOMEPATH = \Users\aristo
+LAUNCH_DARKLY_CLIENT_TOKEN_STAGING = 60a7e30fafc7e60e33446282
+SHIM_MCCOMPAT = 0x810000001
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-P5AC8NT
+ProgramData = C:\ProgramData
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+
+
+stderr[
+adb.exe: failed to check server version: protocol fault (couldn't read status): connection reset
+]
+stdout[
+
+]
+exit code: 1
+  at UnityEditor.Android.Command.WaitForProgramToRun (UnityEditor.Utils.Program p, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x00033] in <62de111f18d242d586f9a078a33b1ba2>:0 
+  at UnityEditor.Android.Command.Run (System.Diagnostics.ProcessStartInfo psi, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x0002d] in <62de111f18d242d586f9a078a33b1ba2>:0 
+  at UnityEditor.Android.Command.Run (System.String command, System.String args, System.String workingdir, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x0000a] in <62de111f18d242d586f9a078a33b1ba2>:0 
+  at UnityEditor.Android.ADB.RunInternal (System.String[] command, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x0001e] in <62de111f18d242d586f9a078a33b1ba2>:0 
+  at UnityEditor.Android.ADB.Run (System.String[] command, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x00013] in <62de111f18d242d586f9a078a33b1ba2>:0 
+  at UnityEditor.Android.AndroidDeploymentTargetsExtension.GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext context, UnityEditor.ProgressHandler progressHandler) [0x0013b] in <62de111f18d242d586f9a078a33b1ba2>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:DoScan (UnityEditor.DeploymentTargets.IDeploymentTargetsExtension,UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,System.Threading.CancellationToken)
+UnityEditor.Android.TargetScanWorker/<>c__DisplayClass8_0:<Scan>b__0 ()
+System.Threading.Tasks.Task:InnerInvoke ()
+System.Threading.Tasks.Task:Execute ()
+System.Threading.Tasks.Task:ExecutionContextCallback (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.Tasks.Task:ExecuteWithThreadLocal (System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:ExecuteEntry (bool)
+System.Threading.Tasks.Task:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
+System.Threading.ThreadPoolWorkQueue:Dispatch ()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Users\aristo\AppData\Local\Android\Sdk\platform-tools\adb.exe
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:DoScan (UnityEditor.DeploymentTargets.IDeploymentTargetsExtension,UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,System.Threading.CancellationToken)
+UnityEditor.Android.TargetScanWorker/<>c__DisplayClass8_0:<Scan>b__0 ()
+System.Threading.Tasks.Task:InnerInvoke ()
+System.Threading.Tasks.Task:Execute ()
+System.Threading.Tasks.Task:ExecutionContextCallback (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.Tasks.Task:ExecuteWithThreadLocal (System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:ExecuteEntry (bool)
+System.Threading.Tasks.Task:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
+System.Threading.ThreadPoolWorkQueue:Dispatch ()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\aristo\Desktop\UnityGames\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\aristo\Desktop\UnityGames\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 388.64 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4522ms)
+		BeginReloadAssembly (651ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (165ms)
+		EndReloadAssembly (3397ms)
+			LoadAssemblies (533ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (565ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (116ms)
+			SetupLoadedEditorAssemblies (2138ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (40ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (389ms)
+				BeforeProcessingInitializeOnLoad (272ms)
+				ProcessInitializeOnLoadAttributes (1125ms)
+				ProcessInitializeOnLoadMethodAttributes (283ms)
+				AfterProcessingInitializeOnLoad (28ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.33 seconds
+Refreshing native plugins compatible for Editor in 4.65 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5918 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (0.7 MB). Loaded Objects now: 6358.
+Memory consumption went from 231.3 MB to 230.5 MB.
+Total: 14.941300 ms (FindLiveObjects: 1.278700 ms CreateObjectMapping: 3.434400 ms MarkObjects: 9.468600 ms  DeleteObjects: 0.755900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 856681.714828 seconds.
+  path: Assets/Gate_HeightIncrease.prefab
+  artifactKey: Guid(191e1cc040395354385b7e91c5d82cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gate_HeightIncrease.prefab using Guid(191e1cc040395354385b7e91c5d82cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0634657f2a46bfd80fb92804cd922ee5') in 1.504091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 394.710621 seconds.
+  path: Assets/Editor/Tutorials/LevelEditor/17-SaveAndPlay.asset
+  artifactKey: Guid(c3180662c98eb5f49b5c4c33b19361a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/LevelEditor/17-SaveAndPlay.asset using Guid(c3180662c98eb5f49b5c4c33b19361a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196e83fbf0bc23679ce1a3c942d6cebe') in 0.028065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Lava/Lava3DBubblesExplodingFast.prefab
+  artifactKey: Guid(d5e53f6947c6a96469a08e87ebf2441f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Lava/Lava3DBubblesExplodingFast.prefab using Guid(d5e53f6947c6a96469a08e87ebf2441f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777408160aca065edeb55be1b957d2ab') in 0.045555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesBlowingRed.prefab
+  artifactKey: Guid(8f1c5f972544fe647b3baa7483abfc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesBlowingRed.prefab using Guid(8f1c5f972544fe647b3baa7483abfc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a98ed867154e45e96469cd73c58d5e7') in 0.057841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Hail/HailHeavy.prefab
+  artifactKey: Guid(d76416dda69b8ae4f84d83c32caec03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Hail/HailHeavy.prefab using Guid(d76416dda69b8ae4f84d83c32caec03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6272214ca0021ff7525b8dd41552b19') in 0.017134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainHeavy.mat
+  artifactKey: Guid(60182b544bf893f449ffd2fee996e0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainHeavy.mat using Guid(60182b544bf893f449ffd2fee996e0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e7a18ed72cf7204785f8c724d49ec3') in 0.039262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/VarietyParticles/Models/aurora_path.FBX
+  artifactKey: Guid(dcc6647ab4a4d9e48a576c60e7a3fd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Models/aurora_path.FBX using Guid(dcc6647ab4a4d9e48a576c60e7a3fd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69788559b71c3163521349684af3aef') in 0.349966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowHeavy.prefab
+  artifactKey: Guid(67bed91d49929c442ac1729303261d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowHeavy.prefab using Guid(67bed91d49929c442ac1729303261d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001420e924c2cbf6915d8ea397c442dc') in 0.028981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesFallingRed.prefab
+  artifactKey: Guid(cc1f366e5b801a44bbbdb02ee14e3069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesFallingRed.prefab using Guid(cc1f366e5b801a44bbbdb02ee14e3069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21d4c50b1b7f6e86ae5d361718cf9497') in 0.014942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Lava/JumpingLavaArea4.prefab
+  artifactKey: Guid(e3fec3a2e3fe68346bf0bac2ed70dfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Lava/JumpingLavaArea4.prefab using Guid(e3fec3a2e3fe68346bf0bac2ed70dfee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed483c5f7424bdfe37720409ffc484a') in 0.016008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_heavy.png
+  artifactKey: Guid(26184f953d98758418b06e156c9c9647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_heavy.png using Guid(26184f953d98758418b06e156c9c9647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775b6587592acdd334880b0a6b50d34c') in 0.021718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Lava/JumpingLavaArea.prefab
+  artifactKey: Guid(ed674136d3b8b1947bf6d9e181ea04ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Lava/JumpingLavaArea.prefab using Guid(ed674136d3b8b1947bf6d9e181ea04ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1535923386c8e0c01120a9b8c9205d9d') in 0.017781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesFallingGreen.prefab
+  artifactKey: Guid(5ed43be7cb609d4408e0a803d7755fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesFallingGreen.prefab using Guid(5ed43be7cb609d4408e0a803d7755fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0aa66a832dec8935280052ffc3431db') in 0.015466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Runner/Character/Models/Armature.fbx
+  artifactKey: Guid(36078ab0369161e49a29d349ae3e0739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/Character/Models/Armature.fbx using Guid(36078ab0369161e49a29d349ae3e0739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74d07176c12d619e88397645dd268d2') in 0.056991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Lava/LavaBubble.mat
+  artifactKey: Guid(41876a2fe23d6e64ba2ad50791ff68ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Lava/LavaBubble.mat using Guid(41876a2fe23d6e64ba2ad50791ff68ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f5bebfb8f14f81b6755ee235ff2a07') in 0.015969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesFallingYellow.prefab
+  artifactKey: Guid(75a7461b654dfa74da4406e601700185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Leaves/LeavesFallingYellow.prefab using Guid(75a7461b654dfa74da4406e601700185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f58742777e07b5880de59c7f7215f4c') in 0.015776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Runner/InputActions/Movement.inputactions
+  artifactKey: Guid(7da6ca0abc47a4daf8cdbaa29468b709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/InputActions/Movement.inputactions using Guid(7da6ca0abc47a4daf8cdbaa29468b709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c007734f2b645e2f06955b77706ff13') in 0.014934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.133363 seconds.
+  path: Assets/Scenes/AvniTest.unity
+  artifactKey: Guid(71156db5f4d64944e9fbce263e936edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AvniTest.unity using Guid(71156db5f4d64944e9fbce263e936edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905f8054edfb7859e89ea84f2362e495') in 0.001747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.103030 seconds.
+  path: Assets/Editor/Tutorials/LevelEditor/16-TransformObstacle.asset
+  artifactKey: Guid(9fdfb52d2ff202b43b7db1d15eb8514b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/LevelEditor/16-TransformObstacle.asset using Guid(9fdfb52d2ff202b43b7db1d15eb8514b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/Editor/Tutorials/GetStarted/10-OpenTheRightScene.asset). Local file identifier (-7184823267936287008) doesn't exist!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+Broken text PPtr in file(Assets/Editor/Tutorials/LevelEditor/11-StartEditing.asset). Local file identifier (7011568114605018467) doesn't exist!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+Broken text PPtr in file(Assets/Editor/Tutorials/CreateLevel/10-DuplicateLevel.asset). Local file identifier (5088167140067499974) doesn't exist!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+Broken text PPtr in file(Assets/Editor/Tutorials/CreateLevel/20-OpenScene.asset). Local file identifier (-4328561140375699794) doesn't exist!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+Broken text PPtr in file(Assets/Editor/Tutorials/CreateLevel/60-SaveChanges.asset). Local file identifier (848586927281324900) doesn't exist!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (StartLine: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (FinishLine: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (money: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (flamethrower: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Fence: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Target: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Gate_WidthDecrease: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Gate_WidthIncrease: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Gate_HeightDecrease: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (roadPrefab: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Armory: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (BaseBulletPrefab: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.004: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Hand: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.005: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.002: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.006: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.008: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Hand: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.007: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.001: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder.003: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Rock: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (default: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cloud: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Cylinder: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Gate-: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Gate+: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Gate-: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (store: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (polySurface6: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Plane (1): OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (polySurface6: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Plane: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (Plane (1): OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+SendMessage cannot be called during Awake, CheckConsistency, or OnValidate (polySurface6: OnMeshFilterChanged)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Unity.Tutorials.Core.Editor.Criterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs:163)
+Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion:OnValidate () (at Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/InstantiatePrefabCriterion.cs:57)
+
+[Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Criteria/Criterion.cs line 163]
+
+ -> (artifact id: 'f9a1625e892f6f820105a5b79eeb2485') in 0.326296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mesh/boxingGlove.fbx
+  artifactKey: Guid(2f62c601aea59e745a6e83d28b0744e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mesh/boxingGlove.fbx using Guid(2f62c601aea59e745a6e83d28b0744e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f3f836ff78f2bb401365b8c1891dda') in 0.050249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Dust/bigdust.png
+  artifactKey: Guid(403b3475e8a4b9a43a0598ec3f7f9469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Dust/bigdust.png using Guid(403b3475e8a4b9a43a0598ec3f7f9469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3231b068f56511aede1e12a15fdd9b59') in 0.027202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpraySmall.prefab
+  artifactKey: Guid(34108ff16242452478c511059afe313a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpraySmall.prefab using Guid(34108ff16242452478c511059afe313a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd75501e08358a71eaa2ea1af63a67d5') in 0.055761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodExplosionBig.prefab
+  artifactKey: Guid(bcfffc82b3fe3a840b0c27868777d0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodExplosionBig.prefab using Guid(bcfffc82b3fe3a840b0c27868777d0db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5384898afff581119b4fb6b2b8fc94') in 0.036692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodFountain.prefab
+  artifactKey: Guid(6cc5f3d0288e6c1489e33335eca0c910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodFountain.prefab using Guid(6cc5f3d0288e6c1489e33335eca0c910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee61c3fc2bc47ef81726570e7fb64d22') in 0.013883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Blood/BloodHitAdditive.mat
+  artifactKey: Guid(26cdf9ce7228ea04d8e8c8ad4da44a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Blood/BloodHitAdditive.mat using Guid(26cdf9ce7228ea04d8e8c8ad4da44a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a2024442d96ab70a9b823dab101880') in 0.012269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Shared/Prefabs/UI/BackButton.prefab
+  artifactKey: Guid(e2817ba29ba59484a96ceffea6c5abf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shared/Prefabs/UI/BackButton.prefab using Guid(e2817ba29ba59484a96ceffea6c5abf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d31b04b1f40a06c50fd13b53ea8ed7') in 0.035741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Blood/BloodHit.mat
+  artifactKey: Guid(d10c9698594c1a74f88b53fabdee71ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Blood/BloodHit.mat using Guid(d10c9698594c1a74f88b53fabdee71ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8d75bf8117ec7c1f828c13b9899c22') in 0.008495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpray.prefab
+  artifactKey: Guid(faf5968f2c6f4e9498b8cfa6a23256fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpray.prefab using Guid(faf5968f2c6f4e9498b8cfa6a23256fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e321c9b16de1b80da39b2d4df78ff697') in 0.011165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MyAssets/Prefabs/BaseBulletPrefab.prefab
+  artifactKey: Guid(4132e0e0fc202604f8b48664e0e6f3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Prefabs/BaseBulletPrefab.prefab using Guid(4132e0e0fc202604f8b48664e0e6f3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e02aa35af8d5da2de9216759d938b2') in 0.017882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Blood/BloodHitGreen.mat
+  artifactKey: Guid(4797654b6d81e4949bdcb8fe792c4b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Blood/BloodHitGreen.mat using Guid(4797654b6d81e4949bdcb8fe792c4b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de47001bf6a1280ea8c5235cd3195ebc') in 0.079614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Blood/blood_hit01_green.png
+  artifactKey: Guid(e62f77389a9442248a98898a09eecf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Blood/blood_hit01_green.png using Guid(e62f77389a9442248a98898a09eecf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62658b90432a5021b13f200a223cb7e') in 0.078384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Shared/Events/BackEvent.asset
+  artifactKey: Guid(58f804667e2cb4eb789b6d2dfb3c4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shared/Events/BackEvent.asset using Guid(58f804667e2cb4eb789b6d2dfb3c4ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6765db2ee5272ddcd7fbc3a73fc94ac4') in 0.021653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodFountain02.prefab
+  artifactKey: Guid(80003f06ab0ac5a41b1ab76cd569e0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodFountain02.prefab using Guid(80003f06ab0ac5a41b1ab76cd569e0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e477a778b2860db7ec53b5b6151106') in 0.015828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Explosions/BlueExplosion.prefab
+  artifactKey: Guid(310510affe9cd7f4cb5e11c68c39a5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Explosions/BlueExplosion.prefab using Guid(310510affe9cd7f4cb5e11c68c39a5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbed78351af1d077bedf1e00181451e3') in 0.217495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Blood/blood_hit01.png
+  artifactKey: Guid(ad5b842a67e313642a7f4d36a99701ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Blood/blood_hit01.png using Guid(ad5b842a67e313642a7f4d36a99701ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acb93ab10747aa33709c5e2292e34b3') in 0.010827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSplash.prefab
+  artifactKey: Guid(1840b55631bb66545bd1511619286948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSplash.prefab using Guid(1840b55631bb66545bd1511619286948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26cfa3e44d0acc2591c75d6a9ce3ba5f') in 0.009997 seconds 

@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
 using HyperCasual.Runner;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using PauseState = HyperCasual.Core.PauseState;
 
 namespace HyperCasual.Gameplay
 {
@@ -20,7 +22,12 @@ namespace HyperCasual.Gameplay
         AbstractLevelData[] m_Levels;
         [SerializeField]
         GameObject[] m_LevelManagers;
-        public AbstractLevelData[] Levels => m_Levels;
+        public AbstractLevelData[] Levels
+        {
+            get => m_Levels;
+            set => m_Levels = value;
+        }
+
         [Header("Events")]
         [SerializeField]
         AbstractGameEvent m_ContinueEvent;
