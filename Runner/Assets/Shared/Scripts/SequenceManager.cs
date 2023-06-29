@@ -163,6 +163,10 @@ namespace HyperCasual.Gameplay
             gameplayState.AddLink(new EventLink(m_LoseEvent, loseState));
             gameplayState.AddLink(new EventLink(m_PauseEvent, pauseState));
             
+            winState.AddLink(new EventLink(m_ContinueEvent, loadLevelState));
+            winState.AddLink(new EventLink(m_BackEvent, unloadLose));
+            winState.AddLink(new EventLink(proceedToResultEvent, proceedToResultState));
+            
             loseState.AddLink(new EventLink(m_ContinueEvent, loadLevelState));
             loseState.AddLink(new EventLink(m_BackEvent, unloadLose));
             loseState.AddLink((new EventLink(proceedToResultEvent, proceedToResultState)));
@@ -208,7 +212,7 @@ namespace HyperCasual.Gameplay
 
         void OnWinScreenDisplayed(IState currentLevel)
         {
-            UIManager.Instance.Show<LevelCompleteScreen>();
+            UIManager.Instance.Show<GameoverScreen>();
             var currentLevelIndex = m_LevelStates.IndexOf(currentLevel);
             
             if (currentLevelIndex == -1)

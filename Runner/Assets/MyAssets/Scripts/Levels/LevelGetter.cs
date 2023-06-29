@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using HyperCasual.Core;
 using HyperCasual.Gameplay;
+using HyperCasual.Runner;
 using UnityEditor;
 using UnityEngine;
 
@@ -29,6 +30,17 @@ namespace MyAssets.Scripts.Levels
             {
                 Debug.Log(e);
             }
+        }
+        
+        #region Delete
+
+        public SaveManager sm;
+        #endregion
+        [ContextMenu("Set level  to zero")]
+        public void SetLevelToZero()
+        {
+            sm.LevelProgress = 0;
+            Debug.Log(sm.LevelProgress);
         }
     }
 }

@@ -15,7 +15,6 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            Inventory.Instance.m_TempGold = 0;
             GunFire.Instance?.StopFiring();
         }
     }

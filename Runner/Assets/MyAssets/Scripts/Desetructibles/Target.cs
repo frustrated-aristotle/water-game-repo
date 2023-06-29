@@ -39,7 +39,7 @@ public class Target : MonoBehaviour
 
         if (isCollisionPlayer)
         {
-            GameManager.Instance.Lose();
+            GameManager.Instance.Win();
         }
 
       

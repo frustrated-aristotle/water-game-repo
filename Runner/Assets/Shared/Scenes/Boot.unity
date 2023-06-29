@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceManager: {fileID: 4462145952910458180, guid: 6a3c13f7e2c6d42fe8c3f5029e1d0a98,
     type: 3}
+  sm: {fileID: 4575908568916051447, guid: 3634157dd07b141c2aaa950dd4771f81, type: 3}
 --- !u!114 &424909044076258115
 MonoBehaviour:
   m_ObjectHideFlags: 0

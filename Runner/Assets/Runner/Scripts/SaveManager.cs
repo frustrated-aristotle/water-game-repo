@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
@@ -37,6 +38,7 @@ namespace HyperCasual.Runner
         const string k_QualityLevel = "QualityLevel";
         const string capacity = "Capacity";
 
+        
         void Awake()
         {
             s_Instance = this;
