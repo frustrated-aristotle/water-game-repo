@@ -12,7 +12,6 @@ namespace HyperCasual.Runner
     [CreateAssetMenu(fileName = "Data", menuName = "Runner/LevelDefinition", order = 1)]
     public class LevelDefinition : AbstractLevelData
     {
-
         [ContextMenu("DeleteMoney")]
         public void DeleteMoney()
         {

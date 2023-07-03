@@ -85,7 +85,7 @@ public class InspectorFunc : MonoBehaviour
     {
         int lineIndex = 1;
         int placedTargetCount=0;
-        int baseZ = 115;
+        int baseZ = 135+15;
         float leftX = -4f;
         float rightX = 4f;
         float middleX = 0f;

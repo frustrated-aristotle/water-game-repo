@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
+using HyperCasual.Gameplay;
 using UnityEngine;
 
 #if UNITY_EDITOR
@@ -29,7 +30,7 @@ namespace HyperCasual.Runner
         [SerializeField]
         AbstractGameEvent m_LoseEvent;
 
-        LevelDefinition m_CurrentLevel;
+        [SerializeField] LevelDefinition m_CurrentLevel;
 
         /// <summary>
         /// Returns true if the game is currently active.
@@ -104,7 +105,8 @@ namespace HyperCasual.Runner
         /// </summary>
         public void LoadLevel(LevelDefinition levelDefinition)
         {
-            m_CurrentLevel = levelDefinition;
+            Debug.Log("Load level is working");
+            m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress];
             LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);
             CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);
             PlaceLevelMarkers(m_CurrentLevel, ref m_LevelMarkersGO);
@@ -242,6 +244,7 @@ namespace HyperCasual.Runner
         void StartGame()
         {
             ResetLevel();
+            Inventory.Instance.ResetTemps();
             m_IsPlaying = true;
         }
 

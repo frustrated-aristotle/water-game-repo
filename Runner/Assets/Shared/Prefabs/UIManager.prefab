@@ -366,6 +366,7 @@ MonoBehaviour:
   flowRateUpgradeButton: {fileID: 6721532534218406294}
   valueManipulatorButton: {fileID: 0}
   WaterCapacityUI: {fileID: 109624896325380505}
+  img: {fileID: 6647870336202243726}
 --- !u!1001 &59403737481401959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1373,7 +1374,7 @@ PrefabInstance:
     - target: {fileID: 864111321475162454, guid: 159a6cc7f4f464a5bbeb1410c075eed1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 864111321475162456, guid: 159a6cc7f4f464a5bbeb1410c075eed1,
         type: 3}
@@ -2081,27 +2082,32 @@ PrefabInstance:
     - target: {fileID: 3121327118576032548, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3121327118576032548, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.291
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4228321730336515580, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4836239172929253888, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4836239172929253888, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.291
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4836239172929253888, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.291
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7451919907126932203, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
@@ -2111,7 +2117,7 @@ PrefabInstance:
     - target: {fileID: 7451919907126932203, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7997348061337167852, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
         type: 3}
@@ -2258,6 +2264,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7417427414876494706}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6647870336202243726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4228321730336515580, guid: 8c0c5e0359670f94eafa55ea0ca9832e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7417427414876494706}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7451401457061652598
 PrefabInstance:
   m_ObjectHideFlags: 0

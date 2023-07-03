@@ -52,8 +52,16 @@ MonoBehaviour:
     m_Event: {fileID: 11400000, guid: 4facc4ba26e884ef88b6c2506fa5ae2c, type: 2}
   m_LoseEventListener:
     m_Event: {fileID: 11400000, guid: 2b6d3353ba4d84d3ca725ef1835ca96f, type: 2}
+  baseMoney: 10
   m_TempGold: 0
   m_TotalGold: 0
-  m_TempXp: 0
-  m_TotalXp: 0
-  m_TempKeys: 0
+  totalMoneyAmount: 0
+  soilAmount: 0
+  acidAmount: 0
+  bucketCapacity: 0
+  tempBucketCapacity: 0
+  initialWaterY: -80
+  currentWaterY: 0
+  greenColor: {r: 0.19215685, g: 1, b: 0.2123218, a: 1}
+  yellowColor: {r: 0.9997527, g: 1, b: 0.19215685, a: 1}
+  redColor: {r: 1, g: 0.2806234, b: 0.19215685, a: 1}

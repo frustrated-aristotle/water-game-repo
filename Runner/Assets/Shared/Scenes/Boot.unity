@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 238935440}
   - component: {fileID: 238935441}
   - component: {fileID: 238935442}
+  - component: {fileID: 238935443}
   m_Layer: 0
   m_Name: BootLoader
   m_TagString: Untagged
@@ -185,6 +186,21 @@ MonoBehaviour:
   sequenceManager: {fileID: 4462145952910458180, guid: 6a3c13f7e2c6d42fe8c3f5029e1d0a98,
     type: 3}
   sm: {fileID: 4575908568916051447, guid: 3634157dd07b141c2aaa950dd4771f81, type: 3}
+--- !u!114 &238935443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238935439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22477c43e727aac4799a11a3a20b5368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatChangeValue: 0
+  intChangeValue: 250
+  changedValue: 250
 --- !u!114 &424909044076258115
 MonoBehaviour:
   m_ObjectHideFlags: 0

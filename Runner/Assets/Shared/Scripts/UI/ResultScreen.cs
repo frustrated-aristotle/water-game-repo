@@ -34,7 +34,6 @@ namespace HyperCasual.Runner
 
         private void InitCollectedMoney()
         {
-            Debug.Log("Works");
             collectedMoneyText.text = Inventory.Instance.m_TempGold.ToString();
         }
     }

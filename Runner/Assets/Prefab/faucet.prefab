@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3208388928464428125}
+  - component: {fileID: -5991070832645236883}
+  - component: {fileID: 3251142887998417205}
   m_Layer: 0
   m_Name: faucet
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2868137756060239591}
   m_LocalRotation: {x: -0, y: 0.7252549, z: -0, w: 0.68848044}
-  m_LocalPosition: {x: -6.4, y: 6.63, z: 29.94}
+  m_LocalPosition: {x: -6, y: 6.63, z: 30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33,6 +35,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 92.98, z: 0}
+--- !u!114 &-5991070832645236883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868137756060239591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0722058c2a4d34c4c893eeedd3931726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SnapToGrid: 1
+--- !u!136 &3251142887998417205
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868137756060239591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3599999
+  m_Height: 7.567981
+  m_Direction: 1
+  m_Center: {x: -0.0000000021496183, y: -4.297705, z: 3.43}
 --- !u!1 &6503312175115288126
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +431,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -455,7 +484,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -508,7 +537,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -561,7 +590,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 0
       maxCurve:
@@ -19289,6 +19318,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3208388928464428125}
     m_Modifications:
+    - target: {fileID: 6077322137043311577, guid: ecc0cac14f5650f4c8ac06266fefa202,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077322137043311577, guid: ecc0cac14f5650f4c8ac06266fefa202,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077322137043311577, guid: ecc0cac14f5650f4c8ac06266fefa202,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6077322137043311577, guid: ecc0cac14f5650f4c8ac06266fefa202,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6077322137062411453, guid: ecc0cac14f5650f4c8ac06266fefa202,
         type: 3}
       propertyPath: m_Name

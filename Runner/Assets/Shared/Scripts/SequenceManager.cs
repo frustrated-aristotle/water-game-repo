@@ -219,8 +219,18 @@ namespace HyperCasual.Gameplay
                 throw new Exception($"{nameof(currentLevel)} is invalid!");
             
             var levelProgress = SaveManager.Instance.LevelProgress;
+            Debug.Log("current level is : " + currentLevel);
+            SaveManager.Instance.LevelProgress = levelProgress + 1;
+
             if (currentLevelIndex == levelProgress && currentLevelIndex < m_LevelStates.Count - 1)
-                SaveManager.Instance.LevelProgress = levelProgress + 1;
+            {
+                Debug.Log("LevelProgress");
+            }
+            else
+            {
+                Debug.Log($"Current Level index: {currentLevelIndex} and the level progress is = {levelProgress}");
+                
+            }
         }
 
         void OnLevelSelectionDisplayed()

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 namespace HyperCasual.Core
 {
@@ -19,12 +21,12 @@ namespace HyperCasual.Core
         RectTransform m_BackgroundLayer;
         [SerializeField]
         RectTransform m_ViewLayer;
-
+        
         public RectTransform bucketCapacityUpgradeButton;
         public RectTransform flowRateUpgradeButton;
         public RectTransform valueManipulatorButton;
         public GameObject WaterCapacityUI;
-        
+        public Image img;
         
         List<View> m_Views;
 

@@ -17,8 +17,9 @@ namespace MyAssets.Scripts.Levels
             List<AbstractLevelData> data = new List<AbstractLevelData>();
             try
             {
-                for (int i = 0; i < 50; i++)
+                for (int i = 1; i < 11; i++)
                 {
+                    Debug.Log("For working");
                     string levelName = "Level " + i;
                     string path = $"Assets/Runner/Environment/Levels/{levelName}.asset";
                     AbstractLevelData asset = (AbstractLevelData)AssetDatabase.LoadAssetAtPath(path, typeof(AbstractLevelData)); // Assetin türünü belirtin (örneğin, GameObject).
@@ -41,6 +42,7 @@ namespace MyAssets.Scripts.Levels
         {
             sm.LevelProgress = 0;
             Debug.Log(sm.LevelProgress);
+            
         }
     }
 }

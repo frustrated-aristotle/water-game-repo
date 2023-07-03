@@ -73,11 +73,36 @@ namespace HyperCasual.Runner
         private void UpdateWaterLevelUI()
         {
             float filledRateForSlider = (float)bucketFilledAmount / tempBucketCapacity * 100 /100;
+            ChangeColor();
             UIManager.Instance.WaterCapacityUI.GetComponent<Slider>().value = filledRateForSlider;
             UIManager.Instance.WaterCapacityUI.GetComponent<Slider>().value = Mathf.Clamp(filledRateForSlider, 0f,1f);
             TextMeshProUGUI t = UIManager.Instance.WaterCapacityUI.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
             t.text = bucketFilledAmount.ToString();
         }
+
+        public Color greenColor, yellowColor, redColor;
+        private void ChangeColor()
+        {
+            float rate = (float)bucketFilledAmount / (float)tempBucketCapacity * 100f;
+            greenColor = new Color(49f / 255f, 255f / 255f, 54f / 255f);
+            yellowColor = new Color(215f / 255f, 255f / 255f, 49f / 255f);
+            redColor = new Color(255f / 255f, 72f / 255f, 49f / 255f);
+            Color fillColor;
+            if (rate <= 40.33f)
+            {
+                Debug.LogError("ğğğ is: "+rate);
+                fillColor = Color.Lerp( greenColor, yellowColor, rate / 33.33f);
+            }
+            else
+            {
+                Debug.LogError("jjjjj: "+rate);
+                fillColor = Color.Lerp(yellowColor, redColor, (rate - 66.66f) / 33.33f);
+            }
+
+            // Renderer bileşeninin renk değerini güncelleme
+            UIManager.Instance.img.color = fillColor;
+        }
+
         private void UpdateWaterLevel()
         {
             float filledRate = (float)bucketFilledAmount / (float)tempBucketCapacity * 100f;
@@ -121,10 +146,8 @@ namespace HyperCasual.Runner
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
             bucketCapacity = SaveManager.Instance.Capacity;
-            bucketCapacity = 360;
-            SaveManager.Instance.Capacity = bucketCapacity;
+            Debug.Log("Save Manager: " + SaveManager.Instance.Capacity);
             tempBucketCapacity = bucketCapacity;
-            
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
             m_TempKeys = 0;
@@ -181,14 +204,11 @@ namespace HyperCasual.Runner
         void OnWin()
         {
             SaveManager.Instance.Currency = m_TotalGold;
-
             m_LevelCompleteScreen.GoldValue = m_TotalGold;
             m_LevelCompleteScreen.XpSlider.minValue = m_TotalXp;
             m_LevelCompleteScreen.XpSlider.maxValue = k_MilestoneFactor * (m_TotalXp + m_TempXp);
             m_LevelCompleteScreen.XpValue = m_TotalXp + m_TempXp;
-
             m_LevelCompleteScreen.StarCount = m_TempKeys;
-
             m_TotalXp += m_TempXp;
             m_TempXp = 0f;
             SaveManager.Instance.XP = m_TotalXp;
@@ -218,16 +238,12 @@ namespace HyperCasual.Runner
             }
         }
  */
-
         private int multiplier = 1;
 
         public void PickUpMoney()
         {
-            
             m_TotalGold += (int)VariableManager.Instance.MoneyAmount;            
             m_TempGold += (int)VariableManager.Instance.MoneyAmount;
-            
-            Debug.Log(m_TotalGold);
             m_Hud.GoldValue = m_TotalGold;
         }
         public void SaveMoney()
@@ -250,7 +266,6 @@ namespace HyperCasual.Runner
         public void SaveInventory()
         {
             SaveMoney();
-            
         }
         
         public void IncreaseBucketCapacityFromStartingMenu()
@@ -264,6 +279,12 @@ namespace HyperCasual.Runner
         public void MakeBucketLevelZero()
         {
             BucketFilledAmount = -BucketFilledAmount;
+        }
+
+        public void ResetTemps()
+        {
+            tempBucketCapacity = BucketCapacity;
+            m_TempGold = 0;
         }
     }
 }
