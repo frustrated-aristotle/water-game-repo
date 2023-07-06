@@ -112,8 +112,8 @@ namespace HyperCasual.Runner
 
         enum BlendShapeType
         {
-            WIDTH = 0,
-            HEIGHT = 1,
+            HEIGHT = 0,
+            WIDTH = 1,
         }
         public void AdjustWidth(float adjust)
         {

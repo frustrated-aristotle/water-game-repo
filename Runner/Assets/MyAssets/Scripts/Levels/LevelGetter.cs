@@ -19,7 +19,6 @@ namespace MyAssets.Scripts.Levels
             {
                 for (int i = 1; i < 11; i++)
                 {
-                    Debug.Log("For working");
                     string levelName = "Level " + i;
                     string path = $"Assets/Runner/Environment/Levels/{levelName}.asset";
                     AbstractLevelData asset = (AbstractLevelData)AssetDatabase.LoadAssetAtPath(path, typeof(AbstractLevelData)); // Assetin türünü belirtin (örneğin, GameObject).

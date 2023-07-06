@@ -115,8 +115,12 @@ namespace HyperCasual.Runner
                     break;
                 }
             }
-
             m_Applied = true;
+            //negative gate
+            if (widthValue < 0 || heightValue < 0 )
+            {
+                Inventory.Instance.AdjustWaterFilledAmountBecauseNegativeGate();
+            }
         }
     }
 }

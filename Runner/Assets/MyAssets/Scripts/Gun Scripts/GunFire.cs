@@ -7,9 +7,10 @@ public class GunFire : MonoBehaviour
 {
     private ObjectPooler pool;
     private bool isFiring;
+    public bool IsFiring { get => isFiring;}
     private int i = 0;
     [SerializeField]
-    private float rate = 1;
+    private float rate = 1f;
 
     public static GunFire Instance;
 
@@ -46,13 +47,13 @@ public class GunFire : MonoBehaviour
     }
     private void FireGun()
     {
+        Debug.Log("Fired");
         Vector3 pos = PlayerController.Instance.transform.position + new Vector3(0, 3, 2.6f);
         GameObject a = pool.SpawnFromPool("Bullet", pos, Quaternion.identity);
         a.transform.Rotate(90,0,0);
         if (Inventory.Instance.BucketFilledAmount - a.GetComponent<BulletMovement>().BulletPower > 0)
         {
             Inventory.Instance.BucketFilledAmount = -a.GetComponent<BulletMovement>().BulletPower;
-            Debug.LogError("Bullet Power: " + a.GetComponent<BulletMovement>().BulletPower); 
         }
         else
         {
@@ -60,6 +61,5 @@ public class GunFire : MonoBehaviour
             isFiring = false;
         }
         //Inventory.Instance.BucketFilledAmount = -10;
-       
     }
 }

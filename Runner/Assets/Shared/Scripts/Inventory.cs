@@ -286,5 +286,13 @@ namespace HyperCasual.Runner
             tempBucketCapacity = BucketCapacity;
             m_TempGold = 0;
         }
+
+        public void AdjustWaterFilledAmountBecauseNegativeGate()
+        {
+            if (BucketCapacity < BucketFilledAmount)
+            {
+                Debug.LogError("Bucket capacity is lower then the bucket filled amount " + BucketCapacity + " Bucket filled amount: "+ BucketFilledAmount);
+            }
+        }
     }
 }

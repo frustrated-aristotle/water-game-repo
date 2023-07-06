@@ -1,14 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HyperCasual.Core;
+using HyperCasual.Gameplay;
 using HyperCasual.Runner;
+using UnityEditor;
 using UnityEngine;
 
 public class InspectorFunc : MonoBehaviour
 {
 
     public static InspectorFunc Instance;
-
+    public List<LevelDefinition> levels;
     private void Awake()
     {
         Instance = this;
@@ -79,13 +82,14 @@ public class InspectorFunc : MonoBehaviour
             gate.transform.position = gatePos;
         }
     }
-    
+    public int baseZ = 150;
+    public float stepDistance = 15f;
+
     [ContextMenu("Give Positions")]
     public void GivePosFromZero()
     {
         int lineIndex = 1;
         int placedTargetCount=0;
-        int baseZ = 135+15;
         float leftX = -4f;
         float rightX = 4f;
         float middleX = 0f;
@@ -101,7 +105,7 @@ public class InspectorFunc : MonoBehaviour
             Vector3 targetPos = target.transform.position;
             targetPos.z = baseZ;
             lineIndex = (int)(placedTargetCount / 3) + 1;
-            targetPos.z += lineIndex * 5f;
+            targetPos.z += lineIndex * stepDistance;
             placedTargetCount++;
             
             targetPos.x = xPosDictionary[i];
@@ -114,8 +118,28 @@ public class InspectorFunc : MonoBehaviour
             i++;
             target.transform.position = targetPos;
         }
-        
     }
+
+
+    private void GetLevels()
+    {
+        try
+        {
+            for (int i = 1; i < 11; i++)
+            {
+                string levelName = "Level " + i;
+                string path = $"Assets/Runner/Environment/Levels/{levelName}.asset";
+                LevelDefinition asset = (LevelDefinition)AssetDatabase.LoadAssetAtPath(path, typeof(AbstractLevelData));
+                levels.Add(asset);
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+            throw;
+        }
+    }
+
     private int CheckPos(Transform targetTransform)
     {
         if (targetTransform.position.x < 0)

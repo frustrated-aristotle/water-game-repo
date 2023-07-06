@@ -22,7 +22,7 @@ public class Target : MonoBehaviour
     private void OnEnable()
     {
         float posZValue = transform.position.z;
-        targetStep = (int)(posZValue - firstStepZValue) /5 +1;
+        targetStep = (int)((int)(posZValue - InspectorFunc.Instance.baseZ) / InspectorFunc.Instance.stepDistance + 1);
         health = (int)(targetStep * 1.5f * 5);
         //ne sarayda ne handa
         UpdateHealthText();
