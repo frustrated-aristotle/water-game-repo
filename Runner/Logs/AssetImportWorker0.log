@@ -1,0 +1,387 @@
+Using pre-set license
+Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'tr' Physical Memory: 16330 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/UnityProjects/water-game-repo/Runner
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58754
+Successfully changed project path to: C:/UnityProjects/water-game-repo/Runner
+C:/UnityProjects/water-game-repo/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [37584] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 3259922965 [EditorId] 3259922965 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [37584] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 3259922965 [EditorId] 3259922965 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 111.25 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/water-game-repo/Runner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005134 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 107.08 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.538 seconds
+Domain Reload Profiling:
+	ReloadAssembly (539ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (402ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (89ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (256ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (107ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007529 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 107.15 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.199 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1199ms)
+		BeginReloadAssembly (202ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (131ms)
+		EndReloadAssembly (905ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (224ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (524ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (107ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5920 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (448.9 KB). Loaded Objects now: 6365.
+Memory consumption went from 231.0 MB to 230.5 MB.
+Total: 4.190800 ms (FindLiveObjects: 0.573700 ms CreateObjectMapping: 0.341100 ms MarkObjects: 3.012500 ms  DeleteObjects: 0.262500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1426439.339620 seconds.
+  path: Assets/Mesh/handv1.fbx
+  artifactKey: Guid(3a993dc4267314f4c9100ca09603e5a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mesh/handv1.fbx using Guid(3a993dc4267314f4c9100ca09603e5a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf02d2353564df5f2cf6a27c72c2d635') in 0.247697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 120.309536 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_billboard.png
+  artifactKey: Guid(c83129e9a1d6d2a469d75c2cb7acb1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_billboard.png using Guid(c83129e9a1d6d2a469d75c2cb7acb1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a63c1f1cf7f512a1917367859b81c2') in 0.021999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainLong.mat
+  artifactKey: Guid(758d79cea9a22f34c84662f223febff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainLong.mat using Guid(758d79cea9a22f34c84662f223febff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6df57ca28a9ba38da43868240042bc') in 0.012456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_long.png
+  artifactKey: Guid(a448a962e8622b145a69a40161c3b854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_long.png using Guid(a448a962e8622b145a69a40161c3b854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beab7f7c54b4a641150445cecbe9401f') in 0.007046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_spray_billboard.png
+  artifactKey: Guid(31257ad84c8a6444d922056c1efa3368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_spray_billboard.png using Guid(31257ad84c8a6444d922056c1efa3368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '268d867bb04992fb616cb8830c72ca38') in 0.007662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_spray.png
+  artifactKey: Guid(c5f50bb31721eae4ea3b2a3ff62a0d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_spray.png using Guid(c5f50bb31721eae4ea3b2a3ff62a0d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b14a9cd0df27f364bc1b99423540715') in 0.007694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowRain.prefab
+  artifactKey: Guid(242a55744a393844990edd3fedb335d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowRain.prefab using Guid(242a55744a393844990edd3fedb335d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c4386a9e4a36d451ebc5caa9d2fd51') in 0.011906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_splash.png
+  artifactKey: Guid(125e669fd4db6f640ad8fa98f4a45c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_splash.png using Guid(125e669fd4db6f640ad8fa98f4a45c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6d33749cc255834ed782538f220616') in 0.007268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainExtreme.prefab
+  artifactKey: Guid(1953890db7192884b91824c522d19ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainExtreme.prefab using Guid(1953890db7192884b91824c522d19ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30664d7e58d95e92884690c191d590e8') in 0.010659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainSplash.mat
+  artifactKey: Guid(0a82281b3b079e5409eec31bf2861c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainSplash.mat using Guid(0a82281b3b079e5409eec31bf2861c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666125c9ba2791cad32a9d3d3615e9b9') in 0.007129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_extreme.png
+  artifactKey: Guid(3bfa5a5bd3c0b8d4f8c882bda554ee93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_extreme.png using Guid(3bfa5a5bd3c0b8d4f8c882bda554ee93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19308119d736a0589a3fca4166071f1') in 0.007314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainSpray.mat
+  artifactKey: Guid(ddb720691bd40ee43a53f0bac5240f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainSpray.mat using Guid(ddb720691bd40ee43a53f0bac5240f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514f7e687f130b4dc68b18bf43a6e7b6') in 0.008314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainMedium.prefab
+  artifactKey: Guid(2c4367ab89b6bb841b949674737facc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainMedium.prefab using Guid(2c4367ab89b6bb841b949674737facc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc1c57c6037425297f6091caafa6d95') in 0.008691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_heavy.png
+  artifactKey: Guid(26184f953d98758418b06e156c9c9647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_heavy.png using Guid(26184f953d98758418b06e156c9c9647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b7728ac7ad9832e024b5b44e39a69d') in 0.006119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainHard.prefab
+  artifactKey: Guid(4b40da68aeec1934793ed4a63ca6536a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainHard.prefab using Guid(4b40da68aeec1934793ed4a63ca6536a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38153faaf3567bcae9849409787aaed5') in 0.008240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Insects/RoachesUnevenTerrain.prefab
+  artifactKey: Guid(3d07955270faf44489cdd16e88aad92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Insects/RoachesUnevenTerrain.prefab using Guid(3d07955270faf44489cdd16e88aad92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5cf85d47c6e86f4a41f1bab217152d') in 0.008567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainDrop.mat
+  artifactKey: Guid(c8b2a91ed21a89a44a77a5536f7a2f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainDrop.mat using Guid(c8b2a91ed21a89a44a77a5536f7a2f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b418829bcfc337ae720b8806b1e65afa') in 0.008405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Rain/RainExtreme.mat
+  artifactKey: Guid(68f88e2e2acf6c54bb6e696271612d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Rain/RainExtreme.mat using Guid(68f88e2e2acf6c54bb6e696271612d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad858eed58edbfc0f4c5fbe0e720d551') in 0.007247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Insects/RoachesFlatTerrain.prefab
+  artifactKey: Guid(274c6afb9629d3d4ca38b3e2f5ef3b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Insects/RoachesFlatTerrain.prefab using Guid(274c6afb9629d3d4ca38b3e2f5ef3b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ef0ada4dcc0adcdee9ca6d136e97fd') in 0.008364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.313108 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainExtreme.prefab
+  artifactKey: Guid(1953890db7192884b91824c522d19ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainExtreme.prefab using Guid(1953890db7192884b91824c522d19ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b558803dc1fa5c38b9a1fdc292c78371') in 0.007711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.349650 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesExplosionUnderwater.prefab
+  artifactKey: Guid(9e63e42566b4f394d94c6d093e06debf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesExplosionUnderwater.prefab using Guid(9e63e42566b4f394d94c6d093e06debf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92143cc9bc4726cf509948dcb3049f88') in 0.010005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesUnderwater.prefab
+  artifactKey: Guid(367bfb6f469a7734f88f6f94a1ad10b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesUnderwater.prefab using Guid(367bfb6f469a7734f88f6f94a1ad10b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b756272a6a5059237e3dfb80fc84be1') in 0.008925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/Tapwater.prefab
+  artifactKey: Guid(33629becf3b884643800fbec1ada98b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/Tapwater.prefab using Guid(33629becf3b884643800fbec1ada98b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a93180053af42e7ab3bb4aa4ef980d3') in 0.014274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MyAssets/Scriptable Objects/UpgradeWaterFlowEvent.asset
+  artifactKey: Guid(a06ba86887d523f44ad1620dc23e9f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Scriptable Objects/UpgradeWaterFlowEvent.asset using Guid(a06ba86887d523f44ad1620dc23e9f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a352e192d30fa122abf145b3fbdfdd') in 0.005242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Water/underwater_blast.png
+  artifactKey: Guid(465a0bff04fdb2d429f080e63e0fc589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Water/underwater_blast.png using Guid(465a0bff04fdb2d429f080e63e0fc589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c983507be461b994e3f6b5f3a5d68f') in 0.011513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Water/WaterStream.mat
+  artifactKey: Guid(3e6593b6cd534bd489b3cbdf43740f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Water/WaterStream.mat using Guid(3e6593b6cd534bd489b3cbdf43740f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e44d58d9156a4941387f0c210de6332') in 0.010611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Oneshot/GrenadeImpactWater.prefab
+  artifactKey: Guid(902e63e1177458948a48e5edf09e7a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Oneshot/GrenadeImpactWater.prefab using Guid(902e63e1177458948a48e5edf09e7a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30eb41f8b4bb5da51476b6151c96ac54') in 0.019241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Water/waterfall01.png
+  artifactKey: Guid(fdb1de0ed0ffad84cb2472112eff98ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Water/waterfall01.png using Guid(fdb1de0ed0ffad84cb2472112eff98ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e0ec2c4ee9964a14b8731aa89a5c2f') in 0.010322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Snow/SnowAsh.mat
+  artifactKey: Guid(d19d464dc52684e4aa235502e9724aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Snow/SnowAsh.mat using Guid(d19d464dc52684e4aa235502e9724aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5660c9bb4f78ab95bebe5932e63f5950') in 0.006547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/Epic Toon FX/Textures/waterspray.png
+  artifactKey: Guid(713012f1c8a1caf46b618e0831a6c04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Epic Toon FX/Textures/waterspray.png using Guid(713012f1c8a1caf46b618e0831a6c04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3494ec6ff398ccc62aee62e4edb97d2') in 0.012821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowAshes.prefab
+  artifactKey: Guid(c2d88646d7d5547488e1a598dafd9e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowAshes.prefab using Guid(c2d88646d7d5547488e1a598dafd9e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d940d754af9c80a0da7c9f1836321d4') in 0.008035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Water/water_streaming.png
+  artifactKey: Guid(0232c6cc575e7a04fb363a688b96d474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Water/water_streaming.png using Guid(0232c6cc575e7a04fb363a688b96d474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c922ab3c1070bd316a1e1a1fb4c793') in 0.009533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MyAssets/Prefabs/UIPrefabs/WaterStartCap (1).prefab
+  artifactKey: Guid(8c0c5e0359670f94eafa55ea0ca9832e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Prefabs/UIPrefabs/WaterStartCap (1).prefab using Guid(8c0c5e0359670f94eafa55ea0ca9832e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c9634fe6e388cb2e621f7dc0863748') in 0.022504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Water/Waterfall.mat
+  artifactKey: Guid(458f2e63b3109174cb9c85a22b2dbc86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Water/Waterfall.mat using Guid(458f2e63b3109174cb9c85a22b2dbc86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc69cac17f35174920b9ccbaf9f1900') in 0.009180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesSmallUnderwater.prefab
+  artifactKey: Guid(b7fc7606b61996746a60959e2e8a0442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesSmallUnderwater.prefab using Guid(b7fc7606b61996746a60959e2e8a0442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd758ecc3dbe9ad15e3daf652d07aba1a') in 0.007771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Oneshot/BulletImpactWater.prefab
+  artifactKey: Guid(5627102c9ef2b4a448a34c1dd243ed6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Oneshot/BulletImpactWater.prefab using Guid(5627102c9ef2b4a448a34c1dd243ed6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d570f73f8d6a082b5be131edac24426') in 0.016862 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

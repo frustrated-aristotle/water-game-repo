@@ -1,0 +1,436 @@
+Using pre-set license
+Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'tr' Physical Memory: 16330 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/UnityProjects/water-game-repo/Runner
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+58754
+Successfully changed project path to: C:/UnityProjects/water-game-repo/Runner
+C:/UnityProjects/water-game-repo/Runner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9540] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 2253304133 [EditorId] 2253304133 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9540] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 2253304133 [EditorId] 2253304133 [Version] 1048832 [Id] WindowsEditor(7,Av) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 136.19 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/water-game-repo/Runner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004541 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 107.44 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.532 seconds
+Domain Reload Profiling:
+	ReloadAssembly (533ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (393ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (81ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (255ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006057 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 114.99 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.215 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1215ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (928ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (543ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (115ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (256ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.59 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5920 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (448.9 KB). Loaded Objects now: 6365.
+Memory consumption went from 231.0 MB to 230.5 MB.
+Total: 7.828900 ms (FindLiveObjects: 0.940800 ms CreateObjectMapping: 0.515400 ms MarkObjects: 5.866600 ms  DeleteObjects: 0.504900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1426569.827279 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Insects/Roach.mat
+  artifactKey: Guid(60fae44a0aa8a9c40b0b852105f7e929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Insects/Roach.mat using Guid(60fae44a0aa8a9c40b0b852105f7e929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e76dcc8657cb32f4d28742f3b7e88bb') in 0.194400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.822793 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Snow/Snowflake.mat
+  artifactKey: Guid(1b53224f860115345b4b8fe6a818d750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Snow/Snowflake.mat using Guid(1b53224f860115345b4b8fe6a818d750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd402ed77728b13d71a2947c8301921b') in 0.007173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.085233 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowRain.prefab
+  artifactKey: Guid(242a55744a393844990edd3fedb335d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Snow/SnowRain.prefab using Guid(242a55744a393844990edd3fedb335d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c486eddd3405dfe4b056ae12fb7533') in 0.016902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.789844 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainHard.prefab
+  artifactKey: Guid(4b40da68aeec1934793ed4a63ca6536a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Rain/Non-Ripples/RainHard.prefab using Guid(4b40da68aeec1934793ed4a63ca6536a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3201f03c30feff015f067f056d04908a') in 0.010486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.106380 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesExplosionCloudUnderwater.prefab
+  artifactKey: Guid(13115409a684e6049ae88ae3c2ad00fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Underwater/BubblesExplosionCloudUnderwater.prefab using Guid(13115409a684e6049ae88ae3c2ad00fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2cfb2df4e0b9883b8cdbca1a4a781f') in 0.012507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/ShowerWater.prefab
+  artifactKey: Guid(1ace21c5e19581842acf40597e912fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/ShowerWater.prefab using Guid(1ace21c5e19581842acf40597e912fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677034a5ea73b399249d5b0706fd0ddf') in 0.013476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Water/water_impact.png
+  artifactKey: Guid(337e54328cfbce4459ce801fbf82eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Water/water_impact.png using Guid(337e54328cfbce4459ce801fbf82eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925af4fd7ccfccad5dd4901172ed8387') in 0.037446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WideWaterfall.prefab
+  artifactKey: Guid(21be7eff0f46e4440a87a231264e7642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WideWaterfall.prefab using Guid(21be7eff0f46e4440a87a231264e7642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071e1c4c21c2cdddb21015be6584ab57') in 0.020582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterImpact.prefab
+  artifactKey: Guid(dd1edb94fafa2dc4e93d4545500a7894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterImpact.prefab using Guid(dd1edb94fafa2dc4e93d4545500a7894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42cf3ab49ab3f8487e175d07b74bc8d') in 0.015442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MyAssets/Prefabs/Materials/uploads_files_4214006_cartoon+water+bucket+obj-defaultMat.mat
+  artifactKey: Guid(79dc05d5b4837344db8497c8671a6737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/Prefabs/Materials/uploads_files_4214006_cartoon+water+bucket+obj-defaultMat.mat using Guid(79dc05d5b4837344db8497c8671a6737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbae816858dbfd217948b53f4c76d877') in 0.015340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterfallSmall.prefab
+  artifactKey: Guid(8b13371e845c40d4faa8f8ea3c2207cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterfallSmall.prefab using Guid(8b13371e845c40d4faa8f8ea3c2207cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fd06654ca74f18eb1e7a25600a95bd') in 0.016219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Runner/Character/Animations/Locomotion--Walk_N.anim.fbx
+  artifactKey: Guid(8269a9f8cf495034c817722ac21f309f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/Character/Animations/Locomotion--Walk_N.anim.fbx using Guid(8269a9f8cf495034c817722ac21f309f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01dddb861fe93dabb2850c48db17cf2') in 0.016185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/water_ripple.png
+  artifactKey: Guid(7f5861a1c25e41e45b6160f0011737b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/water_ripple.png using Guid(7f5861a1c25e41e45b6160f0011737b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd520514519e48273c09fd1232f692ece') in 0.007745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterSpray.prefab
+  artifactKey: Guid(84d20823800397e4696cda725298571b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterSpray.prefab using Guid(84d20823800397e4696cda725298571b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7a5f6cf293558d2d81ef779439345a') in 0.010238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterSteamSpray.prefab
+  artifactKey: Guid(a0fd911e1e219074db84b35d6bc1468d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterSteamSpray.prefab using Guid(a0fd911e1e219074db84b35d6bc1468d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d54444da587f26d234d86a995a3bd95') in 0.010771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Water/UnderwaterBlast.mat
+  artifactKey: Guid(62c2b22160a0d224a9e537adc577a054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Water/UnderwaterBlast.mat using Guid(62c2b22160a0d224a9e537adc577a054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d0113e237427a1de8c170bbd38a050') in 0.008429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Water/WaterImpact.mat
+  artifactKey: Guid(51e7e8a0360d1ff4dacf94483c542af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Water/WaterImpact.mat using Guid(51e7e8a0360d1ff4dacf94483c542af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4337ac642f2eb5e0e7f90c2c64c4c1') in 0.010606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.023386 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterfallSmall.prefab
+  artifactKey: Guid(8b13371e845c40d4faa8f8ea3c2207cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterfallSmall.prefab using Guid(8b13371e845c40d4faa8f8ea3c2207cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a156b4ab0bef67eb3aa6596b3e7bbc7') in 0.015607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.559365 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterfallSmall.prefab
+  artifactKey: Guid(8b13371e845c40d4faa8f8ea3c2207cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WaterfallSmall.prefab using Guid(8b13371e845c40d4faa8f8ea3c2207cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170aba026692afd82c73c27ae8d013c0') in 0.012884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104.968381 seconds.
+  path: Assets/Plugins/Epic Toon FX/Materials/Geometric/circle.mat
+  artifactKey: Guid(150aee38b5d848b42b75593618992bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Epic Toon FX/Materials/Geometric/circle.mat using Guid(150aee38b5d848b42b75593618992bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dcc5805bef2a7611cbd757bba6a0036') in 0.007259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 158.979129 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WideWaterfall.prefab
+  artifactKey: Guid(21be7eff0f46e4440a87a231264e7642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/WideWaterfall.prefab using Guid(21be7eff0f46e4440a87a231264e7642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6003a2c7336e96372eeed8b251088c07') in 0.018504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.524141 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Light/Aurora.mat
+  artifactKey: Guid(18200222e7dc379448b9546f7777405f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Light/Aurora.mat using Guid(18200222e7dc379448b9546f7777405f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214da02ca796016ee13a068d100e990a') in 0.023741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Editor/Tutorials/Hypercasual_BestPractice.png
+  artifactKey: Guid(79db104986097c54da0cf7646d74df17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/Hypercasual_BestPractice.png using Guid(79db104986097c54da0cf7646d74df17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823e398dfa3550c63ad2a80db6be383e') in 0.008173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpraySmall.prefab
+  artifactKey: Guid(34108ff16242452478c511059afe313a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpraySmall.prefab using Guid(34108ff16242452478c511059afe313a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0ae6656ccb58474fd56bbaa8ec83e2') in 0.012847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Light/GodrayCluster.mat
+  artifactKey: Guid(8d0197b4ff881fb4bb4504a4ac0663ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Light/GodrayCluster.mat using Guid(8d0197b4ff881fb4bb4504a4ac0663ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2fab3ab4d7aaee4d6bf43830d00881') in 0.019920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Clouds/Godrays.prefab
+  artifactKey: Guid(a3a0b2503fc9a324a80cea59f8ee03ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Clouds/Godrays.prefab using Guid(a3a0b2503fc9a324a80cea59f8ee03ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0df1d74a1bc6037a033601b4009a85') in 0.021331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Light/AuroraSide.mat
+  artifactKey: Guid(18e20c78637b1064ab4d796ff0b92ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Light/AuroraSide.mat using Guid(18e20c78637b1064ab4d796ff0b92ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672f67ac87c68921c259f761786cbb5d') in 0.020503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/VarietyParticles/Models/aurora_path.FBX
+  artifactKey: Guid(dcc6647ab4a4d9e48a576c60e7a3fd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Models/aurora_path.FBX using Guid(dcc6647ab4a4d9e48a576c60e7a3fd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33414963c89dd0d3454e8306bf16491') in 0.051541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/VarietyParticles/Materials/Light/Aurora 2.mat
+  artifactKey: Guid(0c8ed8e2c903ba84fa0f6a10f3e44e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Materials/Light/Aurora 2.mat using Guid(0c8ed8e2c903ba84fa0f6a10f3e44e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8e45bad812369a9828311a5962d312') in 0.023545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Light/aurora01.png
+  artifactKey: Guid(31d5154aae587c540b037c8ae424534b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Light/aurora01.png using Guid(31d5154aae587c540b037c8ae424534b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85fd6079895ccbb5a028b40da8b5e5ac') in 0.021038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Runner/Prefabs/GameplayCamera.prefab
+  artifactKey: Guid(a199d962ca53e4a10ba285d5d34bf335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/Prefabs/GameplayCamera.prefab using Guid(a199d962ca53e4a10ba285d5d34bf335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19b42b95fbfa1b2eb9b79c3afa80ce4') in 0.004469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Goo/Looping/GooSpraySmall.prefab
+  artifactKey: Guid(0cd53b013f8e64440bd2a656fbaf502f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Goo/Looping/GooSpraySmall.prefab using Guid(0cd53b013f8e64440bd2a656fbaf502f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8d140fd283ada2252506c49b0e6b02') in 0.012938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpray.prefab
+  artifactKey: Guid(faf5968f2c6f4e9498b8cfa6a23256fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Looping/BloodSpray.prefab using Guid(faf5968f2c6f4e9498b8cfa6a23256fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b5f1cbd3897b47d5901c631d75c34f') in 0.013042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Aurora/Aurora3DSimpleLine.prefab
+  artifactKey: Guid(00d9317597327da498adcab13fd8c523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Aurora/Aurora3DSimpleLine.prefab using Guid(00d9317597327da498adcab13fd8c523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a499f5ba8b276b8ae5da9c87ac7c68e') in 0.032577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Aurora/Aurora3DCurly.prefab
+  artifactKey: Guid(9dba73926cf169047a9487057fbdd57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Aurora/Aurora3DCurly.prefab using Guid(9dba73926cf169047a9487057fbdd57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d2e01f9d311dcf949daff697812f00') in 0.042432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3537f2af8a5fa3e62250b3e0ec2943') in 0.026295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Firework/FireworkCrackler.prefab
+  artifactKey: Guid(ab04ebf24eecafc4098e227eb416fc9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Firework/FireworkCrackler.prefab using Guid(ab04ebf24eecafc4098e227eb416fc9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c2eb1ed6109d0c00730099ea84ebcf') in 0.034760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Runner/Character/Models/Player.FBX
+  artifactKey: Guid(a38f7b5b103d143b68ac7b651728e3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/Character/Models/Player.FBX using Guid(a38f7b5b103d143b68ac7b651728e3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f37177cb9319ae6e5db730202edb2b') in 0.020957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/VarietyParticles/Demo/Prefabs/Main Camera.prefab
+  artifactKey: Guid(883d4e1770a426943ac00edd5ba02308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Demo/Prefabs/Main Camera.prefab using Guid(883d4e1770a426943ac00edd5ba02308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6715f5b31f2fdfc41b1dad305297e5') in 0.003134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Goo/Looping/GooSpray.prefab
+  artifactKey: Guid(7fa12f4f2db2c5a4bbda2b08bf9bf577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Goo/Looping/GooSpray.prefab using Guid(7fa12f4f2db2c5a4bbda2b08bf9bf577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0938623b55f5bbd9d84b7a80ebdb6c48') in 0.011201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.750246 seconds.
+  path: Assets/Editor/Tutorials/LevelEditor/11-StartEditing.asset
+  artifactKey: Guid(331c4e883bf9ef647ab3ac1ad7d5c6fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/Tutorials/LevelEditor/11-StartEditing.asset using Guid(331c4e883bf9ef647ab3ac1ad7d5c6fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/Editor/Tutorials/LevelEditor/11-StartEditing.asset). Local file identifier (7011568114605018467) doesn't exist!
+ -> (artifact id: '6e5114a0153544ff19f41bfcbd81748f') in 0.013093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/BubblesExploding.prefab
+  artifactKey: Guid(2a96b1a64e79b374d991be82e68d8e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Water/Looping/BubblesExploding.prefab using Guid(2a96b1a64e79b374d991be82e68d8e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cde1163df15fdd3fa8e8ed175b5f8a5') in 0.010563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Runner/Events/CoinPickedEvent.asset
+  artifactKey: Guid(a796f105604544326aea1a54797b65ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/Events/CoinPickedEvent.asset using Guid(a796f105604544326aea1a54797b65ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd49b01313bd345ba77de7d2fdc31a6d7') in 0.003000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Runner/Environment/Materials/Coin.mat
+  artifactKey: Guid(c6bc51f1318fb4ec087e1fd0630a2090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Runner/Environment/Materials/Coin.mat using Guid(c6bc51f1318fb4ec087e1fd0630a2090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454744972f3fa66560259709b6d73753') in 0.007393 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
