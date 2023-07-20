@@ -6,20 +6,18 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour
 {
-    [SerializeField]private int bulletPower;
+    private int currentBulletPower;
 
-
-    public int BulletPower
+    public int CurrentBulletPower
     {
-        get => bulletPower;
-        private set => bulletPower = value;
+        get => currentBulletPower;
+        private set => currentBulletPower = value;
     }
 
     private void OnEnable()
     {
-        bulletPower = GameManager.Instance.BulletPower;
+        CurrentBulletPower = SaveManager.Instance.BulletPower;
     }
-
 
     private void FixedUpdate()
     {

@@ -23,7 +23,6 @@ namespace HyperCasual.Runner
         [SerializeField]
         private CloudType cloudType;
 
-        [SerializeField] 
         private int rate;
 
         public int Rate
@@ -32,7 +31,6 @@ namespace HyperCasual.Runner
             set
             {
                 rate = value;
-                Debug.LogError("Rate Is: "+ rate);
             }
         }
         
@@ -47,9 +45,12 @@ namespace HyperCasual.Runner
 
         protected override void OnEnable()
         {
+            Debug.Log("cloud rate BEFORE: "  + rate);
             base.OnEnable();
-//            rate = (int)VariableManager.Instance.CloudRate;
-            Debug.LogError("cloud rate : "  + rate);
+            Rate = (int)SaveManager.Instance.CloudRate;
+            Debug.Log("cloud rate AFTER: "  + rate+ " \n++++++++++++++++++++++++++++++++++++");
+
+            //            rate = (int)VariableManager.Instance.CloudRate;
             RenderSettings.skybox = mat;
             
         }
@@ -73,7 +74,7 @@ namespace HyperCasual.Runner
             Debug.Log("Inventory bucket capactiy: " + Inventory.Instance.tempBucketCapacity);
             if (col.CompareTag(playerTag))
             {
-                filler.FillTheBucket(Inventory.Instance,rate);
+                filler.FillTheBucket(Inventory.Instance,Rate);
                 filler.TakeTheEffect();
             }
         }

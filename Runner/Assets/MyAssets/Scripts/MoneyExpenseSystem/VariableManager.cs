@@ -28,7 +28,6 @@ public class VariableManager : MonoBehaviour
     }
     #endregion
     
-    
     #region  Income Increase Cost Stuff
    [SerializeField] protected int initialIncomeIncreaseCost = 300;
     private float currentIncomeIncreaseCost = 300;
@@ -93,7 +92,6 @@ public class VariableManager : MonoBehaviour
         set
         {
             currentBulletPowerIncreaseCost = (int)value;
-            Debug.Log("Working");
         }
         
     }
@@ -102,9 +100,10 @@ public class VariableManager : MonoBehaviour
     {
         if (BulletPowerIncreaseCost <= Inventory.Instance.TotalGold)
         {
+            UpgradeBullet();
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)BulletPowerIncreaseCost;
-            GameManager.Instance.BulletPowerMultiplier = 0.3f;
-            GameManager.Instance.InitBulletPower();
+            GunFire.Instance.Rate -= 0.05f; 
+            //GameManager.Instance.InitBulletPower();
             //U-FlowUpgradeIsPurchased();
             //We are making the cloud rate multiplier 1 at awake.
             bulletPowerIncreaseCostMultiplier += 0.2f;
@@ -117,6 +116,13 @@ public class VariableManager : MonoBehaviour
            
              GameoverScreen.Instance.UpdateGameEndUpgradeButtons(Color.red , false);
         }
+    }
+
+    private void UpgradeBullet()
+    {
+        int currentBulletPower = SaveManager.Instance.BulletPower;
+        int newBulletPower = currentBulletPower + (int)(currentBulletPower * 60 / 100f);
+        SaveManager.Instance.BulletPower = newBulletPower;
     }
 
     #endregion
@@ -146,7 +152,6 @@ public class VariableManager : MonoBehaviour
         if (BucketCapacityIncreaseCost <= Inventory.Instance.TotalGold)
         {
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)BucketCapacityIncreaseCost;
-            //U-FlowUpgradeIsPurchased();
             //We are making the cloud rate multiplier 1 at awake.
             bucketCapacityIncreaseCostMultiplier += 0.2f;
             BucketCapacityIncreaseCost = initialBucketCapacityIncreaseCost * bucketCapacityIncreaseCostMultiplier;
@@ -186,14 +191,17 @@ public class VariableManager : MonoBehaviour
     #region Cloud Rates Related
     private int initialCloudRate = 15;
     private float currentCloudRate=15;
-    private float cloudRateMultiplier = 1f;
+    //private float cloudRateMultiplier = 1f;
 
     public float CloudRate
     {
         get
         {
-            UpdateRate(ref currentCloudRate, ref initialCloudRate, ref cloudRateMultiplier);
-            return currentCloudRate;
+            float val = (SaveManager.Instance.CloudRate > currentCloudRate)
+                ? SaveManager.Instance.CloudRate
+                : currentCloudRate; 
+            //UpdateRate(ref currentCloudRate, ref initialCloudRate, ref cloudRateMultiplier);
+            return val;
         }
         set
         {
@@ -207,10 +215,11 @@ public class VariableManager : MonoBehaviour
         {
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)CloudRateIncreaseCost;
             FlowUpgradeIsPurchased();
-            //We are making the cloud rate multiplier 1 at awake.
-            cloudRateMultiplier += 0.2f;
-            CloudRate = initialCloudRate * cloudRateMultiplier;
-            SaveManager.Instance.CloudRateMultiplier = cloudRateMultiplier;
+            //cloudRateMultiplier += 0.2f;
+            //CloudRate = initialCloudRate * cloudRateMultiplier;
+            CloudRate += CloudRate * 70 / 100;
+            //SaveManager.Instance.CloudRateMultiplier = cloudRateMultiplier;
+            SaveManager.Instance.CloudRate = CloudRate;
             ModifyCloudsFlowRate();
         }
         else
@@ -273,7 +282,7 @@ public class VariableManager : MonoBehaviour
         SaveManager.Instance.BulletPowerIncreaseCostMultiplier = 1;
         SaveManager.Instance.IncomeIncreaseCostMultiplier = 1;
         SaveManager.Instance.MoneyAmountMultiplier = 1;
-        cloudRateMultiplier = SaveManager.Instance.CloudRateMultiplier;
+        //cloudRateMultiplier = SaveManager.Instance.CloudRateMultiplier;
         cloudRateIncreaseCostMultiplier = SaveManager.Instance.CloudRateCostMultiplier;
         bucketCapacityIncreaseCostMultiplier = SaveManager.Instance.BucketCapacityIncreaseCostMultiplier;
         bulletPowerIncreaseCostMultiplier = SaveManager.Instance.BulletPowerIncreaseCostMultiplier;

@@ -18,6 +18,7 @@ namespace HyperCasual.Runner
         /// </summary>
         public static SaveManager Instance => s_Instance;
         static SaveManager s_Instance;
+        const string bulletPower = "BulletPower";
         const string normalSpeed = "NormalSpeed";
         const string horizontalSpeed = "HorizontalSpeed";
         const string initBulletPowerIncreaseCost = "InitBulletPowerIncreaseCost";
@@ -101,6 +102,7 @@ namespace HyperCasual.Runner
             set => PlayerPrefs.SetInt(k_QualityLevel, value);
         }
 
+        #region BLEND SHAPES
         public float FirstBlendShapeValue
         {
             get => PlayerPrefs.GetFloat(firstBlendShapeValue);
@@ -112,7 +114,9 @@ namespace HyperCasual.Runner
             get => PlayerPrefs.GetFloat(secondBlendShapeValue);
             set => PlayerPrefs.SetFloat(secondBlendShapeValue, value);
         }
+        #endregion
 
+        #region CLOUDS
         public float CloudRateMultiplier 
         { 
             get => PlayerPrefs.GetFloat(cloudRateMultiplier);
@@ -124,6 +128,7 @@ namespace HyperCasual.Runner
             get => PlayerPrefs.GetFloat(cloudRateCostMultiplier);
             set => PlayerPrefs.SetFloat(cloudRateCostMultiplier, value);
         }
+        #endregion
 
         public float BucketCapacityIncreaseCostMultiplier
         {
@@ -131,6 +136,11 @@ namespace HyperCasual.Runner
             set => PlayerPrefs.SetFloat(bucketCapacityIncreaseCostMultiplier, value);
         }
 
+        public int BulletPower
+        {
+            get => PlayerPrefs.GetInt(bulletPower);
+            set => PlayerPrefs.SetInt(bulletPower, value);
+        }
         public float BulletPowerIncreaseCostMultiplier
         {
             get => PlayerPrefs.GetFloat(bulletPowerIncreaseCostMultiplier);
@@ -148,6 +158,13 @@ namespace HyperCasual.Runner
             get => PlayerPrefs.GetFloat(moneyAmountMultiplier);
             set => PlayerPrefs.SetFloat(moneyAmountMultiplier, value);  
         }
+
+        public float CloudRate 
+        { 
+            get => PlayerPrefs.GetFloat("CloudRate");
+            set => PlayerPrefs.SetFloat("CloudRate", value);
+        }
+
         public AudioSettings LoadAudioSettings()
         {
             return PlayerPrefsUtils.Read<AudioSettings>(k_AudioSettings);

@@ -2,6 +2,7 @@ using System;
 using HyperCasual.Runner;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Target : MonoBehaviour
@@ -10,21 +11,33 @@ public class Target : MonoBehaviour
     
     public int health;
 
-    public int targetStep;
+    public int stepValue;
 
     [SerializeField] 
     GameObject healthTxt;
 
-    [SerializeField]private float firstStepZValue;
+    #region Position Related
+
+    [SerializeField] private float posZValue;
+    [SerializeField] private float baseZ;
+
+    #endregion
 
     public int Health { get => health; private set => health -= value;}
 
-    private void OnEnable()
+
+    private void Start()
     {
-        float posZValue = transform.position.z;
-        targetStep = (int)((int)(posZValue - InspectorFunc.Instance.baseZ) / InspectorFunc.Instance.stepDistance + 1);
-        health = (int)(targetStep * 1.5f * 5);
-        //ne sarayda ne handa
+        TakeHealthByStep();
+    }
+
+    private void TakeHealthByStep()
+    {
+        ChangePlayerToGun armory = FindObjectOfType<ChangePlayerToGun>();
+        baseZ = armory.transform.position.z;
+        posZValue = transform.position.z;
+        stepValue = TargetManager.StepValue((int)posZValue, (int)baseZ);
+        health = TargetManager.GiveHealth(stepValue);
         UpdateHealthText();
     }
 
@@ -52,7 +65,7 @@ public class Target : MonoBehaviour
         bool isCollisionBullet = col.CompareTag("Bullet");
         if (isCollisionBullet)
         {
-            int damageAmount = col.GetComponent<BulletMovement>().BulletPower;
+            int damageAmount = col.GetComponent<BulletMovement>().CurrentBulletPower;
             TakeAHit(damageAmount);
             if (Health <= 0)
             {
@@ -83,7 +96,7 @@ public class Target : MonoBehaviour
 
     private void TakeAHit(int damageAmount)
     {
-        Debug.LogError("Take A Hit");
+        Debug.LogError("dmg amount : " + damageAmount);
         Health = damageAmount;
             UpdateHealthText();
     }

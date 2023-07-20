@@ -25,10 +25,9 @@ public class InspectorFunc : MonoBehaviour
         List<Target> targets = GameObject.FindObjectsOfType<Target>().ToList();
         foreach (Target target in targets)
         {
-            Debug.LogError("ASSSIGNWORKS");
             float zValue = target.transform.position.z;
             int stepValue = (int)((zValue - firstStep) / 5 + 1);
-            target.targetStep = stepValue;
+            //target.targetStep = stepValue;
             target.health = (int)(stepValue * 1.5f * 20);
             target.UpdateHealthText();
         }
@@ -129,8 +128,8 @@ public class InspectorFunc : MonoBehaviour
             {
                 string levelName = "Level " + i;
                 string path = $"Assets/Runner/Environment/Levels/{levelName}.asset";
-                LevelDefinition asset = (LevelDefinition)AssetDatabase.LoadAssetAtPath(path, typeof(AbstractLevelData));
-                levels.Add(asset);
+                //LevelDefinition asset = (LevelDefinition)AssetDatabase.LoadAssetAtPath(path, typeof(AbstractLevelData));
+                //levels.Add(asset);
             }
         }
         catch (Exception e)

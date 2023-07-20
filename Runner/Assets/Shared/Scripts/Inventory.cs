@@ -146,7 +146,6 @@ namespace HyperCasual.Runner
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
             bucketCapacity = SaveManager.Instance.Capacity;
-            Debug.Log("Save Manager: " + SaveManager.Instance.Capacity);
             tempBucketCapacity = bucketCapacity;
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
@@ -270,9 +269,9 @@ namespace HyperCasual.Runner
         
         public void IncreaseBucketCapacityFromStartingMenu()
         {
-            Debug.LogError("Increase from menu");
-            bucketCapacity += 10;
+            bucketCapacity += bucketCapacity * 70 / 100;
             tempBucketCapacity = bucketCapacity;
+            SaveManager.Instance.Capacity = bucketCapacity;
             SaveCapacity();
         }
 
