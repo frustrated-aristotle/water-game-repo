@@ -70,6 +70,12 @@ namespace HyperCasual.Runner
             }
         }
 
+        public void MakeBucketFilledAmountEqualToCapacity()
+        {
+            bucketFilledAmount = tempBucketCapacity;
+            UpdateWaterLevel();
+            UpdateWaterLevelUI();
+        }
         private void UpdateWaterLevelUI()
         {
             float filledRateForSlider = (float)bucketFilledAmount / tempBucketCapacity * 100 /100;
@@ -106,6 +112,7 @@ namespace HyperCasual.Runner
         private void UpdateWaterLevel()
         {
             float filledRate = (float)bucketFilledAmount / (float)tempBucketCapacity * 100f;
+            Debug.Log($@"Bucket Filled Amount : {bucketFilledAmount} and the temp capactiy is {tempBucketCapacity} ");
             float bucketY = PlayerController.Instance.GetBlendShapeWeight(0, 5) + 80;
             float sayi = bucketY * filledRate/100;
             float waterRate = -80 + sayi;
@@ -282,7 +289,10 @@ namespace HyperCasual.Runner
 
         public void ResetTemps()
         {
-            tempBucketCapacity = BucketCapacity;
+            Debug.Log("Reset temps before tempBcucket : " + tempBucketCapacity);
+            tempBucketCapacity = SaveManager.Instance.Capacity;
+            Debug.Log("Reset temps after tempBcucket : " + tempBucketCapacity);
+
             m_TempGold = 0;
         }
 

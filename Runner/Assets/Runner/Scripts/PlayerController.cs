@@ -120,6 +120,7 @@ namespace HyperCasual.Runner
             int blendShapeType = (int)BlendShapeType.WIDTH;
             float x = GetBlendShapeWeight(blendShapeType, 5);
             float newX = x + adjust;
+            Debug.Log("Blendshape x : " + x + " and newX is : " + newX);
             SetBlendShapeWeight(blendShapeType,newX, 5);
         }
         public void AdjustHeight(float adjust)
@@ -129,6 +130,8 @@ namespace HyperCasual.Runner
             int blendShapeType = (int)BlendShapeType.HEIGHT;
             float y = GetBlendShapeWeight(blendShapeType, 5);
             float newY = y + adjust;
+            Debug.Log("Blendshape y : " + y + " and newY is : " + newY);
+
             SetBlendShapeWeight(blendShapeType, newY, 5);
         }
 
@@ -143,6 +146,7 @@ namespace HyperCasual.Runner
         {
             if (baseWidth <= newWeightValue)
             {
+                Debug.Log("Weight value : " + newWeightValue);
                 SkinnedMeshRenderer child = transform.GetChild(childIndex).GetComponent<SkinnedMeshRenderer>();
                 child.SetBlendShapeWeight(weightIndex, newWeightValue);
             }

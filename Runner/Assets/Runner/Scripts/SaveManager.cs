@@ -165,6 +165,13 @@ namespace HyperCasual.Runner
             set => PlayerPrefs.SetFloat("CloudRate", value);
         }
 
+        private const string faucetRate = "FaucetRate";
+        public float FaucetRate
+        {
+            get => PlayerPrefs.GetFloat(faucetRate);
+            set => PlayerPrefs.SetFloat(faucetRate, value);
+        }
+
         public AudioSettings LoadAudioSettings()
         {
             return PlayerPrefsUtils.Read<AudioSettings>(k_AudioSettings);
@@ -173,6 +180,12 @@ namespace HyperCasual.Runner
         public void SaveAudioSettings(AudioSettings audioSettings)
         {
             PlayerPrefsUtils.Write(k_AudioSettings, audioSettings);
+        }
+
+        public float MoneyAmount
+        {
+            get => PlayerPrefs.GetFloat("MoneyAmount");
+            set => PlayerPrefs.SetFloat("MoneyAmount",value);
         }
     }
 }

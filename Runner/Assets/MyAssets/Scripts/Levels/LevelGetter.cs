@@ -52,7 +52,12 @@ namespace MyAssets.Scripts.Levels
             SetMoney();
             SetCapacity();
             SetBulletPower();
-            
+            SetCloudRate();
+        }
+
+        private void SetCloudRate()
+        {
+            sm.CloudRate = 5;
         }
 
         private void SetBulletPower()
@@ -63,6 +68,7 @@ namespace MyAssets.Scripts.Levels
         private void SetMoney()
         {
             sm.Currency = initialMoney;
+            sm.MoneyAmount = 70;
         }
 
         private void SetCapacity()

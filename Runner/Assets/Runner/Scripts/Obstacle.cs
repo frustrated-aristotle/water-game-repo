@@ -15,15 +15,15 @@ namespace HyperCasual.Runner
         {
             if (col.CompareTag(k_PlayerTag))
             {
-               //GameManager.Instance.Lose();
-               CameraManager.Instance.KamerayiTitret();
-               Handheld.Vibrate();
-               if (Inventory.Instance.BucketFilledAmount - 10 >= 0)
-               {
-                   Inventory.Instance.BucketFilledAmount = -10;
-               }
-               else
-                   return;
+                int pourAmount = VariableManager.Instance.pourAmount;
+                CameraManager.Instance.KamerayiTitret();
+                Handheld.Vibrate();
+                if (Inventory.Instance.BucketFilledAmount - pourAmount >= 0)
+                {
+                   Inventory.Instance.BucketFilledAmount = -pourAmount;
+                }
+                else
+                    return;
             }
         }
     }

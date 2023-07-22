@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3208388928464428125}
   - component: {fileID: -5991070832645236883}
   - component: {fileID: 3251142887998417205}
+  - component: {fileID: -2648257979527827610}
   m_Layer: 0
   m_Name: faucet
   m_TagString: Untagged
@@ -62,6 +63,19 @@ CapsuleCollider:
   m_Height: 7.567981
   m_Direction: 1
   m_Center: {x: -0.0000000021496183, y: -4.297705, z: 3.43}
+--- !u!114 &-2648257979527827610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868137756060239591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef7159bae3b4b44989ae450f34f12ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SnapToGrid: 1
 --- !u!1 &6503312175115288126
 GameObject:
   m_ObjectHideFlags: 0

@@ -89,6 +89,8 @@ namespace HyperCasual.Runner
 
         void ActivateGate()
         {
+            //float h = heightValue;
+            //float w = widthValue;
             switch (m_GateType)
             {
                 /*
@@ -104,14 +106,35 @@ namespace HyperCasual.Runner
                  */
                 case GateType.ChangeHeight:
                 {
-                    Inventory.Instance.BucketCapacity = heightValue;
                     PlayerController.Instance.AdjustHeight(heightValue);
+                    int height = Inventory.Instance.BucketCapacity * 30 / 100;
+                    if (heightValue<0)
+                    {
+                        
+                        Inventory.Instance.BucketCapacity = -height;
+                        Debug.Log("BucXket Noldu : " + Inventory.Instance.BucketCapacity);
+
+                    }
+                    else
+                    {
+                        Inventory.Instance.BucketCapacity = height;
+                    }
                     break;
                 }
                 case GateType.ChangeWidth:
                 {
-                    Inventory.Instance.BucketCapacity = widthValue;
                     PlayerController.Instance.AdjustWidth(widthValue);
+                    int width = Inventory.Instance.BucketCapacity * 30 / 100;
+                    if (widthValue<0)
+                    {
+                        Inventory.Instance.BucketCapacity = -width;
+                        Debug.Log("BucXket Noldu : " + Inventory.Instance.BucketCapacity);
+
+                    }
+                    else
+                    {
+                        Inventory.Instance.BucketCapacity = width;
+                    }
                     break;
                 }
             }

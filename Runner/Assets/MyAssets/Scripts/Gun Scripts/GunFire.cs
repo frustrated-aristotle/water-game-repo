@@ -53,7 +53,7 @@ public class GunFire : MonoBehaviour
         Debug.Log("Fired");
         Vector3 pos = PlayerController.Instance.transform.position + new Vector3(0, 3, 2.6f);
         GameObject a = pool.SpawnFromPool("Bullet", pos, Quaternion.identity);
-        a.transform.Rotate(90,0,0);
+        a.transform.Rotate(0,0,0);
         if (Inventory.Instance.BucketFilledAmount - a.GetComponent<BulletMovement>().CurrentBulletPower > 0)
         {
             Inventory.Instance.BucketFilledAmount = -a.GetComponent<BulletMovement>().CurrentBulletPower;

@@ -8,22 +8,25 @@ public class VariableManager : MonoBehaviour
 {
     [SerializeField]private List<Cloud> clouds = new List<Cloud>();
 
+    //Fields that will be reached from outside:
+    public int pourAmount = 50;
+
     #region Money Stuff
     
-    private int initialMoneyAmount = 10;
-    private float currentMoneyAmount=10;
+    private int initialMoneyAmount = 70;
+    private float currentMoneyAmount=70;
     private float moneyAmountMultiplier = 1f;
 
     public float MoneyAmount
     {
         get
         {
-            UpdateRate(ref currentMoneyAmount, ref initialMoneyAmount, ref moneyAmountMultiplier);
-            return currentMoneyAmount;
+            //UpdateRate(ref currentMoneyAmount, ref initialMoneyAmount, ref moneyAmountMultiplier);
+            return SaveManager.Instance.MoneyAmount;
         }
         set
         {
-            currentMoneyAmount = value;
+            SaveManager.Instance.MoneyAmount = value;
         }
     }
     #endregion
@@ -45,22 +48,25 @@ public class VariableManager : MonoBehaviour
             currentIncomeIncreaseCost = (int)value;
         }
     }
-
     public void OnIncomeIncreasePurchased()
     {
         if (IncomeIncreaseCost <= Inventory.Instance.TotalGold)
         {
+            Debug.Log("Money Amount Before : " + MoneyAmount);
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)IncomeIncreaseCost;
             incomeIncreaseCostMultiplier += 0.2f;
             IncomeIncreaseCost = initialIncomeIncreaseCost * incomeIncreaseCostMultiplier;
             SaveManager.Instance.IncomeIncreaseCostMultiplier = incomeIncreaseCostMultiplier;
             moneyAmountMultiplier += 0.2f;
+            MoneyAmount += MoneyAmount * 30 / 100;
+            SaveManager.Instance.MoneyAmount = MoneyAmount;
+            Debug.Log("Money Amount After : " + MoneyAmount);
             UpdateCollectibles();
             GameoverScreen.Instance.UpdateGameEndUpgradeButtons();
         }
         else
         {
-           
+            Debug.Log("Couldnt bought?");
             GameoverScreen.Instance.UpdateGameEndUpgradeButtons(Color.red , false);
         }
     }

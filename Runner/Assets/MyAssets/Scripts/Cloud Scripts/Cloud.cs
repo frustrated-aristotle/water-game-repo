@@ -7,11 +7,6 @@ namespace HyperCasual.Runner
     public class Cloud : Spawnable
     {
         private const string playerTag = "Player";
-        
-        public TextMeshProUGUI text;
-        
-        public GameObject go;
-        
         private IFillTheBucket filler;
         [SerializeField] private Material mat;
         protected override void Awake()
@@ -45,20 +40,10 @@ namespace HyperCasual.Runner
 
         protected override void OnEnable()
         {
-            Debug.Log("cloud rate BEFORE: "  + rate);
             base.OnEnable();
             Rate = (int)SaveManager.Instance.CloudRate;
-            Debug.Log("cloud rate AFTER: "  + rate+ " \n++++++++++++++++++++++++++++++++++++");
-
-            //            rate = (int)VariableManager.Instance.CloudRate;
             RenderSettings.skybox = mat;
-            
         }
-
-     
-
-        //Maybe we can add the SetScale method
-
         public override void ResetSpawnable()
         {
             applied = false;
@@ -66,21 +51,11 @@ namespace HyperCasual.Runner
 
         private void OnTriggerEnter(Collider col)
         {
-            fonk(col);
-        }
-
-        void fonk(Collider col)
-        {
-            Debug.Log("Inventory bucket capactiy: " + Inventory.Instance.tempBucketCapacity);
-            if (col.CompareTag(playerTag))
-            {
-                filler.FillTheBucket(Inventory.Instance,Rate);
-                filler.TakeTheEffect();
-            }
+            WaterFillHelper.FillWater(col,playerTag,filler,Rate);
         }
         private void OnTriggerStay(Collider col)
         {
-            fonk(col);
+            WaterFillHelper.FillWater(col,playerTag,filler,Rate);
         }
     }
 }

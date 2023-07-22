@@ -15,7 +15,7 @@ C:/Users/frust/OneDrive/Belgeler/GitHub/Unity Game/water-game-repo/Runner
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49254
+64480
 Successfully changed project path to: C:/Users/frust/OneDrive/Belgeler/GitHub/Unity Game/water-game-repo/Runner
 C:/Users/frust/OneDrive/Belgeler/GitHub/Unity Game/water-game-repo/Runner
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/frust/OneDrive/Belgeler/GitHub/Unity Game/water-game-repo/Runner
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11064] Host "[IP] 192.168.1.37 [Port] 0 [Flags] 2 [Guid] 3809934473 [EditorId] 3809934473 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J54JDLQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6696] Host "[IP] 192.168.1.37 [Port] 0 [Flags] 2 [Guid] 3182858816 [EditorId] 3182858816 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J54JDLQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11064] Host "[IP] 192.168.1.37 [Port] 0 [Flags] 2 [Guid] 3809934473 [EditorId] 3809934473 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J54JDLQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6696] Host "[IP] 192.168.1.37 [Port] 0 [Flags] 2 [Guid] 3182858816 [EditorId] 3182858816 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-J54JDLQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 222.79 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 299.23 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,45 +67,129 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011895 seconds.
+Registered in 0.016230 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 195.72 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 430.56 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.848 seconds
+- Completed reload, in  2.626 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4849ms)
-		BeginReloadAssembly (3886ms)
+	ReloadAssembly (2627ms)
+		BeginReloadAssembly (295ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (781ms)
-			LoadAssemblies (3878ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (1866ms)
+			LoadAssemblies (286ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (185ms)
+			SetupTypeCache (442ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (471ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (1149ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (89ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (196ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (127ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
+				InitializePlatformSupportModulesInManaged (203ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (431ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (342ms)
+				ProcessInitializeOnLoadMethodAttributes (169ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.020085 seconds.
-Android Extension - Scanning For ADB Devices 4938 ms
+Registered in 0.027375 seconds.
+Android Extension - Scanning For ADB Devices 7354 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\frust\OneDrive\Belgeler\GitHub\Unity Game\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\frust\OneDrive\Belgeler\GitHub\Unity Game\water-game-repo\Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 419.95 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.755 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4757ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (4225ms)
+			LoadAssemblies (225ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (855ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (301ms)
+			SetupLoadedEditorAssemblies (2568ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (37ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (420ms)
+				BeforeProcessingInitializeOnLoad (367ms)
+				ProcessInitializeOnLoadAttributes (1515ms)
+				ProcessInitializeOnLoadMethodAttributes (210ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 2.46 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (449.9 KB). Loaded Objects now: 6360.
+Memory consumption went from 233.5 MB to 233.1 MB.
+Total: 8.247000 ms (FindLiveObjects: 0.701100 ms CreateObjectMapping: 0.743700 ms MarkObjects: 6.184500 ms  DeleteObjects: 0.616300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 327871.837821 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSplash.prefab
+  artifactKey: Guid(1840b55631bb66545bd1511619286948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Blood/Oneshot/BloodSplash.prefab using Guid(1840b55631bb66545bd1511619286948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b9e0f0f2baee30f08b11405b9d8891') in 0.301885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/VarietyParticles/Textures/Weather/rain_splash.png
+  artifactKey: Guid(125e669fd4db6f640ad8fa98f4a45c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Textures/Weather/rain_splash.png using Guid(125e669fd4db6f640ad8fa98f4a45c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d86bd92e36a688353f20d020c1c432') in 0.031812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Goo/Oneshot/GooSplash.prefab
+  artifactKey: Guid(45c6aa07a8f725b49bb534158daf5f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Goo/Oneshot/GooSplash.prefab using Guid(45c6aa07a8f725b49bb534158daf5f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30e1ebb9076c8c4253940d6c550c543') in 0.043075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Plugins/VarietyParticles/Prefabs/Goo/Oneshot/GooSplashLong.prefab
+  artifactKey: Guid(8cd2022fee3675c41aaa232102e2391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/VarietyParticles/Prefabs/Goo/Oneshot/GooSplashLong.prefab using Guid(8cd2022fee3675c41aaa232102e2391a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24fbd2a364b5161fa79db9276d8652ea') in 0.032467 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
