@@ -48,6 +48,7 @@ namespace MyAssets.Scripts.Levels
         [ContextMenu("Arrange Things Before the Build")]
         public void BeforeBuild()
         {
+            Debug.Log("ad");
             SetLevelToZero();
             SetMoney();
             SetCapacity();
@@ -74,6 +75,8 @@ namespace MyAssets.Scripts.Levels
         private void SetCapacity()
         {
             sm.Capacity = initialCapacity;
+            Debug.Log(sm.Capacity);
+            Debug.Log(SaveManager.Instance.Capacity);
         }
     }
 }

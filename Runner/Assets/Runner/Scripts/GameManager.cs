@@ -111,6 +111,13 @@ namespace HyperCasual.Runner
             CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);
             PlaceLevelMarkers(m_CurrentLevel, ref m_LevelMarkersGO);
             StartGame();
+            PlayerController.Instance.m_HorizontalSpeedFactor = 25;
+            if (Inventory.Instance.BucketCapacity == 0)
+            {
+                Inventory.Instance.BucketCapacity = 200;
+                Inventory.Instance.tempBucketCapacity = 200;
+                SaveManager.Instance.Capacity = 200;
+            }
         }
 
         /// <summary>

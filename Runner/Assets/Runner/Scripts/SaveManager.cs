@@ -45,6 +45,15 @@ namespace HyperCasual.Runner
             s_Instance = this;
         }
 
+        #region Save
+
+        public int IsInitialized
+        {
+            get => PlayerPrefs.GetInt("isInit");
+            set => PlayerPrefs.SetInt("isInit", value);
+        }
+
+        #endregion
         #region Initial Values
 
         public int InitialBulletPowerIncreaseCost

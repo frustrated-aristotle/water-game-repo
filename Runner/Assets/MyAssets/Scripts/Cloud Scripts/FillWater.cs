@@ -1,3 +1,4 @@
+using HyperCasual.Core;
 using TMPro;
 using UnityEngine;
 
@@ -7,16 +8,19 @@ namespace HyperCasual.Runner
     {
         public void FillTheBucket( Inventory inventory,int rate)
         {
-            Debug.Log("ASAS: log Inventory bucket filled amount" + inventory.BucketFilledAmount + " filled amount: " + inventory.BucketFilledAmount);
+            TextMeshProUGUI t = UIManager.Instance.WaterCapacityUI.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+            //t.text ="FIRST : "+ rate + " is rate and i: " + Random.Range(0,1000) + ": inventory"+inventory;
+            t.text = "Cap: "+inventory.BucketCapacity + " and filled amount" + inventory.BucketFilledAmount;
             if (inventory.BucketCapacity >= inventory.BucketFilledAmount + rate)
             {
-                Debug.Log("ASAS: FillBucket first if " + inventory.BucketCapacity + " filled amount: " + inventory.BucketFilledAmount );
+                TextMeshProUGUI ts = UIManager.Instance.WaterCapacityUI.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+                ts.text ="FIRST : "+ rate + " is rate and i: " + Random.Range(0,1000);
                 inventory.BucketFilledAmount = rate;
             }
             if (inventory.BucketCapacity < inventory.BucketFilledAmount)
             {
-                Debug.Log("ASAS: FillBucket second if" + inventory.BucketCapacity + " filled amount: " + inventory.BucketFilledAmount);
-                //inventory.BucketFilledAmount = inventory.BucketCapacity;
+                TextMeshProUGUI ts = UIManager.Instance.WaterCapacityUI.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+                ts.text = "SECOND : "+rate + " is rate and i: " + Random.Range(0,1000);
                 inventory.MakeBucketFilledAmountEqualToCapacity();
             }
         }

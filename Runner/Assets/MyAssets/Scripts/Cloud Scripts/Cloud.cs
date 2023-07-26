@@ -1,4 +1,5 @@
 
+using HyperCasual.Core;
 using TMPro;
 using UnityEngine;
 
@@ -42,6 +43,8 @@ namespace HyperCasual.Runner
         {
             base.OnEnable();
             Rate = (int)SaveManager.Instance.CloudRate;
+            Rate = 24;
+           
             RenderSettings.skybox = mat;
         }
         public override void ResetSpawnable()
@@ -49,6 +52,7 @@ namespace HyperCasual.Runner
             applied = false;
         }
 
+        private int i = 1;
         private void OnTriggerEnter(Collider col)
         {
             WaterFillHelper.FillWater(col,playerTag,filler,Rate);
