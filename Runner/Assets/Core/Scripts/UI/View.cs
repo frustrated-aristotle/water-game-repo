@@ -1,5 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using HyperCasual.Runner;
+using MyAssets.Scripts.PurchaseHandler;
+using TMPro;
 using UnityEngine;
 
 namespace HyperCasual.Core
@@ -9,6 +13,11 @@ namespace HyperCasual.Core
     /// </summary>
     public abstract class View : MonoBehaviour
     {
+        private void OnEnable()
+        {
+            PurchaseHandler.UpdateCosts += PurchaseHandler.UpdateCost;
+            PurchaseHandler.UpdateValues += PurchaseHandler.UpdateValue;
+        }
         /// <summary>
         /// Initializes the View
         /// </summary>

@@ -22,6 +22,10 @@ namespace HyperCasual.Runner
                 {
                    Inventory.Instance.BucketFilledAmount = -pourAmount;
                 }
+                else if (Inventory.Instance.BucketFilledAmount < pourAmount )
+                {
+                    Inventory.Instance.BucketFilledAmount = -Inventory.Instance.BucketFilledAmount;
+                }
                 else
                     return;
             }

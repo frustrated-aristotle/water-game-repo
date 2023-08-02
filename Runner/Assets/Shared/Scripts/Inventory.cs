@@ -45,7 +45,9 @@ namespace HyperCasual.Runner
         private int bucketFilledAmount;
 
         [SerializeField] private float initialWaterY = -80f;
+        private float initialWaterX = 13f;
         public float currentWaterY;
+        public float currentWaterX;
         public int BucketCapacity 
         {
             get
@@ -70,10 +72,15 @@ namespace HyperCasual.Runner
             }
         }
 
+        public void SetCapacitiesAfterPurchaseUpgrade()
+        {
+            tempBucketCapacity = (int)SaveManager.Instance.BucketCapacity;
+            bucketCapacity = tempBucketCapacity;
+        }
+        
         public void MakeBucketFilledAmountEqualToCapacity()
         {
             bucketFilledAmount = tempBucketCapacity;
-            UpdateWaterLevel();
             UpdateWaterLevelUI();
         }
         private void UpdateWaterLevelUI()
@@ -96,12 +103,10 @@ namespace HyperCasual.Runner
             Color fillColor;
             if (rate <= 40.33f)
             {
-                Debug.LogError("ğğğ is: "+rate);
                 fillColor = Color.Lerp( greenColor, yellowColor, rate / 33.33f);
             }
             else
             {
-                Debug.LogError("jjjjj: "+rate);
                 fillColor = Color.Lerp(yellowColor, redColor, (rate - 66.66f) / 33.33f);
             }
 
@@ -112,21 +117,23 @@ namespace HyperCasual.Runner
         private void UpdateWaterLevel()
         {
             float filledRate = (float)bucketFilledAmount / (float)tempBucketCapacity * 100f;
-            Debug.Log($@"Bucket Filled Amount : {bucketFilledAmount} and the temp capactiy is {tempBucketCapacity} ");
             float bucketY = PlayerController.Instance.GetBlendShapeWeight(0, 5) + 80;
             float sayi = bucketY * filledRate/100;
             float waterRate = -80 + sayi;
+            float bucetX = PlayerController.Instance.GetBlendShapeWeight(1, 5) + 13;
+            float sayi2 = bucetX * filledRate / 100;
+            float waterRateX = -13 + sayi2;
             //-80-waterrate
             SkinnedMeshRenderer child = PlayerController.Instance.transform.GetChild(5).GetChild(1)
                 .GetComponent<SkinnedMeshRenderer>(); 
-            Debug.LogError($"Name of child is : {child.name} and water rate is : {waterRate} filled rate:  {filledRate} bucketY {bucketY} and sayi : {sayi}");
-            Debug.LogError($"bucket Filled Amount : {bucketFilledAmount} and temp capacity is : {tempBucketCapacity} and blend shape is : {PlayerController.Instance.GetBlendShapeWeight(0, 5)}"/* filled rate:  {filledRate} bucketY {bucketY} and sayi : {sayi}"*/);
-
             child.SetBlendShapeWeight(1, waterRate);
             TextMeshPro textMP = GameObject.Find("playerWaterText").GetComponent<TextMeshPro>(); 
             textMP.text = BucketFilledAmount.ToString();
             TextMeshPro bucketText = GameObject.Find("playerCapacityText").GetComponent<TextMeshPro>();
             bucketText.text = "Capacity: " + BucketCapacity + "\nEmpty Portion"+(BucketCapacity - BucketFilledAmount).ToString();
+            float waterX = 13;
+            Debug.Log("WaterRate issss: " + waterRateX);
+            
         }
         /// <summary>
         /// Temporary const
@@ -150,9 +157,11 @@ namespace HyperCasual.Runner
             
             //m_LoseEventListener.EventHandler = OnLose;
             currentWaterY = initialWaterY;
+            currentWaterX = initialWaterX;
+            totalMoneyAmount = SaveManager.Instance.Currency;
             m_TempGold = 0;
             m_TotalGold = SaveManager.Instance.Currency;
-            bucketCapacity = SaveManager.Instance.Capacity;
+            bucketCapacity = (int)SaveManager.Instance.BucketCapacity;
             tempBucketCapacity = bucketCapacity;
             m_TempXp = 0;
             m_TotalXp = SaveManager.Instance.XP;
@@ -222,7 +231,6 @@ namespace HyperCasual.Runner
 
         void OnLose()
         {
-            Debug.Log("OnLoseEvent");
             m_TotalXp += m_TempXp;
             m_TempXp = 0f;
             SaveManager.Instance.XP = m_TotalXp;
@@ -248,16 +256,15 @@ namespace HyperCasual.Runner
 
         public void PickUpMoney()
         {
-            m_TotalGold += (int)VariableManager.Instance.MoneyAmount;            
-            m_TempGold += (int)VariableManager.Instance.MoneyAmount;
-            m_Hud.GoldValue = m_TotalGold;
+            totalMoneyAmount += (int)SaveManager.Instance.MoneyValue;            
+            m_TempGold += (int)SaveManager.Instance.MoneyValue;
+            SaveManager.Instance.Currency = totalMoneyAmount;
+            m_Hud.GoldValue = totalMoneyAmount;
         }
         public void SaveMoney()
         {
             int extraMoney = (m_TempGold * multiplier) - m_TempGold;
             m_TempGold += extraMoney;
-            SaveManager.Instance.Currency = m_TotalGold;
-            SaveManager.Instance.InitialBulletPowerIncreaseCost = VariableManager.Instance.initialBulletPowerIncreaseCost;
         }
 
         /// <summary>
@@ -266,7 +273,7 @@ namespace HyperCasual.Runner
         /// </summary>
         public void SaveCapacity()
         {
-            SaveManager.Instance.Capacity = (int)bucketCapacity;
+            SaveManager.Instance.BucketCapacity = (int)bucketCapacity;
         }
 
         public void SaveInventory()
@@ -278,7 +285,7 @@ namespace HyperCasual.Runner
         {
             bucketCapacity += bucketCapacity * 70 / 100;
             tempBucketCapacity = bucketCapacity;
-            SaveManager.Instance.Capacity = bucketCapacity;
+            SaveManager.Instance.BucketCapacity = bucketCapacity;
             SaveCapacity();
         }
 
@@ -289,10 +296,7 @@ namespace HyperCasual.Runner
 
         public void ResetTemps()
         {
-            Debug.Log("Reset temps before tempBcucket : " + tempBucketCapacity);
-            tempBucketCapacity = SaveManager.Instance.Capacity;
-            Debug.Log("Reset temps after tempBcucket : " + tempBucketCapacity);
-
+            tempBucketCapacity = (int)SaveManager.Instance.BucketCapacity;
             m_TempGold = 0;
         }
 
@@ -300,7 +304,10 @@ namespace HyperCasual.Runner
         {
             if (BucketCapacity < BucketFilledAmount)
             {
-                Debug.LogError("Bucket capacity is lower then the bucket filled amount " + BucketCapacity + " Bucket filled amount: "+ BucketFilledAmount);
+                Debug.Log("BUCKET CAP: " + BucketCapacity);
+                Debug.Log("BUCKET FILLED AMOUNT : "+ BucketFilledAmount);
+                bucketFilledAmount = BucketCapacity;
+                UpdateWaterLevelUI();
             }
         }
     }

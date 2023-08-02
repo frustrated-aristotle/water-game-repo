@@ -1,5 +1,6 @@
 using HyperCasual.Core;
 using HyperCasual.Runner;
+using MyAssets.Scripts.PurchaseHandler;
 using UnityEngine;
 
 namespace HyperCasual.Gameplay
@@ -13,7 +14,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            VariableManager.Instance.OnIncomeIncreasePurchased();
+            PurchaseHandler.PurchaseUpgradeClicked(UpgradeTypes.MONEY_UPGRADE, ValueTypes.MONEY);
         }
     }
 }

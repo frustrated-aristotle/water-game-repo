@@ -1,7 +1,7 @@
 using HyperCasual.Core;
 using HyperCasual.Runner;
+using MyAssets.Scripts.PurchaseHandler;
 using UnityEngine;
-using UnityEngine.InputSystem.HID;
 
 namespace HyperCasual.Gameplay
 {
@@ -14,8 +14,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            Debug.Log("UpgradeCapacity Event is reset in bucketcap event");
-             VariableManager.Instance.OnBucketCapacityIncreasePurchased();  
+            PurchaseHandler.PurchaseUpgradeClicked(UpgradeTypes.CAPACITY_UPGRADE, ValueTypes.CAPACITY);
         }
     }
 }

@@ -47,10 +47,7 @@ namespace HyperCasual.Runner
                 tempCount *= GameManager.Instance.MoneyMultipler;
                 m_Count = (int)tempCount;
              */
-            if (SaveManager.Instance)
-            {
-                m_Count = (int)SaveManager.Instance.MoneyAmount;
-            }
+            m_Count = (int)SaveManager.Instance.MoneyValue;
             m_Renderers = gameObject.GetComponentsInChildren<Renderer>();
         }
 

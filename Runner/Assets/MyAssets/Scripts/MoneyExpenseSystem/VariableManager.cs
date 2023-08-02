@@ -22,11 +22,11 @@ public class VariableManager : MonoBehaviour
         get
         {
             //UpdateRate(ref currentMoneyAmount, ref initialMoneyAmount, ref moneyAmountMultiplier);
-            return SaveManager.Instance.MoneyAmount;
+            return 3; //SaveManager.Instance.MoneyAmount;
         }
         set
         {
-            SaveManager.Instance.MoneyAmount = value;
+            //SaveManager.Instance.MoneyAmount = value;
         }
     }
     #endregion
@@ -56,17 +56,16 @@ public class VariableManager : MonoBehaviour
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)IncomeIncreaseCost;
             incomeIncreaseCostMultiplier += 0.2f;
             IncomeIncreaseCost = initialIncomeIncreaseCost * incomeIncreaseCostMultiplier;
-            SaveManager.Instance.IncomeIncreaseCostMultiplier = incomeIncreaseCostMultiplier;
+            //SaveManager.Instance.IncomeIncreaseCostMultiplier = incomeIncreaseCostMultiplier;
             moneyAmountMultiplier += 0.2f;
             MoneyAmount += MoneyAmount * 30 / 100;
-            SaveManager.Instance.MoneyAmount = MoneyAmount;
+            //SaveManager.Instance.MoneyAmount = MoneyAmount;
             Debug.Log("Money Amount After : " + MoneyAmount);
             UpdateCollectibles();
             GameoverScreen.Instance.UpdateGameEndUpgradeButtons();
         }
         else
         {
-            Debug.Log("Couldnt bought?");
             GameoverScreen.Instance.UpdateGameEndUpgradeButtons(Color.red , false);
         }
     }
@@ -104,29 +103,26 @@ public class VariableManager : MonoBehaviour
 
     public void OnBulletPowerIncreasePurchased()
     {
-        if (BulletPowerIncreaseCost <= Inventory.Instance.TotalGold)
+        if (BulletPowerIncreaseCost <= SaveManager.Instance.Currency)
         {
             UpgradeBullet();
-            Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)BulletPowerIncreaseCost;
+            //Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)BulletPowerIncreaseCost;
             GunFire.Instance.Rate -= 0.05f; 
             //GameManager.Instance.InitBulletPower();
             //U-FlowUpgradeIsPurchased();
             //We are making the cloud rate multiplier 1 at awake.
-            bulletPowerIncreaseCostMultiplier += 0.2f;
-            BulletPowerIncreaseCost = initialBulletPowerIncreaseCost * bulletPowerIncreaseCostMultiplier;
-            SaveManager.Instance.BulletPowerIncreaseCostMultiplier = bulletPowerIncreaseCostMultiplier;
+            //PurchaseHandler.PurchaseUpgrade("BulletPowerIncreaseCost");
             GameoverScreen.Instance.UpdateGameEndUpgradeButtons();
         }
         else
         {
-           
              GameoverScreen.Instance.UpdateGameEndUpgradeButtons(Color.red , false);
         }
     }
 
     private void UpgradeBullet()
     {
-        int currentBulletPower = SaveManager.Instance.BulletPower;
+        int currentBulletPower = (int)SaveManager.Instance.BulletPower;
         int newBulletPower = currentBulletPower + (int)(currentBulletPower * 60 / 100f);
         SaveManager.Instance.BulletPower = newBulletPower;
     }
@@ -158,10 +154,7 @@ public class VariableManager : MonoBehaviour
         if (BucketCapacityIncreaseCost <= Inventory.Instance.TotalGold)
         {
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)BucketCapacityIncreaseCost;
-            //We are making the cloud rate multiplier 1 at awake.
-            bucketCapacityIncreaseCostMultiplier += 0.2f;
-            BucketCapacityIncreaseCost = initialBucketCapacityIncreaseCost * bucketCapacityIncreaseCostMultiplier;
-            SaveManager.Instance.BucketCapacityIncreaseCostMultiplier = bucketCapacityIncreaseCostMultiplier;
+            
             Hud.Instance.UpdateUpgradeButtonText();
             Inventory.Instance.IncreaseBucketCapacityFromStartingMenu();
         }
@@ -182,9 +175,9 @@ public class VariableManager : MonoBehaviour
     {
         get
         {
-            UpdateRate(ref currentCloudRateIncreaseCost, ref initialCloudRateIncreaseCost,
-                ref cloudRateIncreaseCostMultiplier);
-            return currentCloudRateIncreaseCost;
+            // UpdateRate(ref currentCloudRateIncreaseCost, ref initialCloudRateIncreaseCost,
+            //     ref cloudRateIncreaseCostMultiplier);
+            return 3; //SaveManager.Instance.CloudUpradeCost;
         }
         set
         {
@@ -221,11 +214,9 @@ public class VariableManager : MonoBehaviour
         {
             Inventory.Instance.TotalGold = Inventory.Instance.TotalGold - (int)CloudRateIncreaseCost;
             FlowUpgradeIsPurchased();
-            //cloudRateMultiplier += 0.2f;
-            //CloudRate = initialCloudRate * cloudRateMultiplier;
             CloudRate += CloudRate * 70 / 100;
-            //SaveManager.Instance.CloudRateMultiplier = cloudRateMultiplier;
             SaveManager.Instance.CloudRate = CloudRate;
+            
             ModifyCloudsFlowRate();
         }
         else
@@ -263,7 +254,7 @@ public class VariableManager : MonoBehaviour
         cloudRateIncreaseCostMultiplier += 0.2f;
         //Change the text of upgrade cost in ui.
         Hud.Instance.UpdateUpgradeButtonText();
-        SaveManager.Instance.CloudRateCostMultiplier = cloudRateIncreaseCostMultiplier;
+        //SaveManager.Instance.CloudRateCostMultiplier = cloudRateIncreaseCostMultiplier;
     }
     #endregion
 
@@ -281,19 +272,19 @@ public class VariableManager : MonoBehaviour
             Instance = this;
         }
 
-        initialBulletPowerIncreaseCost = SaveManager.Instance.InitialBulletPowerIncreaseCost;
-        SaveManager.Instance.CloudRateMultiplier = 1;
-        SaveManager.Instance.CloudRateCostMultiplier = 1;
-        SaveManager.Instance.BucketCapacityIncreaseCostMultiplier = 1;
-        SaveManager.Instance.BulletPowerIncreaseCostMultiplier = 1;
-        SaveManager.Instance.IncomeIncreaseCostMultiplier = 1;
-        SaveManager.Instance.MoneyAmountMultiplier = 1;
+        //initialBulletPowerIncreaseCost = SaveManager.Instance.InitialBulletPowerIncreaseCost;
+        //SaveManager.Instance.CloudRateMultiplier = 1;
+        //SaveManager.Instance.CloudRateCostMultiplier = 1;
+        //SaveManager.Instance.BucketCapacityIncreaseCostMultiplier = 1;
+        //SaveManager.Instance.BulletPowerIncreaseCostMultiplier = 1;
+        //SaveManager.Instance.IncomeIncreaseCostMultiplier = 1;
+        //SaveManager.Instance.MoneyAmountMultiplier = 1;
         //cloudRateMultiplier = SaveManager.Instance.CloudRateMultiplier;
-        cloudRateIncreaseCostMultiplier = SaveManager.Instance.CloudRateCostMultiplier;
-        bucketCapacityIncreaseCostMultiplier = SaveManager.Instance.BucketCapacityIncreaseCostMultiplier;
-        bulletPowerIncreaseCostMultiplier = SaveManager.Instance.BulletPowerIncreaseCostMultiplier;
-        incomeIncreaseCostMultiplier = SaveManager.Instance.IncomeIncreaseCostMultiplier;
-        moneyAmountMultiplier = SaveManager.Instance.MoneyAmountMultiplier;
+        //cloudRateIncreaseCostMultiplier = SaveManager.Instance.CloudRateCostMultiplier;
+        //bucketCapacityIncreaseCostMultiplier = SaveManager.Instance.BucketCapacityIncreaseCostMultiplier;
+        //bulletPowerIncreaseCostMultiplier = SaveManager.Instance.BulletPowerIncreaseCostMultiplier;
+        //incomeIncreaseCostMultiplier = SaveManager.Instance.IncomeIncreaseCostMultiplier;
+        //moneyAmountMultiplier = SaveManager.Instance.MoneyAmountMultiplier;
     }
     #endregion
     public static VariableManager Instance;

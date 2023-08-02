@@ -18,6 +18,7 @@ namespace HyperCasual.Runner
 
         [SerializeField]
         HyperCasualButton m_QuitButton;
+       
 
 
         [SerializeField]
@@ -32,6 +33,7 @@ namespace HyperCasual.Runner
 
         [SerializeField] public TMP_InputField input;
         [SerializeField] public TMP_InputField input2;
+        [SerializeField] public TMP_InputField input3;
 
         public static PauseMenu Instance;
 
@@ -69,6 +71,12 @@ namespace HyperCasual.Runner
         void OnSaveClicked()
         {
             saveEvent.Raise();
+        }
+
+        public void ResetGame()
+        {
+            PlayerPrefs.DeleteAll();
+            GameManager.Instance.LoadLevel(0);
         }
     }
 }

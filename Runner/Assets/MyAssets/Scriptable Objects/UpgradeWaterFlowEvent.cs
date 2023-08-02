@@ -1,5 +1,6 @@
 using HyperCasual.Core;
 using HyperCasual.Runner;
+using MyAssets.Scripts.PurchaseHandler;
 using UnityEngine;
 
 namespace HyperCasual.Gameplay
@@ -13,9 +14,7 @@ namespace HyperCasual.Gameplay
     {
         public override void Reset()
         {
-            VariableManager.Instance.IncreaseCloudRate();
-            //Need to find all clouds and then give them this. 
-            Debug.LogError($"FLOW RATE MUST BE INCREASED : {VariableManager.Instance.CloudRate}");
+            PurchaseHandler.PurchaseUpgradeClicked(UpgradeTypes.CLOUD_UPGRADE, ValueTypes.CLOUD);
         }
     }
 }

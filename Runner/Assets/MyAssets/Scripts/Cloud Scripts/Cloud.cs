@@ -19,7 +19,7 @@ namespace HyperCasual.Runner
         [SerializeField]
         private CloudType cloudType;
 
-        private int rate;
+        [SerializeField]private int rate;
 
         public int Rate
         {
@@ -43,8 +43,6 @@ namespace HyperCasual.Runner
         {
             base.OnEnable();
             Rate = (int)SaveManager.Instance.CloudRate;
-            Rate = 24;
-           
             RenderSettings.skybox = mat;
         }
         public override void ResetSpawnable()
@@ -55,11 +53,11 @@ namespace HyperCasual.Runner
         private int i = 1;
         private void OnTriggerEnter(Collider col)
         {
-            WaterFillHelper.FillWater(col,playerTag,filler,Rate);
+            WaterFillHelper.FillWater(col,playerTag,filler,"CloudRate");
         }
         private void OnTriggerStay(Collider col)
         {
-            WaterFillHelper.FillWater(col,playerTag,filler,Rate);
+            WaterFillHelper.FillWater(col,playerTag,filler,"CloudRate");
         }
     }
 }

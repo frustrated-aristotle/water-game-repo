@@ -10,13 +10,7 @@ public class BulletMovement : MonoBehaviour
 
     public int CurrentBulletPower
     {
-        get => currentBulletPower;
-        private set => currentBulletPower = value;
-    }
-
-    private void OnEnable()
-    {
-        CurrentBulletPower = SaveManager.Instance.BulletPower;
+        get => (int)SaveManager.Instance.BulletPower;
     }
 
     private void FixedUpdate()

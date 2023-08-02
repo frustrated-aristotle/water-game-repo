@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Core;
+using MyAssets.Scripts.PurchaseHandler;
 using UnityEngine;
 using AudioSettings = HyperCasual.Core.AudioSettings;
 
@@ -18,17 +19,9 @@ namespace HyperCasual.Runner
         /// </summary>
         public static SaveManager Instance => s_Instance;
         static SaveManager s_Instance;
-        const string bulletPower = "BulletPower";
         const string normalSpeed = "NormalSpeed";
         const string horizontalSpeed = "HorizontalSpeed";
-        const string initBulletPowerIncreaseCost = "InitBulletPowerIncreaseCost";
-        const string moneyAmountMultiplier= "MoneyAmountMultiplier";
-        const string incomeIncreaseCostMultiplier = "IncomeIncreaseCostMultiplier";
-        const string bulletPowerIncreaseCostMultiplier = "BulletPowerIncreaseCostMultiplier";
-        const string bucketCapacityIncreaseCostMultiplier = "BucketCapacityIncreaseCostMultiplier";
-        const string cloudRateCostMultiplier = "CloudRateCostMultiplier";
-        const string cloudRateMultiplier="ClooudMultiplier";
-        const string cloudRate = "CloudRate";
+        
         const string secondBlendShapeValue = "SecondBlendShapeValue";
         const string firstBlendShapeValue = "FirstBlendShapeValue";
 
@@ -45,22 +38,8 @@ namespace HyperCasual.Runner
             s_Instance = this;
         }
 
-        #region Save
-
-        public int IsInitialized
-        {
-            get => PlayerPrefs.GetInt("isInit");
-            set => PlayerPrefs.SetInt("isInit", value);
-        }
-
-        #endregion
         #region Initial Values
 
-        public int InitialBulletPowerIncreaseCost
-        {
-            get => PlayerPrefs.GetInt(initBulletPowerIncreaseCost);
-            set => PlayerPrefs.SetInt(initBulletPowerIncreaseCost, value);
-        }
 
         public float NormalSpeed
         {
@@ -91,26 +70,11 @@ namespace HyperCasual.Runner
             get => PlayerPrefs.GetInt(k_Currency); 
             set => PlayerPrefs.SetInt(k_Currency, value);
         }
-
-        public int Capacity
-        {
-            get => PlayerPrefs.GetInt(capacity);
-            set => PlayerPrefs.SetInt(capacity, value);
-        }
         public float XP
         {
             get => PlayerPrefs.GetFloat(k_Xp); 
             set => PlayerPrefs.SetFloat(k_Xp, value);
         }
-
-        public bool IsQualityLevelSaved => PlayerPrefs.HasKey(k_QualityLevel);
-        
-        public int QualityLevel 
-        { 
-            get => PlayerPrefs.GetInt(k_QualityLevel); 
-            set => PlayerPrefs.SetInt(k_QualityLevel, value);
-        }
-
         #region BLEND SHAPES
         public float FirstBlendShapeValue
         {
@@ -126,75 +90,137 @@ namespace HyperCasual.Runner
         #endregion
 
         #region CLOUDS
-        public float CloudRateMultiplier 
-        { 
-            get => PlayerPrefs.GetFloat(cloudRateMultiplier);
-            set => PlayerPrefs.SetFloat(cloudRateMultiplier, value); 
+        private const string cloudRateUpgradeCost = "CloudRateUpgradeCost";
+        private const string cloudRate = "CloudRate";
+        public float CloudRateUpgradeCost
+        {
+            get => PlayerPrefs.GetFloat(cloudRateUpgradeCost);
+            set => PlayerPrefs.GetFloat(cloudRateUpgradeCost, value);
+        }
+        public float CloudRate
+        {
+            get => PlayerPrefs.GetFloat(cloudRate);
+            set => PlayerPrefs.SetFloat(cloudRate, value);
+        }
+        
+        #endregion
+        #region BUCKET CAPACITY
+
+        private const string bucketCapacity = "BucketCapacity";
+        private const string bucketCapacityUpgradeCost = "BucketCapacityUpgradeCost";
+        
+        public float BucketCapacity
+        {
+            get => PlayerPrefs.GetFloat(bucketCapacity);
+            set => PlayerPrefs.SetFloat(bucketCapacity, value);
         }
 
-        public float CloudRateCostMultiplier
+        public float BucketCapacityUpgradeCost
         {
-            get => PlayerPrefs.GetFloat(cloudRateCostMultiplier);
-            set => PlayerPrefs.SetFloat(cloudRateCostMultiplier, value);
+            get => PlayerPrefs.GetFloat(bucketCapacityUpgradeCost);
+            set => PlayerPrefs.SetFloat(bucketCapacityUpgradeCost, value);
+        }
+
+        #endregion
+        #region BULLET
+        private const string bulletPowerIncreaseCost = "BulletPowerIncreaseCost";
+        
+        private const string bulletPower = "BulletPower";
+
+        public float BulletPower
+        {
+            get => PlayerPrefs.GetFloat(bulletPower);
+            set => PlayerPrefs.SetFloat(bulletPower, value);
+        }
+
+        public float BulletPowerUpgradeCost
+        {
+            get => PlayerPrefs.GetFloat(bulletPowerIncreaseCost);
+            set => PlayerPrefs.SetFloat(bulletPowerIncreaseCost, value);
+        }
+
+        public float BulletLevel
+        {
+            get => PlayerPrefs.GetFloat("BulletLevel");
+            set => PlayerPrefs.SetFloat("BulletLevel", value);
         }
         #endregion
-
-        public float BucketCapacityIncreaseCostMultiplier
-        {
-            get => PlayerPrefs.GetFloat(bucketCapacityIncreaseCostMultiplier);
-            set => PlayerPrefs.SetFloat(bucketCapacityIncreaseCostMultiplier, value);
-        }
-
-        public int BulletPower
-        {
-            get => PlayerPrefs.GetInt(bulletPower);
-            set => PlayerPrefs.SetInt(bulletPower, value);
-        }
-        public float BulletPowerIncreaseCostMultiplier
-        {
-            get => PlayerPrefs.GetFloat(bulletPowerIncreaseCostMultiplier);
-            set => PlayerPrefs.SetFloat(bulletPowerIncreaseCostMultiplier, value);
-        }
-
-        public float IncomeIncreaseCostMultiplier
-        {
-            get => PlayerPrefs.GetFloat(incomeIncreaseCostMultiplier); 
-            set => PlayerPrefs.SetFloat(incomeIncreaseCostMultiplier, value);   
-        }
-
-        public float MoneyAmountMultiplier
-        {
-            get => PlayerPrefs.GetFloat(moneyAmountMultiplier);
-            set => PlayerPrefs.SetFloat(moneyAmountMultiplier, value);  
-        }
-
-        public float CloudRate 
-        { 
-            get => PlayerPrefs.GetFloat("CloudRate");
-            set => PlayerPrefs.SetFloat("CloudRate", value);
-        }
-
+        #region FAUCET
         private const string faucetRate = "FaucetRate";
+        private const string faucetRateUpgradeCost = "FaucetRateUpgradeCost";
         public float FaucetRate
         {
             get => PlayerPrefs.GetFloat(faucetRate);
-            set => PlayerPrefs.SetFloat(faucetRate, value);
+            set => PlayerPrefs.GetFloat(faucetRate, value);
+        }
+        public float FaucetRateUpgradeCost
+        {
+            get => PlayerPrefs.GetFloat(faucetRateUpgradeCost);
+            set => PlayerPrefs.SetFloat(faucetRateUpgradeCost, value);
+        }
+        #endregion
+        #region MONEY
+        private const string moneyValue = "MoneyValue";
+        private const string moneyValueUpgradecost = "MoneyValueUpgradeCost";
+        public float MoneyValue
+        {
+            get => PlayerPrefs.GetFloat(moneyValue);
+            set => PlayerPrefs.SetFloat(moneyValue, value);
+        }
+        public float MoneyValueUpgradeCost
+        {
+            get => PlayerPrefs.GetFloat(moneyValueUpgradecost);
+            set => PlayerPrefs.SetFloat(moneyValueUpgradecost, value);
+        }
+        #endregion
+
+        public int IsInitialized
+        {
+            get => PlayerPrefs.GetInt("IsInit");
+            set => PlayerPrefs.SetInt("IsInit", value);
         }
 
+        #region GenericGetAndSet
+
+        public float GenericGet(UpgradeTypes type)
+        {
+            string key = PurchaseHandler.DictionaryUpgradeTypes[type];
+            return PlayerPrefs.GetFloat(key);
+        }
+
+        public void GenericSet(UpgradeTypes type, float value)
+        {
+            string key = PurchaseHandler.DictionaryUpgradeTypes[type];
+            PlayerPrefs.SetFloat(key, value);
+        }
+
+        public float GenericGet(ValueTypes type)
+        {
+            string key = PurchaseHandler.DictionaryValueTypes[type];
+            return PlayerPrefs.GetFloat(key);
+        }
+        public void GenericSet(ValueTypes type, float value)
+        {
+            string key = PurchaseHandler.DictionaryValueTypes[type];
+            PlayerPrefs.SetFloat(key, value);
+        }
+        #endregion
+        #region PRE-MADE
         public AudioSettings LoadAudioSettings()
         {
             return PlayerPrefsUtils.Read<AudioSettings>(k_AudioSettings);
         }
-
         public void SaveAudioSettings(AudioSettings audioSettings)
         {
             PlayerPrefsUtils.Write(k_AudioSettings, audioSettings);
         }
-
-        public float MoneyAmount
-        {
-            get => PlayerPrefs.GetFloat("MoneyAmount");
-            set => PlayerPrefs.SetFloat("MoneyAmount",value);
+        public bool IsQualityLevelSaved => PlayerPrefs.HasKey(k_QualityLevel);
+        public int QualityLevel 
+        { 
+            get => PlayerPrefs.GetInt(k_QualityLevel); 
+            set => PlayerPrefs.SetInt(k_QualityLevel, value);
         }
+        #endregion
+
     }
 }

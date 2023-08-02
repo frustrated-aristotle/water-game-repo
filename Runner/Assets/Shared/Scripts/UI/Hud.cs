@@ -1,6 +1,6 @@
-using System;
 using HyperCasual.Core;
 using HyperCasual.Runner;
+using MyAssets.Scripts.PurchaseHandler;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +34,8 @@ namespace HyperCasual.Gameplay
         {
             Instance = this;
         }
+        
+        
 
         /// <summary>
         /// The slider that displays the XP value 
@@ -48,13 +50,13 @@ namespace HyperCasual.Gameplay
         /// </summary>
         public int GoldValue
         {
-            get => m_GoldValue;
+            get => SaveManager.Instance.Currency;
             set
             {
                 if (m_GoldValue != value)
                 {
                     m_GoldValue = value;
-                    m_GoldText.text = GoldValue.ToString();
+                    m_GoldText.text = SaveManager.Instance.Currency.ToString();
                 }
             }
         }
@@ -78,12 +80,25 @@ namespace HyperCasual.Gameplay
             }
         }
 
+
         void OnEnable()
         {
             m_PauseButton.AddListener(OnPauseButtonClick);
-            GoldValue = Inventory.Instance.m_TotalGold;
+            GoldValue = SaveManager.Instance.Currency;
+            PurchaseHandler.UpdateTexts += UpdateText;
             ToggleButtonActiveState(true);
+            UpdateText(UpgradeTypes.CLOUD_UPGRADE);
         }
+
+        public void UpdateText(UpgradeTypes type)
+        {
+            capacityText.text = ((int)SaveManager.Instance.BucketCapacityUpgradeCost).ToString();
+            flowText.text = ((int)SaveManager.Instance.CloudRateUpgradeCost).ToString();
+            m_GoldText.text = SaveManager.Instance.Currency.ToString();
+            PurchaseRelatedStatics.UpdateTextColors(flowText, capacityText, UpgradeTypes.CLOUD_UPGRADE, UpgradeTypes.CAPACITY_UPGRADE);
+        }
+
+        
 
         public void ToggleButtonActiveState(bool willBeActive)
         {
@@ -98,6 +113,7 @@ namespace HyperCasual.Gameplay
         void OnDisable()
         {
             m_PauseButton.RemoveListener(OnPauseButtonClick);
+
         }
 
         void OnPauseButtonClick()
@@ -107,13 +123,8 @@ namespace HyperCasual.Gameplay
 
         public void UpdateUpgradeButtonText()
         {
-            int flowInt = (int)VariableManager.Instance.CloudRateIncreaseCost;
-            int capacityInt = (int)VariableManager.Instance.BucketCapacityIncreaseCost;
+            PurchaseHandler.UpdateText(ref capacityText, ref flowText, UpgradeTypes.MONEY_UPGRADE, UpgradeTypes.BULLETPOWER_UPGRADE);
             GoldValue = Inventory.Instance.TotalGold;
-            flowText.text = flowInt.ToString();
-            flowText.text = flowInt.ToString();
-            capacityText.text = capacityInt.ToString();
-            capacityText.color  = Color.white;
         }
 
         public void UpdateUpgradeButtonText(Color color , bool isItFlowText)
@@ -131,7 +142,5 @@ namespace HyperCasual.Gameplay
                 capacityText.color = color;
             }
         }
-
-        
     }
 }

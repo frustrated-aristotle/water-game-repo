@@ -1,6 +1,7 @@
 using System;
 using HyperCasual.Core;
 using HyperCasual.Gameplay;
+using MyAssets.Scripts.PurchaseHandler;
 using TMPro;
 using UnityEngine;
 
@@ -34,11 +35,11 @@ namespace HyperCasual.Runner
         [SerializeField] private AbstractGameEvent increaseIncomeEvent;
         [SerializeField] private AbstractGameEvent proceedToResultEvent;
 
-
         public static GameoverScreen Instance;
         private void Awake()
         {
             Instance = this;
+           
         }
 
         void OnEnable()
@@ -46,12 +47,20 @@ namespace HyperCasual.Runner
             increaseBulletPowerButton.AddListener(OnIncreaseBulletPowerButtonClick);
             increaseIncomeButton.AddListener(OnIncreaseIncomeButtonClick);
             proceedToResultButton.AddListener(OnProceedToResultButtonClick);
-            UpdateGameEndUpgradeButtons();
+            UpdateText(UpgradeTypes.CLOUD_UPGRADE);
+            PurchaseHandler.UpdateTexts += UpdateText;
             //m_PlayAgainButton.AddListener(OnPlayAgainButtonClick);
             //m_GoToMainMenuButton.AddListener(OnGoToMainMenuButtonClick);
         }
 
-       
+        public void UpdateText(UpgradeTypes type)
+        {
+            Debug.Log("Income : " + SaveManager.Instance.MoneyValueUpgradeCost);
+            incomeText.text = ((int)SaveManager.Instance.MoneyValueUpgradeCost).ToString();
+            bulletPowerText.text = ((int)SaveManager.Instance.BulletPowerUpgradeCost).ToString();
+            PurchaseRelatedStatics.UpdateTextColors(incomeText, bulletPowerText, UpgradeTypes.MONEY_UPGRADE, UpgradeTypes.BULLETPOWER_UPGRADE);
+        }
+
 
         void OnDisable()
         {
@@ -91,14 +100,7 @@ namespace HyperCasual.Runner
         }
         public void UpdateGameEndUpgradeButtons()
         {
-            Debug.Log("Updated");
-            int powerInt = (int)VariableManager.Instance.BulletPowerIncreaseCost;
-            int incomeInt = (int)VariableManager.Instance.IncomeIncreaseCost;  
-            Hud.Instance.GoldValue = Inventory.Instance.TotalGold;
-            incomeText.text = incomeInt.ToString();
-            bulletPowerText.text = powerInt.ToString();
-            incomeText.color = Color.white;
-            bulletPowerText.color = Color.white;
+            //PurchaseHandler.UpdateText(ref incomeText, ref bulletPowerText, UpgradeTypes.MONEY_UPGRADE, UpgradeTypes.BULLETPOWER_UPGRADE);
         }
         public void UpdateGameEndUpgradeButtons(Color color , bool isItIncome)
         {

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754459dc56da0b94db65863858326b10, type: 3}
+  m_Name: ValueInitializer
+  m_EditorClassIdentifier: 
+  initialCurrency: 999999
+  initialMoneyValue: 70
+  initialMoneyValueUpgradeCost: 300
+  initialBucketCapacity: 300
+  initialBucketCapacityUpgradeCost: 300
+  initialBulletPower: 10
+  initialBulletPowerUpgradeCost: 300
+  initialFaucetRate: 10
+  initialFaucetRateUpgradeCost: 300
+  initialCloudRate: 5
+  initialCloudRateUpgradeCost: 300

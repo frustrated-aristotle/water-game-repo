@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6013742452007343456}
   - component: {fileID: 908702675661709638}
   - component: {fileID: 2946809331890066953}
-  - component: {fileID: 8138061206144591921}
   - component: {fileID: 2496179805518122297}
   - component: {fileID: -2478630225447084185}
+  - component: {fileID: 783818643063617006}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -55,6 +55,7 @@ MonoBehaviour:
   m_LoseEvent: {fileID: 11400000, guid: 2b6d3353ba4d84d3ca725ef1835ca96f, type: 2}
   m_CurrentLevel: {fileID: 0}
   finishAmount: 0
+  valueInitializer: {fileID: 11400000, guid: 0fda5cb02fdc14247baf13fc993464ee, type: 2}
 --- !u!114 &5003727022789867353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,20 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clouds: []
+  pourAmount: 50
   initialIncomeIncreaseCost: 300
   initialBulletPowerIncreaseCost: 300
---- !u!114 &8138061206144591921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8617234690931488546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 234f4200399ca0241bd65f97a4a83cb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2496179805518122297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,3 +141,15 @@ MonoBehaviour:
   levels: []
   baseZ: 150
   stepDistance: 15
+--- !u!114 &783818643063617006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617234690931488546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6d327a2132fdd429f7094bb9741fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

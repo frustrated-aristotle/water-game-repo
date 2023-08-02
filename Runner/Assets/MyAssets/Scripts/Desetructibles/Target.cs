@@ -65,7 +65,8 @@ public class Target : MonoBehaviour
         bool isCollisionBullet = col.CompareTag("Bullet");
         if (isCollisionBullet)
         {
-            int damageAmount = col.GetComponent<BulletMovement>().CurrentBulletPower;
+            //int damageAmount = col.GetComponent<BulletMovement>().CurrentBulletPower;
+            int damageAmount = (int)SaveManager.Instance.BulletPower;
             TakeAHit(damageAmount);
             if (Health <= 0)
             {
@@ -96,7 +97,6 @@ public class Target : MonoBehaviour
 
     private void TakeAHit(int damageAmount)
     {
-        Debug.LogError("dmg amount : " + damageAmount);
         Health = damageAmount;
             UpdateHealthText();
     }

@@ -99,6 +99,7 @@ namespace HyperCasual.Runner
 #endif
         }
 
+        [SerializeField]private InitializeValues valueInitializer;
         /// <summary>
         /// This method calls all methods necessary to load and
         /// instantiate a level from a level definition.
@@ -106,18 +107,37 @@ namespace HyperCasual.Runner
         public void LoadLevel(LevelDefinition levelDefinition)
         {
             Debug.Log("Load level is working");
+            /*
+            if (SaveManager.Instance.LevelProgress != 15)
+            {
+                SaveManager.Instance.LevelProgress = 15;
+            }
+             */
             m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress];
             LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);
             CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);
             PlaceLevelMarkers(m_CurrentLevel, ref m_LevelMarkersGO);
-            StartGame();
-            PlayerController.Instance.m_HorizontalSpeedFactor = 25;
-            if (Inventory.Instance.BucketCapacity == 0)
+            if (SaveManager.Instance.IsInitialized == 0)
             {
-                Inventory.Instance.BucketCapacity = 200;
-                Inventory.Instance.tempBucketCapacity = 200;
-                SaveManager.Instance.Capacity = 200;
+                valueInitializer.MainInitializer();
+                SaveManager.Instance.IsInitialized = 1;
             }
+            PlayerController.Instance.m_HorizontalSpeedFactor = 25;
+            StartGame();
+        }public void LoadLevel(int num)
+        {
+            Debug.Log("Load level is working");
+            m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[num];
+            LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);
+            CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);
+            PlaceLevelMarkers(m_CurrentLevel, ref m_LevelMarkersGO);
+            if (SaveManager.Instance.IsInitialized == 0)
+            {
+                valueInitializer.MainInitializer();
+                SaveManager.Instance.IsInitialized = 1;
+            }
+            PlayerController.Instance.m_HorizontalSpeedFactor = 25;
+            StartGame();
         }
 
         /// <summary>

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using HyperCasual.Gameplay;
 using UnityEngine;
 
 namespace HyperCasual.Runner
@@ -89,8 +90,6 @@ namespace HyperCasual.Runner
 
         void ActivateGate()
         {
-            //float h = heightValue;
-            //float w = widthValue;
             switch (m_GateType)
             {
                 /*
@@ -110,10 +109,7 @@ namespace HyperCasual.Runner
                     int height = Inventory.Instance.BucketCapacity * 30 / 100;
                     if (heightValue<0)
                     {
-                        
                         Inventory.Instance.BucketCapacity = -height;
-                        Debug.Log("BucXket Noldu : " + Inventory.Instance.BucketCapacity);
-
                     }
                     else
                     {
@@ -128,7 +124,6 @@ namespace HyperCasual.Runner
                     if (widthValue<0)
                     {
                         Inventory.Instance.BucketCapacity = -width;
-                        Debug.Log("BucXket Noldu : " + Inventory.Instance.BucketCapacity);
 
                     }
                     else
@@ -139,9 +134,9 @@ namespace HyperCasual.Runner
                 }
             }
             m_Applied = true;
-            //negative gate
             if (widthValue < 0 || heightValue < 0 )
             {
+                Debug.Log("inside ADJUST");
                 Inventory.Instance.AdjustWaterFilledAmountBecauseNegativeGate();
             }
         }

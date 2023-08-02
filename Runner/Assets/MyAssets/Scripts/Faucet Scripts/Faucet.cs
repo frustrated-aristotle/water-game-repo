@@ -30,15 +30,14 @@ public class Faucet : Spawnable
     {
         base.OnEnable();
         Rate = (int)SaveManager.Instance.FaucetRate;
-        Rate = 23;
     }
     private void OnTriggerEnter(Collider col)
     {
-        WaterFillHelper.FillWater(col,playerTag,filler,Rate);
+        WaterFillHelper.FillWater(col,playerTag,filler,"FaucetRate");
     }
 
     private void OnTriggerStay(Collider col)
     {
-        WaterFillHelper.FillWater(col,playerTag,filler,Rate);
+        WaterFillHelper.FillWater(col,playerTag,filler,"FaucetRate");
     }
 }

@@ -117,21 +117,23 @@ namespace HyperCasual.Runner
         }
         public void AdjustWidth(float adjust)
         {
+            Inventory.Instance.currentWaterX -= adjust;
             int blendShapeType = (int)BlendShapeType.WIDTH;
             float x = GetBlendShapeWeight(blendShapeType, 5);
             float newX = x + adjust;
-            Debug.Log("Blendshape x : " + x + " and newX is : " + newX);
             SetBlendShapeWeight(blendShapeType,newX, 5);
+            SkinnedMeshRenderer child = Instance.transform.GetChild(5).GetChild(1)
+                .GetComponent<SkinnedMeshRenderer>();
+            float main = child.GetBlendShapeWeight(0);
+            child.SetBlendShapeWeight(0,main + adjust);
         }
         public void AdjustHeight(float adjust)
         {
-            //For the water level
             Inventory.Instance.currentWaterY -= adjust;
             int blendShapeType = (int)BlendShapeType.HEIGHT;
             float y = GetBlendShapeWeight(blendShapeType, 5);
             float newY = y + adjust;
-            Debug.Log("Blendshape y : " + y + " and newY is : " + newY);
-
+            Debug.Log("new Y : " + newY);
             SetBlendShapeWeight(blendShapeType, newY, 5);
         }
 
@@ -146,7 +148,6 @@ namespace HyperCasual.Runner
         {
             if (baseWidth <= newWeightValue)
             {
-                Debug.Log("Weight value : " + newWeightValue);
                 SkinnedMeshRenderer child = transform.GetChild(childIndex).GetComponent<SkinnedMeshRenderer>();
                 child.SetBlendShapeWeight(weightIndex, newWeightValue);
             }
@@ -160,8 +161,6 @@ namespace HyperCasual.Runner
         {
             SaveManager.Instance.FirstBlendShapeValue = GetBlendShapeWeight(0,5);
             SaveManager.Instance.SecondBlendShapeValue = GetBlendShapeWeight(1,5);
-            Debug.Log("First Value : " + SaveManager.Instance.FirstBlendShapeValue);
-            Debug.Log("Second Value : " + SaveManager.Instance.SecondBlendShapeValue);
         }
 
         public void SetBlendShapeValuesFromPref()

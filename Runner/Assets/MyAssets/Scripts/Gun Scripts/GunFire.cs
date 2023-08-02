@@ -13,7 +13,7 @@ public class GunFire : MonoBehaviour
     private float rate = 0.7f;
     
     //Rate Related
-    public float Rate { get => rate; set => value = rate; }
+    public float Rate { get => rate; set => rate = value; }
     
     public static GunFire Instance;
 
@@ -50,7 +50,7 @@ public class GunFire : MonoBehaviour
     }
     private void FireGun()
     {
-        Debug.Log("Fired");
+        Debug.Log("Fired " + SaveManager.Instance.BulletPower);
         Vector3 pos = PlayerController.Instance.transform.position + new Vector3(0, 3, 2.6f);
         GameObject a = pool.SpawnFromPool("Bullet", pos, Quaternion.identity);
         a.transform.Rotate(0,0,0);

@@ -571,6 +571,7 @@ MonoBehaviour:
   saveEvent: {fileID: 11400000, guid: a561260083b8b014aad4689361c88dcc, type: 2}
   input: {fileID: 0}
   input2: {fileID: 0}
+  input3: {fileID: 0}
 --- !u!1 &864111321492093203
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,11 +54,13 @@ namespace MyAssets.Scripts.Levels
             SetCapacity();
             SetBulletPower();
             SetCloudRate();
+            PlayerPrefs.DeleteAll();
         }
 
         private void SetCloudRate()
         {
             sm.CloudRate = 5;
+            
         }
 
         private void SetBulletPower()
@@ -69,14 +71,12 @@ namespace MyAssets.Scripts.Levels
         private void SetMoney()
         {
             sm.Currency = initialMoney;
-            sm.MoneyAmount = 70;
+           // sm.MoneyAmount = 70;
         }
 
         private void SetCapacity()
         {
-            sm.Capacity = initialCapacity;
-            Debug.Log(sm.Capacity);
-            Debug.Log(SaveManager.Instance.Capacity);
+            sm.BucketCapacity = initialCapacity;
         }
     }
 }

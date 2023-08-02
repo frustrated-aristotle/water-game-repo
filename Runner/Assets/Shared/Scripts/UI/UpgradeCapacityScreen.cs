@@ -13,6 +13,7 @@ public class UpgradeCapacityScreen : View
     private void OnEnable()
     {
         upgradeCapacityButton.AddListener(OnUpgradeCapacityButtonClicked);
+        
     }
 
     private void OnDisable()

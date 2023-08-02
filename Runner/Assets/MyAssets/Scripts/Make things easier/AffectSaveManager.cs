@@ -12,9 +12,9 @@ public class AffectSaveManager : MonoBehaviour
     [ContextMenu("Give Bucket Capacity")]
     public void GiveBucketCapacity()
     {
-        SaveManager.Instance.Capacity = intChangeValue;
-        changedValue = SaveManager.Instance.Capacity;
-        Debug.Log("Save Manager: " + SaveManager.Instance.Capacity);
+        SaveManager.Instance.BucketCapacity = intChangeValue;
+        changedValue = SaveManager.Instance.BucketCapacity;
+        Debug.Log("Save Manager: " + SaveManager.Instance.BucketCapacity);
     }
 
     [ContextMenu("Give Money Amount")]
