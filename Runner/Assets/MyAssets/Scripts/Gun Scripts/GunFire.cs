@@ -9,8 +9,8 @@ public class GunFire : MonoBehaviour
     private bool isFiring;
     public bool IsFiring { get => isFiring;}
     private int i = 0;
-    [SerializeField]
-    private float rate = 0.7f;
+    //[SerializeField]
+    private float rate = 0.6f;
     
     //Rate Related
     public float Rate { get => rate; set => rate = value; }
@@ -50,10 +50,12 @@ public class GunFire : MonoBehaviour
     }
     private void FireGun()
     {
-        Debug.Log("Fired " + SaveManager.Instance.BulletPower);
         Vector3 pos = PlayerController.Instance.transform.position + new Vector3(0, 3, 2.6f);
         GameObject a = pool.SpawnFromPool("Bullet", pos, Quaternion.identity);
         a.transform.Rotate(0,0,0);
+        a.GetComponent<BulletMovement>().DeactivateTheBullet();
+        //Since we have changed our firing mechanic, this block has no longer use in our game.
+        /*
         if (Inventory.Instance.BucketFilledAmount - a.GetComponent<BulletMovement>().CurrentBulletPower > 0)
         {
             Inventory.Instance.BucketFilledAmount = -a.GetComponent<BulletMovement>().CurrentBulletPower;
@@ -63,6 +65,8 @@ public class GunFire : MonoBehaviour
             a.SetActive(false);
             isFiring = false;
         }
-        //Inventory.Instance.BucketFilledAmount = -10;
+        //Inventory.Instance.BucketFilledAmount = -10; 
+        */
+
     }
 }

@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9490196}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -718,6 +718,8 @@ MonoBehaviour:
   m_PlayAgainEvent: {fileID: 11400000, guid: b892538bd49f3487bbedf5106c094739, type: 2}
   m_GoToMainMenuEvent: {fileID: 11400000, guid: 58f804667e2cb4eb789b6d2dfb3c4ce3,
     type: 2}
+  incomeText: {fileID: 0}
+  bulletPowerText: {fileID: 0}
   increaseIncomeButton: {fileID: 4850430782496590448}
   increaseBulletPowerButton: {fileID: 251686218076407002}
   proceedToResultButton: {fileID: 3081228670021242806}
@@ -727,6 +729,8 @@ MonoBehaviour:
     type: 2}
   proceedToResultEvent: {fileID: 11400000, guid: f000353e4f03bcc429b1d35f7b622345,
     type: 2}
+  bulletGO: {fileID: 2139402321948974043}
+  incomeGO: {fileID: 2139402322161695765}
 --- !u!1 &2437407564737364135
 GameObject:
   m_ObjectHideFlags: 0

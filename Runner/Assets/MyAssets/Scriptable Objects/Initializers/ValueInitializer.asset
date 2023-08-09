@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 754459dc56da0b94db65863858326b10, type: 3}
   m_Name: ValueInitializer
   m_EditorClassIdentifier: 
-  initialCurrency: 999999
+  initialCurrency: 3000000
   initialMoneyValue: 70
   initialMoneyValueUpgradeCost: 300
   initialBucketCapacity: 300

@@ -106,7 +106,6 @@ namespace HyperCasual.Runner
         /// </summary>
         public void LoadLevel(LevelDefinition levelDefinition)
         {
-            Debug.Log("Load level is working");
             /*
             if (SaveManager.Instance.LevelProgress != 15)
             {
@@ -123,10 +122,11 @@ namespace HyperCasual.Runner
                 SaveManager.Instance.IsInitialized = 1;
             }
             PlayerController.Instance.m_HorizontalSpeedFactor = 25;
+            Debug.Log("FireRate at the start of the level: " + GunFire.Instance.Rate);
             StartGame();
-        }public void LoadLevel(int num)
+        }
+        public void LoadLevel(int num)
         {
-            Debug.Log("Load level is working");
             m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[num];
             LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);
             CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);

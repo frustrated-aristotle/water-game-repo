@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using HyperCasual.Core;
 using HyperCasual.Runner;
 using MyAssets.Scripts.PurchaseHandler;
 using TMPro;
@@ -38,41 +39,68 @@ public static class PurchaseHandler
         switch (type)
         {
             case ValueTypes.CLOUD:
-                addition = 2;
+                if (currentValue <= 17 )
+                {
+                    addition = 2;
+                }
+                else
+                {
+                    UIManager.Instance.flowRateUpgradeButton.gameObject.SetActive(false);
+                }
                 break;
             case ValueTypes.MONEY:
-                addition = 40;
+                if (currentValue <= 310 )
+                {
+                    addition = 40;
+                }
+                else
+                {
+                    GameoverScreen.Instance.DeactivateBulletUpgrade(GameoverScreen.Instance.incomeGO);
+                }
                 break;
             case ValueTypes.FAUCET:
-                addition = 2;
+                if (currentValue <= 17)
+                {
+                    addition = 2;
+                }
+                else
+                {
+                    UIManager.Instance.flowRateUpgradeButton.gameObject.SetActive(false);
+                }
                 break;
             case ValueTypes.CAPACITY:
-                addition = 50;
+                if (currentValue <= 900)
+                {
+                    addition = 100;
+                }
+                else
+                {
+                    UIManager.Instance.bucketCapacityUpgradeButton.gameObject.SetActive(false);
+                }
                 break;
             case ValueTypes.BULLETPOWER:
-                Debug.Log("level: " + SaveManager.Instance.BulletLevel + " and the fire rate is : " + GunFire.Instance.Rate);
-                float level = SaveManager.Instance.BulletLevel + 1;
-                SaveManager.Instance.BulletLevel = level;
-                Debug.Log("inside the if: level is " + level + " and level %: "+level%2);
-                if (level % 2 == 0)
+                float mainRate = GunFire.Instance.Rate;
+                bool isIt = mainRate >= 0.3f; 
+                if (isIt)
                 {
+                    Debug.Log("rate: " + GunFire.Instance.Rate + " and it is : " + isIt);
                     float rate = GunFire.Instance.Rate-0.05f;
                     GunFire.Instance.Rate = rate;
-                    Debug.Log("GUNRATEEEEE: " + (GunFire.Instance.Rate));
+                    addition = 0;
                 }
-                addition = 25;
+                else
+                {
+                    GameoverScreen.Instance.DeactivateBulletUpgrade(GameoverScreen.Instance.bulletGO);
+                }
                 break;
         }
         currentValue += addition;
         
         SaveManager.Instance.GenericSet(type, currentValue);
-
-        
         if (type == ValueTypes.CAPACITY)
         {
             Inventory.Instance.SetCapacitiesAfterPurchaseUpgrade();
         }
-
         // if (type == ValueTypes.BULLETPOWER)
         // {
         //     float level = SaveManager.Instance.BulletLevel;
@@ -95,7 +123,6 @@ public static class PurchaseHandler
         //INCREASE COST
         currentCost += currentCost * 20 / 100;
         SaveManager.Instance.GenericSet(type, currentCost);
-        Debug.Log("Currency In event: " + SaveManager.Instance.Currency);
 
 
     }

@@ -25,4 +25,21 @@ public class BulletMovement : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+
+    private bool isActive = false;
+
+    public void DeactivateTheBullet()
+    {
+        StartCoroutine(Deactivate());
+    }
+    private IEnumerator Deactivate()
+    {
+        while (gameObject.activeSelf)
+        {
+            yield return new WaitForSeconds(0.8f);
+            this.gameObject.SetActive(false);
+
+        }
+    }
+    
 }

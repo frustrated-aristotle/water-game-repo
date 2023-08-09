@@ -224,7 +224,7 @@ namespace HyperCasual.Gameplay
 
             if (currentLevelIndex == levelProgress && currentLevelIndex < m_LevelStates.Count - 1)
             {
-                Debug.Log("LevelProgress");
+                Debug.Log("LevelProgress: " + currentLevelIndex);
             }
             else
             {

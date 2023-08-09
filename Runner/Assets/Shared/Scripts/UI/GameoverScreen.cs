@@ -35,6 +35,8 @@ namespace HyperCasual.Runner
         [SerializeField] private AbstractGameEvent increaseIncomeEvent;
         [SerializeField] private AbstractGameEvent proceedToResultEvent;
 
+        //Gameobjects
+        public GameObject bulletGO, incomeGO;
         public static GameoverScreen Instance;
         private void Awake()
         {
@@ -42,6 +44,10 @@ namespace HyperCasual.Runner
            
         }
 
+        public void DeactivateBulletUpgrade(GameObject go)
+        {
+            go.SetActive(false);
+        }
         void OnEnable()
         {
             increaseBulletPowerButton.AddListener(OnIncreaseBulletPowerButtonClick);
@@ -51,6 +57,13 @@ namespace HyperCasual.Runner
             PurchaseHandler.UpdateTexts += UpdateText;
             //m_PlayAgainButton.AddListener(OnPlayAgainButtonClick);
             //m_GoToMainMenuButton.AddListener(OnGoToMainMenuButtonClick);
+            
+            //We will disable all bullets that are active in our scene at this point    
+            BulletMovement[] bullets = GameObject.FindObjectsOfType<BulletMovement>();
+            foreach (BulletMovement bullet in bullets)
+            {
+                bullet.gameObject.SetActive(false);
+            }
         }
 
         public void UpdateText(UpgradeTypes type)

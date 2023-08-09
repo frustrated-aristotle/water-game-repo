@@ -14,11 +14,7 @@ namespace HyperCasual.Runner
     {
         public override void Reset()
         {
-            Debug.Log("Capacity Cost Before: " + SaveManager.Instance.BucketCapacityUpgradeCost);
             PurchaseHandler.PurchaseUpgradeClicked(UpgradeTypes.BULLETPOWER_UPGRADE, ValueTypes.BULLETPOWER);
-            Debug.Log("Capacity Cost After: " + SaveManager.Instance.BucketCapacityUpgradeCost);
-            Debug.Log("Currency After: " + SaveManager.Instance.Currency);
-            //VariableManager.Instance.OnBulletPowerIncreasePurchased();
         }
     }
 }

@@ -132,7 +132,6 @@ namespace HyperCasual.Runner
             TextMeshPro bucketText = GameObject.Find("playerCapacityText").GetComponent<TextMeshPro>();
             bucketText.text = "Capacity: " + BucketCapacity + "\nEmpty Portion"+(BucketCapacity - BucketFilledAmount).ToString();
             float waterX = 13;
-            Debug.Log("WaterRate issss: " + waterRateX);
             
         }
         /// <summary>

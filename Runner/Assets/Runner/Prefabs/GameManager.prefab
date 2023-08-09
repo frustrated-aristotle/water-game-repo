@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 2946809331890066953}
   - component: {fileID: 2496179805518122297}
   - component: {fileID: -2478630225447084185}
-  - component: {fileID: 783818643063617006}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -68,7 +67,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a30b135518fe9642a2b3b2dc7d2a8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 1
 --- !u!114 &6013742452007343456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +83,7 @@ MonoBehaviour:
   - tag: Bullet
     prefab: {fileID: 8064630308587043973, guid: 4132e0e0fc202604f8b48664e0e6f3af,
       type: 3}
-    size: 5
+    size: 15
 --- !u!114 &908702675661709638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,15 +139,3 @@ MonoBehaviour:
   levels: []
   baseZ: 150
   stepDistance: 15
---- !u!114 &783818643063617006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8617234690931488546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb6d327a2132fdd429f7094bb9741fbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
