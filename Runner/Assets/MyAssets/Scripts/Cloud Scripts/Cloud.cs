@@ -1,4 +1,5 @@
 
+using System;
 using HyperCasual.Core;
 using TMPro;
 using UnityEngine;
@@ -42,9 +43,14 @@ namespace HyperCasual.Runner
         protected override void OnEnable()
         {
             base.OnEnable();
-            Rate = (int)SaveManager.Instance.CloudRate;
             RenderSettings.skybox = mat;
         }
+
+        private void Start()
+        {
+            //Rate = (int)SaveManager.Instance.CloudRate;
+        }
+
         public override void ResetSpawnable()
         {
             applied = false;

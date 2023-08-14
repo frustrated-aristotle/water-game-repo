@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Gameplay;
+using PlasticGui.Gluon.WorkspaceWindow.Views.WorkspaceExplorer;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace HyperCasual.Runner
 {
@@ -26,10 +29,69 @@ namespace HyperCasual.Runner
         RectTransform m_Text;
 
         bool m_Applied;
-        
+        [SerializeField] private bool canMoveX;
+        [SerializeField] private bool canMoveZ;
+
         Vector3 m_TextInitialScale;
 
         private Inventory inventory;
+
+        private float gateMoveInterval = 0.2f;
+        private float gateMoveTimeInterval = 0.02f;
+        
+
+        
+
+    private void Start()
+    {
+         
+        if (transform.position.x == 0 && GameManager.Instance != null)
+        {
+            canMoveX = true;
+            StartCoroutine(StartChange());
+
+        }
+    }
+
+    private IEnumerator StartChange()
+    {
+        while (canMoveX)
+        {
+            ChangeDirection();
+            yield return new WaitForSeconds(gateMoveTimeInterval);
+        }
+    }
+
+    private bool isDirectionRight = true;
+    private void ChangeDirection()
+    {
+        float posX = transform.position.x;
+        
+        if (!isDirectionRight)
+        {
+            posX -= gateMoveInterval;
+            //left
+        }
+        else
+        {
+            posX += gateMoveInterval;
+            //right
+        }
+
+        if (posX >= 3)
+        {
+            isDirectionRight = false;
+        }
+        else if (posX <= -3)
+        {
+            isDirectionRight = true;
+        }
+        Vector3 pos = transform.position;
+        pos.x = posX;
+        transform.position = pos;
+        
+    }
+
         enum GateType
         {
             ChangeSpeed,

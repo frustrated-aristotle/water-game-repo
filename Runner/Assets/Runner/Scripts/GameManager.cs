@@ -106,12 +106,12 @@ namespace HyperCasual.Runner
         /// </summary>
         public void LoadLevel(LevelDefinition levelDefinition)
         {
-            /*
-            if (SaveManager.Instance.LevelProgress != 15)
+            
+            if (SaveManager.Instance.LevelProgress != 100)
             {
-                SaveManager.Instance.LevelProgress = 15;
+                SaveManager.Instance.LevelProgress = 100;
             }
-             */
+             
             m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress];
             LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);
             CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);

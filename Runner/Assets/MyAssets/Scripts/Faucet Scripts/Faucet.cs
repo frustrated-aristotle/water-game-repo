@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using HyperCasual.Runner;
@@ -25,12 +26,12 @@ public class Faucet : Spawnable
         base.Awake();
         filler = GetComponent<IFillTheBucket>();
     }
-
-    protected override void OnEnable()
+    private void Start()
     {
-        base.OnEnable();
-        Rate = (int)SaveManager.Instance.FaucetRate;
+//        Rate = (int)SaveManager.Instance.FaucetRate;
+
     }
+
     private void OnTriggerEnter(Collider col)
     {
         WaterFillHelper.FillWater(col,playerTag,filler,"FaucetRate");
