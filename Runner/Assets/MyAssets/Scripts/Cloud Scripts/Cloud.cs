@@ -11,6 +11,7 @@ namespace HyperCasual.Runner
         private const string playerTag = "Player";
         private IFillTheBucket filler;
         [SerializeField] private Material mat;
+
         protected override void Awake()
         {
             base.Awake();
@@ -21,6 +22,7 @@ namespace HyperCasual.Runner
         private CloudType cloudType;
 
         [SerializeField]private int rate;
+        
 
         public int Rate
         {
@@ -46,11 +48,6 @@ namespace HyperCasual.Runner
             RenderSettings.skybox = mat;
         }
 
-        private void Start()
-        {
-            //Rate = (int)SaveManager.Instance.CloudRate;
-        }
-
         public override void ResetSpawnable()
         {
             applied = false;
@@ -64,6 +61,39 @@ namespace HyperCasual.Runner
         private void OnTriggerStay(Collider col)
         {
             WaterFillHelper.FillWater(col,playerTag,filler,"CloudRate");
+        }
+        private void FixedUpdate()
+        {
+            if (CanMoveOnX)
+                MoveCloud();
+        }
+
+        private float cloudMoveInterval;
+        private float gateMoveTimeInterval = 0.02f;
+        private void MoveCloud()
+        {
+            cloudMoveInterval = SaveManager.Instance.CloudMovementSpeedOnX;
+            float posX = transform.position.x;
+            if (!isDirectionRight)//left
+            {
+                posX -= cloudMoveInterval; 
+                
+            }
+            else                  //right
+            {
+                posX += cloudMoveInterval;
+            }
+            if (posX >= 3)
+            {
+                isDirectionRight = false;
+            }
+            else if (posX <= -3)
+            {
+                isDirectionRight = true;
+            }
+            Vector3 pos = transform.position;
+            pos.x = posX;
+            transform.position = pos;
         }
     }
 }

@@ -249,5 +249,6 @@ namespace HyperCasual.Gameplay
             */
             AudioManager.Instance.StopMusic();
         }
+
     }
 }

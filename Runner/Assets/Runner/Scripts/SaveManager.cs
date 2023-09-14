@@ -32,12 +32,27 @@ namespace HyperCasual.Runner
         const string k_QualityLevel = "QualityLevel";
         const string capacity = "Capacity";
 
+        #region Movable Things
+
+        public float GateMovementSpeedOnX
+        {
+            get => PlayerPrefs.GetFloat("GateX"); 
+            set => PlayerPrefs.SetFloat("GateX", value);
+        }
+
+        public float CloudMovementSpeedOnX
+        {
+            get => PlayerPrefs.GetFloat("CloudX");         
+            set => PlayerPrefs.SetFloat("CloudX", value);  
+        }
+
+        #endregion
         
         void Awake()
         {
             s_Instance = this;
         }
-
+        
         #region Initial Values
 
 

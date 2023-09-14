@@ -8,19 +8,17 @@ public class ChangePlayerToGun : MonoBehaviour
     {
         PlayerController.Instance.transform.GetChild(5).gameObject.SetActive(false);
         PlayerController.Instance.transform.GetChild(6).gameObject.SetActive(true);
+        Vector3 size = PlayerController.Instance.GetComponent<BoxCollider>().size;
+        size.x = 1.35f;
+        size.z = 5f;
+        PlayerController.Instance.GetComponent<BoxCollider>().size = size;
+        PlayerController.Instance.GetComponent(typeof(CapsuleCollider)).gameObject.SetActive(true);
         if (!GunFire.Instance.IsFiring)
         {
-            //We will get the bullet power here.
             SaveManager.Instance.BulletPower = BulletPower();
-            Debug.Log("BULLETPOWER: " + SaveManager.Instance.BulletPower);
-            Debug.Log("Fire Rate : " + GunFire.Instance.Rate);//FindAndAssignBulletPower();
             GunFire.Instance.StartFiring();
-            //other.GetComponent<CapsuleCollider>().gameObject.SetActive(false);
-            //other.GetComponent<CapsuleCollider>().enabled = false;
         }
-        Debug.Log("fired count : " + count);
         count++;
-        //PlayerController.Instance.m_AutoMoveForward = false;
     }
 
     private float BulletPower()

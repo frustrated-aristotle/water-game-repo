@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
@@ -27,6 +28,7 @@ namespace HyperCasual.Core
         public RectTransform valueManipulatorButton;
         public GameObject WaterCapacityUI;
         public Image img;
+        public TextMeshProUGUI level;
         
         List<View> m_Views;
 

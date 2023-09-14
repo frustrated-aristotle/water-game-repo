@@ -534,6 +534,7 @@ GameObject:
   - component: {fileID: 6931430198559016198}
   - component: {fileID: 8475646709700121470}
   - component: {fileID: 2926604082106359834}
+  - component: {fileID: 8733122635624497900}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -598,11 +599,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 168254820557207646}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.96369076
-  m_Height: 3.0917284
+  m_Height: 2.614447
   m_Direction: 1
-  m_Center: {x: 0.01593101, y: 1.5458642, z: 0}
+  m_Center: {x: 0.01593101, y: 1.9004905, z: 0}
 --- !u!54 &2926604082106359834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -619,6 +620,19 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!65 &8733122635624497900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168254820557207646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8274145, y: 2.695923, z: 2.0333023}
+  m_Center: {x: -0.05, y: 2, z: 0.001}
 --- !u!1 &1621891922037680661
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +855,11 @@ PrefabInstance:
       propertyPath: m_BlendShapeWeights.Array.data[1]
       value: -80
       objectReference: {fileID: 0}
+    - target: {fileID: 1331938722810370977, guid: c27d96ea6a5e333418707d297e0a487f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1563086661641737949, guid: c27d96ea6a5e333418707d297e0a487f,
         type: 3}
       propertyPath: m_RootOrder
@@ -902,6 +921,11 @@ PrefabInstance:
       value: bucket
       objectReference: {fileID: 0}
     - target: {fileID: 2232346863644626023, guid: c27d96ea6a5e333418707d297e0a487f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770886891690099190, guid: c27d96ea6a5e333418707d297e0a487f,
         type: 3}
       propertyPath: m_IsActive
       value: 1

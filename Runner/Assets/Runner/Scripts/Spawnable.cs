@@ -17,7 +17,8 @@ namespace HyperCasual.Runner
     public class Spawnable : MonoBehaviour
     {
         protected Transform m_Transform;
-
+        public bool CanMoveOnX = false;
+        public bool isDirectionRight = false;
         LevelDefinition m_LevelDefinition;
         Vector3 m_Position;
         Color m_BaseColor;

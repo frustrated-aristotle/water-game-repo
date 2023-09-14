@@ -24,6 +24,7 @@ namespace HyperCasual.Runner
         public static GameManager Instance => s_Instance;
         static GameManager s_Instance;
 
+        public GameObject levelEndPrefab;
         [SerializeField]
         AbstractGameEvent m_WinEvent;
 
@@ -46,6 +47,7 @@ namespace HyperCasual.Runner
         private float bulletPowerMultiplier = 1;
         private int bulletPower = 10;
         private int currentBulletPower = 10;
+
 
         public int BulletPower
         {
@@ -100,19 +102,19 @@ namespace HyperCasual.Runner
         }
 
         [SerializeField]private InitializeValues valueInitializer;
+
         /// <summary>
         /// This method calls all methods necessary to load and
         /// instantiate a level from a level definition.
         /// </summary>
         public void LoadLevel(LevelDefinition levelDefinition)
         {
-            
-            if (SaveManager.Instance.LevelProgress != 100)
-            {
-                SaveManager.Instance.LevelProgress = 100;
-            }
-             
             m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress];
+            string str = SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress].name;
+            string rakamKismi = str.Replace("Design Level ", "");
+            string level = "Level: "+ rakamKismi;
+            UIManager.Instance.level.text = level;
+            Debug.Log("Level Name  " + str);
             LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);
             CreateTerrain(m_CurrentLevel, ref m_CurrentTerrainGO);
             PlaceLevelMarkers(m_CurrentLevel, ref m_LevelMarkersGO);
@@ -122,7 +124,6 @@ namespace HyperCasual.Runner
                 SaveManager.Instance.IsInitialized = 1;
             }
             PlayerController.Instance.m_HorizontalSpeedFactor = 25;
-            Debug.Log("FireRate at the start of the level: " + GunFire.Instance.Rate);
             StartGame();
         }
         public void LoadLevel(int num)
@@ -202,7 +203,7 @@ namespace HyperCasual.Runner
             for (int i = 0; i < levelDefinition.Spawnables.Length; i++)
             {
                 LevelDefinition.SpawnableObject spawnableObject = levelDefinition.Spawnables[i];
-
+                
                 if (spawnableObject.SpawnablePrefab == null)
                 {
                     continue;
@@ -211,12 +212,16 @@ namespace HyperCasual.Runner
                 Vector3 position = spawnableObject.Position;
                 Vector3 eulerAngles = spawnableObject.EulerAngles;
                 Vector3 scale = spawnableObject.Scale;
+                                Debug.Log("HEYYO :");
 
                 GameObject go = null;
                 
                 if (Application.isPlaying)
                 {
                     go = GameObject.Instantiate(spawnableObject.SpawnablePrefab, position, Quaternion.Euler(eulerAngles));
+                    go.GetComponent<Spawnable>().CanMoveOnX = spawnableObject.CanMove;
+                    go.GetComponent<Spawnable>().isDirectionRight = spawnableObject.isDirectionRight;
+                        
                 }
                 else
                 {
@@ -224,6 +229,8 @@ namespace HyperCasual.Runner
                     go = (GameObject)PrefabUtility.InstantiatePrefab(spawnableObject.SpawnablePrefab);
                     go.transform.position = position;
                     go.transform.eulerAngles = eulerAngles;
+                    go.GetComponent<Spawnable>().CanMoveOnX = spawnableObject.CanMove;
+                    go.GetComponent<Spawnable>().isDirectionRight = spawnableObject.isDirectionRight;
 #endif
                 }
 
@@ -245,6 +252,7 @@ namespace HyperCasual.Runner
                 {
                     go.transform.SetParent(levelParent);
                 }
+                
             }
         }
 

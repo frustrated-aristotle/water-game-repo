@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2946809331890066953}
   - component: {fileID: 2496179805518122297}
   - component: {fileID: -2478630225447084185}
+  - component: {fileID: 6244815194372395974}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -50,6 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d4f2e5e8e5b4e128b2f732f39a1f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelEndPrefab: {fileID: 8639955558327190505, guid: fad5d1bf9285a0442bc304643b5a375a,
+    type: 3}
   m_WinEvent: {fileID: 11400000, guid: 4facc4ba26e884ef88b6c2506fa5ae2c, type: 2}
   m_LoseEvent: {fileID: 11400000, guid: 2b6d3353ba4d84d3ca725ef1835ca96f, type: 2}
   m_CurrentLevel: {fileID: 0}
@@ -137,5 +140,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels: []
+  moveFloat: 0
   baseZ: 150
   stepDistance: 15
+--- !u!114 &6244815194372395974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617234690931488546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338006821a171dd4ba0e485c0595500c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gates: []
+  isDone: 0

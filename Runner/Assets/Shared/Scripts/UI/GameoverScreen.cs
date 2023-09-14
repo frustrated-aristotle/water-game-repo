@@ -68,10 +68,12 @@ namespace HyperCasual.Runner
 
         public void UpdateText(UpgradeTypes type)
         {
-            Debug.Log("Income : " + SaveManager.Instance.MoneyValueUpgradeCost);
-            incomeText.text = ((int)SaveManager.Instance.MoneyValueUpgradeCost).ToString();
-            bulletPowerText.text = ((int)SaveManager.Instance.BulletPowerUpgradeCost).ToString();
-            PurchaseRelatedStatics.UpdateTextColors(incomeText, bulletPowerText, UpgradeTypes.MONEY_UPGRADE, UpgradeTypes.BULLETPOWER_UPGRADE);
+            if (gameObject.activeSelf)
+            {
+                incomeText.text = ((int)SaveManager.Instance.MoneyValueUpgradeCost).ToString();
+                bulletPowerText.text = ((int)SaveManager.Instance.BulletPowerUpgradeCost).ToString();
+                PurchaseRelatedStatics.UpdateTextColors(incomeText, bulletPowerText, UpgradeTypes.MONEY_UPGRADE, UpgradeTypes.BULLETPOWER_UPGRADE);
+            }
         }
 
 

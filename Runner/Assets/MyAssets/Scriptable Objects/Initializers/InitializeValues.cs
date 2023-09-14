@@ -25,12 +25,17 @@ public class InitializeValues : ScriptableObject
     [SerializeField] private float initialCloudRate;
     [SerializeField] private float initialCloudRateUpgradeCost;
 
+    [SerializeField] private float initGateX = 0.2f;
+    [SerializeField] private float initCloudX = 0.2f; 
+
     private List<Tuple<string, float>> keyAndValueForSaveManager = new List<Tuple<string, float>>();
     
     public void MainInitializer()
     {
         InitTuples();    
         InitValues(keyAndValueForSaveManager);
+        PlayerPrefs.SetFloat("GateX", initGateX);
+        PlayerPrefs.SetFloat("CloudX", initCloudX);
         SaveManager.Instance.Currency = (int)initialCurrency;
         SaveManager.Instance.BulletLevel = 0;
     }

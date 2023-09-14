@@ -31,6 +31,8 @@ MonoBehaviour:
     Scale: {x: 10, y: 3.05, z: 1}
     BaseColor: {r: 0, g: 0, b: 0, a: 0}
     SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
   - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
       type: 3}
     Position: {x: 0, y: 0, z: 0}
@@ -38,6 +40,8 @@ MonoBehaviour:
     Scale: {x: 1, y: 1, z: 1}
     BaseColor: {r: 0, g: 0, b: 0, a: 0}
     SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
   - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
       type: 3}
     Position: {x: 0, y: 0, z: 0}
@@ -45,377 +49,8 @@ MonoBehaviour:
     Scale: {x: 1, y: 1, z: 1}
     BaseColor: {r: 0, g: 0, b: 0, a: 0}
     SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
-      type: 3}
-    Position: {x: 0, y: 0, z: 0}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1, y: 1, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
-      type: 3}
-    Position: {x: 0, y: 0, z: 0}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1, y: 1, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 2868137756060239591, guid: eae9e1caa56cc494ea6f3cbc8a2d5d9c,
-      type: 3}
-    Position: {x: 7.84, y: 8.35, z: 60}
-    EulerAngles: {x: 0, y: 270, z: 0}
-    Scale: {x: 1.000004, y: 1, z: 1.000004}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 2868137756060239591, guid: eae9e1caa56cc494ea6f3cbc8a2d5d9c,
-      type: 3}
-    Position: {x: -7.51, y: 8.35, z: 69.66}
-    EulerAngles: {x: -0, y: 92.98, z: -0}
-    Scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 314387739941697089, guid: ab22d0748f0e442098d9148039da7b5d,
-      type: 3}
-    Position: {x: 0, y: 4.76, z: 45}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 3, y: 3, z: 0.1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 8108204161446462133, guid: d4839c88a6fb1b14d9f9ed1ff669afe2,
-      type: 3}
-    Position: {x: -3.33, y: 1, z: 100}
-    EulerAngles: {x: 270.01978, y: 0, z: 0}
-    Scale: {x: 100, y: 99.999985, z: 99.999985}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 7204820607176787261, guid: 182c289d4331cb849b9348a8efc46550,
-      type: 3}
-    Position: {x: 0, y: 5.09, z: 21}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 0.5, y: 0.5, z: 0.5}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 7204820607176787261, guid: 182c289d4331cb849b9348a8efc46550,
-      type: 3}
-    Position: {x: 0, y: 5.09, z: 30}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 0.5, y: 0.5, z: 0.5}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 320434132636210332, guid: ba578357d39e7694394fbe9cf8818bac,
-      type: 3}
-    Position: {x: 7, y: 3.4290805, z: 130}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1, y: 1, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 390}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 390}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 390}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 375}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 375}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 375}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 360}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 360}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 360}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 345}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 345}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 345}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 330}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 330}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 330}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 315}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 315}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 315}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 300}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 300}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 300}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 285}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 285}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 285}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 270}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 270}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 270}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 255}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 255}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 255}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 240}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 240}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 240}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 225}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 225}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 225}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 4, y: 4, z: 210}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: 0, y: 4, z: 210}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
-      type: 3}
-    Position: {x: -4, y: 4, z: 210}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1.5, y: 3, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 1221753601997255974, guid: 8b4141819fb30384484d864ea9c9c2d7,
-      type: 3}
-    Position: {x: 0, y: 4.50009, z: 180}
-    EulerAngles: {x: 0, y: 180, z: 0}
-    Scale: {x: 1, y: 1, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 5699400771020496883, guid: fc003f8ec9896cf4d99be20035b55457,
-      type: 3}
-    Position: {x: 0, y: 0, z: 190}
-    EulerAngles: {x: -0, y: 90, z: -0}
-    Scale: {x: 3.1000133, y: 1, z: 1.700028}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 314387739941697089, guid: 5bd318a794a4f4540b17e0167e382731,
-      type: 3}
-    Position: {x: 0, y: 4.76, z: 85}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 3, y: 3, z: 0.1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 314387739941697089, guid: ab22d0748f0e442098d9148039da7b5d,
-      type: 3}
-    Position: {x: 0, y: 4.76, z: 115}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 3, y: 3, z: 0.1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
-  - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
-      type: 3}
-    Position: {x: 0, y: 0, z: 0}
-    EulerAngles: {x: -0, y: 0, z: 0}
-    Scale: {x: 1, y: 1, z: 1}
-    BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
   - SpawnablePrefab: {fileID: 7204820607176787261, guid: 182c289d4331cb849b9348a8efc46550,
       type: 3}
     Position: {x: -3, y: 5.09, z: 150}
@@ -423,6 +58,8 @@ MonoBehaviour:
     Scale: {x: 0.5, y: 0.5, z: 0.5}
     BaseColor: {r: 0, g: 0, b: 0, a: 0}
     SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
   - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
       type: 3}
     Position: {x: 0, y: 0, z: 0}
@@ -430,6 +67,458 @@ MonoBehaviour:
     Scale: {x: 1, y: 1, z: 1}
     BaseColor: {r: 0, g: 0, b: 0, a: 0}
     SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 314387739941697089, guid: ab22d0748f0e442098d9148039da7b5d,
+      type: 3}
+    Position: {x: 0, y: 4.76, z: 115}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 3, y: 3, z: 0.1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 1
+    isDirectionRight: 1
+  - SpawnablePrefab: {fileID: 314387739941697089, guid: 5bd318a794a4f4540b17e0167e382731,
+      type: 3}
+    Position: {x: 0, y: 4.76, z: 85}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 3, y: 3, z: 0.1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 1
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 5699400771020496883, guid: fc003f8ec9896cf4d99be20035b55457,
+      type: 3}
+    Position: {x: 0, y: 0, z: 190}
+    EulerAngles: {x: -0, y: 90, z: -0}
+    Scale: {x: 3.1000142, y: 1, z: 1.7000284}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 1221753601997255974, guid: 8b4141819fb30384484d864ea9c9c2d7,
+      type: 3}
+    Position: {x: 0, y: 4.50009, z: 180}
+    EulerAngles: {x: 0, y: 180, z: 0}
+    Scale: {x: 1, y: 1, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 210}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 210}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 210}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 225}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 225}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 225}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 240}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 240}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 240}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 255}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 255}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 255}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 270}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 270}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 270}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 285}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 285}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 285}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 300}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 300}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 300}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 315}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 315}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 315}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 330}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 330}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 330}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 345}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 345}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 345}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 360}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 360}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 360}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 375}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 375}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 375}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: -4, y: 4, z: 390}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 0, y: 4, z: 390}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 4209266843070710858, guid: 6cb0e2152f03bfb41834f728ad16f273,
+      type: 3}
+    Position: {x: 4, y: 4, z: 390}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1.5, y: 3, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 320434132636210332, guid: ba578357d39e7694394fbe9cf8818bac,
+      type: 3}
+    Position: {x: 7, y: 3.4290805, z: 130}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1, y: 1, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 7204820607176787261, guid: 182c289d4331cb849b9348a8efc46550,
+      type: 3}
+    Position: {x: 0, y: 5.09, z: 30}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 0.5, y: 0.5, z: 0.5}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 7204820607176787261, guid: 182c289d4331cb849b9348a8efc46550,
+      type: 3}
+    Position: {x: 0, y: 5.09, z: 21}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 0.5, y: 0.5, z: 0.5}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 8108204161446462133, guid: d4839c88a6fb1b14d9f9ed1ff669afe2,
+      type: 3}
+    Position: {x: -3.33, y: 1, z: 100}
+    EulerAngles: {x: 270.01978, y: 0, z: 0}
+    Scale: {x: 100, y: 99.999985, z: 99.999985}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 314387739941697089, guid: ab22d0748f0e442098d9148039da7b5d,
+      type: 3}
+    Position: {x: 0, y: 4.76, z: 45}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 3, y: 3, z: 0.1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 1
+    isDirectionRight: 1
+  - SpawnablePrefab: {fileID: 2868137756060239591, guid: eae9e1caa56cc494ea6f3cbc8a2d5d9c,
+      type: 3}
+    Position: {x: -7.51, y: 8.35, z: 69.66}
+    EulerAngles: {x: -0, y: 92.98, z: -0}
+    Scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 2868137756060239591, guid: eae9e1caa56cc494ea6f3cbc8a2d5d9c,
+      type: 3}
+    Position: {x: 7.84, y: 8.35, z: 60}
+    EulerAngles: {x: 0, y: 270, z: 0}
+    Scale: {x: 1.0000043, y: 1, z: 1.0000043}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
   - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
       type: 3}
     Position: {x: 0, y: 0, z: 0}
@@ -437,3 +526,32 @@ MonoBehaviour:
     Scale: {x: 1, y: 1, z: 1}
     BaseColor: {r: 0, g: 0, b: 0, a: 0}
     SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
+      type: 3}
+    Position: {x: 0, y: 0, z: 0}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1, y: 1, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
+      type: 3}
+    Position: {x: 0, y: 0, z: 0}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1, y: 1, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0
+  - SpawnablePrefab: {fileID: 5462242561885623108, guid: c3ad5d72868e0af41a58a22efda73b82,
+      type: 3}
+    Position: {x: 0, y: 0, z: 0}
+    EulerAngles: {x: -0, y: 0, z: 0}
+    Scale: {x: 1, y: 1, z: 1}
+    BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    SnapToGrid: 1
+    CanMove: 0
+    isDirectionRight: 0

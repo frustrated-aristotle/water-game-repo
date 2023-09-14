@@ -34,6 +34,7 @@ namespace HyperCasual.Runner
         [SerializeField] public TMP_InputField input;
         [SerializeField] public TMP_InputField input2;
         [SerializeField] public TMP_InputField input3;
+        [SerializeField] public TMP_InputField input4;
 
         public static PauseMenu Instance;
 
@@ -49,6 +50,9 @@ namespace HyperCasual.Runner
             m_QuitButton.AddListener(OnQuitClicked);
             input.text = PlayerController.Instance.m_HorizontalSpeedFactor.ToString();
             input2.text = PlayerController.Instance.m_TargetSpeed.ToString();
+            input3.text = SaveManager.Instance.GateMovementSpeedOnX.ToString();
+            input4.text = SaveManager.Instance.CloudMovementSpeedOnX.ToString();
+            
         }
 
         void OnDisable()

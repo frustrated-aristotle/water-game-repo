@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using HyperCasual.Core;
 using HyperCasual.Gameplay;
 using HyperCasual.Runner;
@@ -16,6 +17,22 @@ public class InspectorFunc : MonoBehaviour
     {
         Instance = this;
     }
+
+     [SerializeField]private float moveFloat;
+    //Move on Z axis by param
+    [ContextMenu("Move All By Param")]
+    public void MoveAllThings()
+    {
+        Spawnable[] spawnables = GameObject.FindObjectsOfType<Spawnable>();
+        foreach (Spawnable spawnable in spawnables)
+        {
+            Vector3 pos = spawnable.transform.position;
+            float zPos = pos.z + moveFloat;
+            pos.z = zPos;
+            spawnable.transform.position = pos;
+        }
+    }
+
 
     //This function will be called from GameManager when the level is loaded.
     [ContextMenu("Assign Step Values")]

@@ -1,10 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using HyperCasual.Gameplay;
-using PlasticGui.Gluon.WorkspaceWindow.Views.WorkspaceExplorer;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 namespace HyperCasual.Runner
 {
@@ -29,68 +23,61 @@ namespace HyperCasual.Runner
         RectTransform m_Text;
 
         bool m_Applied;
-        [SerializeField] private bool canMoveX;
-        [SerializeField] private bool canMoveZ;
+        private bool canMoveX = false;
+        private bool canMoveZ;
 
         Vector3 m_TextInitialScale;
 
         private Inventory inventory;
 
-        private float gateMoveInterval = 0.2f;
+        private float gateMoveInterval;
         private float gateMoveTimeInterval = 0.02f;
+
+        public GateMovementDirection gateMovementDirection;
+
+            
+
+        private void Start()
+        {
+            if (transform.position.x == 0 && GameManager.Instance != null)
+            {
+                canMoveX = true;
+            } 
+        }
+        public bool isInitDirectionRight = true;
         
 
-        
-
-    private void Start()
-    {
-         
-        if (transform.position.x == 0 && GameManager.Instance != null)
+        private void FixedUpdate()
         {
-            canMoveX = true;
-            StartCoroutine(StartChange());
-
-        }
-    }
-
-    private IEnumerator StartChange()
-    {
-        while (canMoveX)
-        {
-            ChangeDirection();
-            yield return new WaitForSeconds(gateMoveTimeInterval);
-        }
-    }
-
-    private bool isDirectionRight = true;
-    private void ChangeDirection()
-    {
-        float posX = transform.position.x;
-        
-        if (!isDirectionRight)
-        {
-            posX -= gateMoveInterval;
-            //left
-        }
-        else
-        {
-            posX += gateMoveInterval;
-            //right
+            if (canMoveX)
+                MoveGate();
         }
 
-        if (posX >= 3)
+        private void MoveGate()
         {
-            isDirectionRight = false;
+            gateMoveInterval = SaveManager.Instance.GateMovementSpeedOnX;
+            float posX = transform.position.x;
+            if (!isDirectionRight)//left
+            {
+                posX -= gateMoveInterval; 
+                
+            }
+            else                  //right
+            {
+                posX += gateMoveInterval;
+            }
+            if (posX >= 3)
+            {
+                isDirectionRight = false;
+            }
+            else if (posX <= -3)
+            {
+                isDirectionRight = true;
+            }
+            Vector3 pos = transform.position;
+            pos.x = posX;
+            transform.position = pos;
         }
-        else if (posX <= -3)
-        {
-            isDirectionRight = true;
-        }
-        Vector3 pos = transform.position;
-        pos.x = posX;
-        transform.position = pos;
-        
-    }
 
         enum GateType
         {
@@ -152,6 +139,11 @@ namespace HyperCasual.Runner
 
         void ActivateGate()
         {
+            BoxCollider col = PlayerController.Instance.GetComponent<BoxCollider>();
+            Vector3 size = col.size;
+            float sizeX = size.x;
+            float sizeY = size.y;
+            
             switch (m_GateType)
             {
                 /*
@@ -172,10 +164,12 @@ namespace HyperCasual.Runner
                     if (heightValue<0)
                     {
                         Inventory.Instance.BucketCapacity = -height;
+                        sizeY -= 0.6f;
                     }
                     else
                     {
                         Inventory.Instance.BucketCapacity = height;
+                        sizeY += 0.6f;
                     }
                     break;
                 }
@@ -186,15 +180,19 @@ namespace HyperCasual.Runner
                     if (widthValue<0)
                     {
                         Inventory.Instance.BucketCapacity = -width;
-
+                        sizeX -= 0.6f;
                     }
                     else
                     {
                         Inventory.Instance.BucketCapacity = width;
+                        sizeX += 0.6f;
                     }
                     break;
                 }
             }
+            size.x = sizeX;
+            size.y = sizeY;
+            col.size = size;
             m_Applied = true;
             if (widthValue < 0 || heightValue < 0 )
             {

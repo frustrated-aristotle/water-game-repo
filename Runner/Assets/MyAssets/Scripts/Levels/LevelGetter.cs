@@ -48,19 +48,25 @@ namespace MyAssets.Scripts.Levels
         [ContextMenu("Arrange Things Before the Build")]
         public void BeforeBuild()
         {
-            Debug.Log("ad");
             SetLevelToZero();
             SetMoney();
             SetCapacity();
             SetBulletPower();
             SetCloudRate();
+            SetMovementSpeedsOfCloudAndGate();
             PlayerPrefs.DeleteAll();
+            Debug.Log("Before Build");
+        }
+
+        private void SetMovementSpeedsOfCloudAndGate()
+        {
+            sm.CloudMovementSpeedOnX = 0.2f;
+            sm.GateMovementSpeedOnX = 0.2f;
         }
 
         private void SetCloudRate()
         {
             sm.CloudRate = 5;
-            
         }
 
         private void SetBulletPower()

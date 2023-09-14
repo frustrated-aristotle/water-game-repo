@@ -1,3 +1,4 @@
+using System;
 using HyperCasual.Core;
 using HyperCasual.Runner;
 using MyAssets.Scripts.PurchaseHandler;
@@ -25,8 +26,19 @@ namespace HyperCasual.Gameplay
         TextMeshProUGUI capacityText;
         [SerializeField] 
         TextMeshProUGUI flowText;
-      
+        
+        //Hold and Move Text Related
+        [SerializeField] 
+        TextMeshProUGUI holdAndMoveText;
 
+        [SerializeField] 
+        private float startingFontSize = 50;
+        [SerializeField] 
+        private float endFontSize = 80;
+        private float scaleUpStep = .75f;
+       
+        private bool canScaleUp = true;
+        //Starting val : 50 end val : 80
 
         public static Hud Instance;
 
@@ -34,8 +46,28 @@ namespace HyperCasual.Gameplay
         {
             Instance = this;
         }
+
         
-        
+        private void FixedUpdate()
+        {
+            if (canScaleUp)
+            {
+                holdAndMoveText.fontSize += scaleUpStep;
+            }
+            else
+            {
+                holdAndMoveText.fontSize -= scaleUpStep;
+            }
+            if (canScaleUp && holdAndMoveText.fontSize >= endFontSize)
+            {
+                canScaleUp = false;
+            }
+            else if(!canScaleUp && holdAndMoveText.fontSize <= startingFontSize)
+            {
+                canScaleUp = true;
+            }
+        }
+
 
         /// <summary>
         /// The slider that displays the XP value 

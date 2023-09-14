@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using HyperCasual.Core;
 using UnityEngine;
 
@@ -127,6 +128,8 @@ namespace HyperCasual.Runner
             /// ignore the level's snap settings.
             /// </summary>
             public bool SnapToGrid = true;
+            public bool CanMove = false;
+            public bool isDirectionRight = false;
         }
 
         /// <summary>
@@ -149,6 +152,28 @@ namespace HyperCasual.Runner
             StartPrefab = updatedLevel.StartPrefab;
             EndPrefab = updatedLevel.EndPrefab;
             Spawnables = updatedLevel.Spawnables;
+
+            //When we click to the save button
+            //We will loop through all Spawnable typed objects on the scene.
+            //In this loop, we will loop through all Spawnables untill finding the same positioned object.
+            //After finding it, we will give the SpawnableObject its CanMove property's value.
+            List<Spawnable> spawnablesList = new List<Spawnable>();
+            spawnablesList = GameObject.FindObjectsOfType<Spawnable>().ToList();
+            Debug.Log("Count: "+spawnablesList.Count);
+            foreach (Spawnable spawnable in spawnablesList)
+            {
+                Vector3 pos = spawnable.transform.position;
+                foreach (SpawnableObject spawnableObject in Spawnables)
+                {
+                    if (pos == spawnableObject.Position)
+                    {
+                        spawnableObject.CanMove = spawnable.CanMoveOnX;
+                        spawnableObject.isDirectionRight = spawnable.isDirectionRight;
+                    }
+                }
+            }
         }
+      
     }
+    
 }
