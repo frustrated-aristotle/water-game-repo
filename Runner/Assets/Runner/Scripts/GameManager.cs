@@ -212,8 +212,6 @@ namespace HyperCasual.Runner
                 Vector3 position = spawnableObject.Position;
                 Vector3 eulerAngles = spawnableObject.EulerAngles;
                 Vector3 scale = spawnableObject.Scale;
-                                Debug.Log("HEYYO :");
-
                 GameObject go = null;
                 
                 if (Application.isPlaying)

@@ -46,10 +46,6 @@ public class GateMovementDirection : MonoBehaviour
         }
     }
 
-    public void GateMovementDirectionMainMethod()
-    {
-       
-    }
 
     private void GiveTheirDirections()
     {

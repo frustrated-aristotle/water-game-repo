@@ -108,7 +108,6 @@ MonoBehaviour:
   widthValue: 15
   m_Text: {fileID: 0}
   gateMovementDirection: {fileID: 0}
-  isDirectionRight: 1
   isInitDirectionRight: 1
 --- !u!65 &1610685542415524369
 BoxCollider:
