@@ -112,7 +112,7 @@ namespace HyperCasual.Runner
             m_CurrentLevel = (LevelDefinition)SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress];
             string str = SequenceManager.Instance.Levels[SaveManager.Instance.LevelProgress].name;
             string rakamKismi = str.Replace("Design Level ", "");
-            string level = "Level: "+ rakamKismi;
+            string level = "Level "+ rakamKismi;
             UIManager.Instance.level.text = level;
             Debug.Log("Level Name  " + str);
             LoadLevel(m_CurrentLevel, ref m_CurrentLevelGO);

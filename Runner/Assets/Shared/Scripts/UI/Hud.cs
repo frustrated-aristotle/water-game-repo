@@ -26,16 +26,17 @@ namespace HyperCasual.Gameplay
         TextMeshProUGUI capacityText;
         [SerializeField] 
         TextMeshProUGUI flowText;
-        
+
+        [SerializeField] private GameObject flowObj, capacityObj;
         //Hold and Move Text Related
         [SerializeField] 
         TextMeshProUGUI holdAndMoveText;
 
         [SerializeField] 
-        private float startingFontSize = 50;
+        private float startingFontSize = 40;
         [SerializeField] 
-        private float endFontSize = 80;
-        private float scaleUpStep = .75f;
+        private float endFontSize = 65;
+        private float scaleUpStep = .5f;
        
         private bool canScaleUp = true;
         //Starting val : 50 end val : 80
@@ -120,6 +121,9 @@ namespace HyperCasual.Gameplay
             PurchaseHandler.UpdateTexts += UpdateText;
             ToggleButtonActiveState(true);
             UpdateText(UpgradeTypes.CLOUD_UPGRADE);
+            flowObj.SetActive(true);
+            capacityObj.SetActive(true);
+            holdAndMoveText.gameObject.SetActive(true);
         }
 
         public void UpdateText(UpgradeTypes type)
@@ -138,9 +142,9 @@ namespace HyperCasual.Gameplay
             {
                 UpdateUpgradeButtonText();
             }
-            var childCount = transform.childCount;
-            transform.GetChild(childCount-1).gameObject.SetActive(willBeActive);
-            transform.GetChild(childCount-2).gameObject.SetActive(willBeActive);
+            holdAndMoveText.gameObject.SetActive(false);
+            flowObj.SetActive(willBeActive);
+            capacityObj.SetActive(willBeActive);
         }
         void OnDisable()
         {

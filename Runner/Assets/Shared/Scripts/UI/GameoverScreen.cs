@@ -64,7 +64,11 @@ namespace HyperCasual.Runner
         }
 
         public float[] times = {6,6,8,8,8,6,6 , 6,8,8,8,8,6,6};
+        public float[] xPositions = {-230,-144,-68,-10,58,123,191,276 };
         private int timerIndex = 0;
+        private int leftIndex = 0;
+
+        private bool toRight = true;
 //Index = 0, 1 , 2 , 3, 4, 5, 6 7 , 8 , 9 , 10 , 11
         private bool isTimerOn = true;
         private int targetIndex = 0;
@@ -72,6 +76,32 @@ namespace HyperCasual.Runner
         public TextMeshProUGUI multiplierText;
         public TextMeshProUGUI multipliedTempGoldText;
 
+        private void CheckPos()
+        {
+            float xPos = pena.transform.position.x;
+            if(toRight)
+            {
+                if (leftIndex < xPositions.Length - 1)
+                {
+                    if (xPos < xPositions[leftIndex + 1 ] && xPos > xPositions[leftIndex]  )
+                    {
+                
+                    }  
+                }
+                else
+                {
+                    toRight = false;
+                }
+               
+            }
+            else if (!toRight)
+            {
+                if (leftIndex>0)
+                {
+                    
+                }
+            }
+        }
         private float Multiplier()
         {
             float f = 1.5f;
@@ -220,34 +250,8 @@ namespace HyperCasual.Runner
             }
             Time.timeScale = 1f;
             PlayerController.Instance.m_TargetSpeed = 0;
-            Invoke(nameof(ActivateGameObject), 2f);
-            StartCoroutine(Timer());
+            
         }
-        
-        private IEnumerator Timer()
-        {
-            while (isTimerOn)
-            {
-                yield return new WaitForSeconds(times[timerIndex] /60f);
-                Debug.Log("Timer ended after : " + times[timerIndex] + " and index: " + timerIndex);
-                multiplier = Multiplier();
-                multiplierText.text =  "Claim " + multiplier.ToString() + "x";
-                timerIndex++;
-                float multipliedTempGold = Inventory.Instance.m_TempGold * multiplier;
-                multipliedTempGoldText.text = "+"+multipliedTempGold.ToString();
-                if (timerIndex >= times.Length)
-                {
-                    timerIndex = 0;
-                    Debug.Log("It is 0 now");
-                }
-            }
-        }
-        private void ActivateGameObject()
-        {
-            proceedToResultButton.gameObject.SetActive(true); // GameObject'i aktif et
-        }
-
-       
         public void UpdateText(UpgradeTypes type)
         {
             if (gameObject.activeSelf)

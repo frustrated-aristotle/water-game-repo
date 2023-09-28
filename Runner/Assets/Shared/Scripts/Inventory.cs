@@ -97,9 +97,11 @@ namespace HyperCasual.Runner
         private void ChangeColor()
         {
             float rate = (float)bucketFilledAmount / (float)tempBucketCapacity * 100f;
-            greenColor = new Color(49f / 255f, 255f / 255f, 54f / 255f);
-            yellowColor = new Color(215f / 255f, 255f / 255f, 49f / 255f);
-            redColor = new Color(255f / 255f, 72f / 255f, 49f / 255f);
+            //greenColor = new Color(49f / 255f, 255f / 255f, 54f / 255f);
+            greenColor = new Color(0f / 255f, 203f / 255f, 0f / 255f);
+            yellowColor = new Color(254f / 255f, 254f / 255f, 0f / 255f);
+            //yellowColor = new Color(215f / 255f, 255f / 255f, 49f / 255f);
+            redColor = new Color(254 / 255f, 72f / 255f, 49f / 255f);
             Color fillColor;
             if (rate <= 40.33f)
             {

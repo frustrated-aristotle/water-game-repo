@@ -15,13 +15,21 @@ namespace HyperCasual.Runner
         [SerializeField] private AbstractGameEvent startSceneEvent;
 
         [SerializeField] private TextMeshProUGUI collectedMoneyText;
+
+        [SerializeField] private GameObject noThanksButton;
         private void OnEnable()
         {
             startSceneButton.AddListener(OnStartSceneButtonClicked);
             InitCollectedMoney();
             Inventory.Instance.MakeBucketLevelZero();
+            Invoke(nameof(ActivateGameObject), 2f);
+            Time.timeScale = 1f;
         }
-
+        
+        private void ActivateGameObject()
+        {
+            noThanksButton.SetActive(true);
+        }
         private void OnDisable()
         {
             startSceneButton.RemoveListener(OnStartSceneButtonClicked);
