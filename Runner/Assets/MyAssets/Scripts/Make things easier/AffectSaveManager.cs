@@ -9,7 +9,7 @@ public class AffectSaveManager : MonoBehaviour
     public int intChangeValue;
     [SerializeField]float changedValue;
     
-    [ContextMenu("Give Bucket Capacity")]
+
     public void GiveBucketCapacity()
     {
         SaveManager.Instance.BucketCapacity = intChangeValue;
